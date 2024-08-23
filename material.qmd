@@ -1,0 +1,16 @@
+---
+page-title: "Material"
+listing:
+  - id: material
+    contents: "material/*.R"
+    type: table
+    sort: "lesson"
+    sort-ui: false
+    filter-ui: false
+---
+
+## Material for sessions
+
+:::{#material}
+:::
+

@@ -1,0 +1,331 @@
+---
+title: "Data Quality, Open Science and Reproducibility in CSS"
+author: "Sebastian Stier"
+lesson: 6
+institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
+date: "2024-04-17"
+date-format: "YYYY-MM-DD"
+bibliography: references.bib
+footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebastianstier.com/ma_css24/)"
+format: 
+  fakegesis-revealjs: 
+    code-line-numbers: false
+
+---
+
+
+## Agenda for today
+
+1. Data quality in CSS
+
+2. Applied text analysis in *R*
+
+3. Open science and reproducibility in CSS
+
+
+##
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/schedule_v2.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    cols_width(Date ~ px(200),
+               Topics ~ px(250),
+               Topics ~ px(500)) %>%
+    tab_options(data_row.padding = px(5.4)) %>%
+    tab_options(heading.title.font.size = 14,
+                table.font.size = 12) %>% 
+     gt_highlight_rows(
+     rows = 6,
+     fill = "lightblue"
+   )
+
+```
+
+# Update on seminar logistics {background-color="#58748F"}
+
+
+## Requirements for seminar theses
+
+- Should be based on content/methods covered in the seminar: collection and analysis of DBD, use of CSS methods
+- 3,500-5,000 words
+- Fully reproducible code, including narrative comments where you explain what you do in each step
+
+
+## Criteria for grading seminar theses
+
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/thesis_grading.xlsx") %>%
+    rename("Very good" = "Very.good") %>%
+    gt() %>%
+    tab_header(md("**Grading scheme**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    cols_width(starts_with("X") ~ px(210), everything() ~ px(140)) %>% 
+    cols_label( X1 = " ", X6 = " ")# %>%
+     # tab_options(data_row.padding = px(5.4)) %>%
+     # tab_options(heading.title.font.size = 14,
+     #             table.font.size = 12)
+
+```
+
+
+
+
+# 1. Data quality in CSS {background-color="#58748F"}
+
+## Data quality
+
+- What are relevant dimensions of data quality?
+
+- How do you assess data quality in your research?
+
+- How do you ensure data quality in your research?
+
+
+## Data quality: relevant dimensions
+
+![](../material/img/data_qual_definition){fig-align="center"}
+
+
+## What is a measurement?
+
+. . . 
+
+- A measurement is the process of linking an abstract concept to empirical indicators
+
+- A measurement is typically an inference since we almost never observe "all data" perfectly. We use measurements to draw inferences based on incomplete/sampled data
+
+## Drawing inferences: social sciences
+
+![](../material/img/inferences_socsci){fig-align="center"}
+
+
+## Drawing inferences: CSS
+
+![](../material/img/inferences_css){fig-align="center"}
+
+
+
+## Theory and causal mechanisms
+
+
+![](../material/img/inferences_merkel){fig-align="center"}
+
+
+## Applications to election prediction
+
+
+![](../material/img/tumasjan){width=70%}
+
+
+::: {style="font-size: 30%;"}
+
+Tumasjan, A., Sprenger, T. O., Sandner, P. G., & Welpe, I. M. (2010). Predicting elections with Twitter: What 140 characters reveal about political sentiment. In: [*Proceedings of the 4th International AAAI Conference on Weblogs and Social Media* (pp. 178–185).](https://doi.org/10.1609/icwsm.v4i1.14009) 
+
+:::
+
+![](../material/img/tumasjan_reply){width=70%}
+
+
+::: {style="font-size: 30%;"}
+
+Jungherr, A., Jürgens, P., & Schoen, H. (2012). Why the Pirate Party Won the German Election of 2009 or The Trouble With Predictions. [*Social Science Computer Review*, 30(2), 229–234.](https://doi.org/10.1177/0894439311404119)
+
+:::
+
+
+
+## The micro-macro link
+
+![](../material/img/jungherr_causal){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+
+Jungherr, A., Schoen, H., & Jürgens, P. (2016). The Mediation of Politics through Twitter: An Analysis of Messages posted during the Campaign for the German Federal Election 2013. [*Journal of Computer-Mediated Communication*, 21(1), 50–68.](https://doi.org/10.1111/jcc4.12143)
+
+See also: Coleman, J. S. (1990). *Foundations of social theory*. Belknap Press of Harvard University Press.
+
+:::
+
+## An error framework perspective
+
+![](../material/img/tse_groves){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+
+Groves, R. M., & Lyberg, L. (2010). Total Survey Error: Past, Present, and Future. [*Public Opinion Quarterly*, 74(5), 849–879.](https://doi.org/10.1093/poq/nfq065)
+
+::: 
+
+## An error framework for DBD
+
+
+![](../material/img/tse_dbd){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+
+Sen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. [*Public Opinion Quarterly*, 85(S1), 399–422.](https://doi.org/10.1093/poq/nfab018)
+
+::: 
+
+## Error framework for DBD
+
+- Can improve communication between different social science and CSS communities
+- May help you to systematically reflect on the validity and reliability of your measurement
+- But this framework is just a starting point! There are always research design and platform specific things to consider
+
+
+# 2. Automated text analysis {background-color="#58748F"}
+
+Guidelines on the use of ChatGPT moved to the next session.
+
+
+# 3. Open science and reproducibility in CSS {background-color="#58748F"}
+
+## Required reading: the "Facebook paper"
+
+![](../material/img/facebook_nyhan){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+González-Bailón, S., Lazer, D., Barberá, P., Zhang, M., Allcott, H., Brown, T., Crespo-Tenorio, A., Freelon, D., Gentzkow, M., Guess, A. M., Iyengar, S., Kim, Y. M., Malhotra, N., Moehler, D., Nyhan, B., Pan, J., Rivera, C. V., Settle, J., Thorson, E., … Tucker, J. A. (2023). [Asymmetric ideological segregation in exposure to political news on Facebook. *Science*, 381(6656), 392–398.](https://doi.org/10.1126/science.ade7138)
+
+:::
+
+
+## What is reproducibility?
+
+**Defining reproducibility**
+    
+A minimum standard on a spectrum of activities ("reproducibility spectrum") for assessing the value or accuracy of scientific claims **based on the original methods, data, and code**. [...] In some fields, this meaning is, instead, associated with the term "replicability" or "repeatability".
+
+::: {style="font-size: 50%;"}
+[https://forrt.org/glossary/reproducibility](https://forrt.org/glossary/reproducibility)
+
+:::
+
+. . . 
+
+Reproducibility ensures that research is **transparent, verifiable, and trustworthy**.
+
+Studies have repeatedly shown suboptimal reproducibility of research in the social sciences [e.g. @chan_what_2024]
+
+
+## Motivations for reproducibility
+    
+- Increasing the robustness and trustworthiness of your own research
+
+- Facilitating collaboration (through the use of common tools and standards)
+
+- Being kind to *future you*:
+    - Editing and reusing your own code (e.g., for a paper revision or a follow-up study)
+    - Easily being able to pick up a project after a break or finding and understanding things again after a longer time
+    
+
+## *The Turing Way* definition
+    
+ [![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)]{fig-align="center"}
+
+    
+
+::: {style="font-size: 50%;"}
+
+[https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
+
+:::
+    
+## Computational reproducibility
+
+
+There also are distinctions between different types (or components) of reproducibility. One type/component that is especially relevant for our course is "computational reproducibility":
+
+. . . 
+
+::: {style="font-size: 85%;"}
+
+Ability to **recreate the same results as the original study** (including tables, figures, and quantitative findings), using the **same input data, computational methods, and conditions of analysis**. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions. 
+
+::: 
+
+::: {style="font-size: 30%;"}
+[https://forrt.org/glossary/reproducibility](https://forrt.org/glossary/reproducibility)
+
+:::
+
+
+## The state of affairs
+
+![](../material/img/hong_open_science){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+Chan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research.
+
+:::
+
+    
+## Tools & workflows
+    
+In our case, **tools** are programming languages, programs, and other pieces of software that we can use to make our research (more easily) reproducible.
+
+**Workflows** are the ways in which we combine these tools to achieve our goal.
+
+. . . 
+
+Choosing tools and establishing workflows are somewhat idiosyncratic processes that depend on...
+
+- the requirements of your project (methods, data types, ...)
+
+- the availability of tools
+
+- your skills and knowledge
+
+- the preferences of collaborators
+
+    
+## Reproducible research workflows
+    
+Being an open scientist means **adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows** [@klein_practical_2018: 11]
+
+
+    
+## Research management practices
+    
+There are quite a few practices that researchers can adopt to increase the reproducibility of their work.
+
+- Using free and open source software (FOSS)
+- [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script)
+- [The *tidyverse* style guide](https://style.tidyverse.org)
+- [Clear folder structures](https://psych-transparency-guide.uni-koeln.de/folder-structure.html)
+- [Naming things](https://style.tidyverse.org/syntax.html)
+
+
+## Fully reproducible documents in *R*
+
+
+![](../material/img/bauer_quarto)
+
+Next session
+
+
+## Credit where credit is due
+
+Today, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer David Schoch and Bernd Weiß. Their material is openly available on GitHub:
+
+[https://github.com/jobreu/reproducible-research-gesis-2023](https://github.com/jobreu/reproducible-research-gesis-2023)
+
+[https://schochastics.github.io/netAnaR2023](https://schochastics.github.io/netAnaR2023/#/title-slide)
+
+
+# See you on May 22nd {background-color="#58748F"} 
+
+## References

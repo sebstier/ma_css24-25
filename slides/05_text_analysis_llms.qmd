@@ -1,0 +1,293 @@
+---
+title: "Automated Text Analysis and Large Language Models"
+author: "Sebastian Stier"
+lesson: 5
+institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
+date: "2024-04-10"
+date-format: "YYYY-MM-DD"
+bibliography: references.bib
+footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebastianstier.com/ma_css24/)"
+format: 
+  fakegesis-revealjs: 
+    code-line-numbers: false
+
+---
+
+
+## Agenda for today
+
+1. Automated text analysis
+
+2. Applied text analysis in *R*
+
+3. Large Language Models
+
+
+##
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/schedule_v2.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    cols_width(Date ~ px(200),
+               Topics ~ px(250),
+               Topics ~ px(500)) %>%
+    tab_options(data_row.padding = px(5.4)) %>%
+    tab_options(heading.title.font.size = 14,
+                table.font.size = 12) %>% 
+     gt_highlight_rows(
+     rows = 5,
+     fill = "lightblue"
+   )
+
+```
+
+
+## Collecting DBD via APIs
+
+
+![](../material/img/apis_bauer){fig-align="center"}
+
+
+::: {style="font-size: 50%;"}
+[https://bookdown.org/paul/apis_for_social_scientists/](https://bookdown.org/paul/apis_for_social_scientists/)
+:::
+
+::: {style="font-size: 80%;"}
+
+- Which APIs did you try out?
+- Which APIs/code still work?
+- Did the data help shape your research ideas?
+
+:::
+
+# 1. Automated text analysis {background-color="#58748F"}
+
+## Automated text analysis: The menu of options
+
+![](../material/img/grimmer_stewart){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Grimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. [*Political Analysis*, 21(3), 267--297.](https://doi.org/10.1093/pan/mps028) 
+
+:::
+
+
+## Important terms
+
+- *Document*: the main unit of analysis containing the text
+    - There might be document-level variables like an author, time, source, etc.
+- *Corpus*: a collection of several documents
+- *Token*: converting a sequence of text into smaller parts, e.g., words
+- *Document-Feature Matrix (DFM)*: a matrix of documents and features (tokens)
+- *Stopwords*: commonly used words in a language (e.g., `the`, `a`, `are`) that do not carry much useful information when you want to classify text
+
+
+## Automated text analysis in *R*
+
+![](../material/img/quanteda){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., Matsuo, A., Perry, P. O., Kuha, J., & Lauderdale, B. (2018). quanteda: An R package for the quantitative analysis of textual data. [*Journal of Open Source Software*, 3(30), 774.](https://joss.theoj.org/papers/10.21105/joss.00774)
+
+:::
+
+
+## From text to numbers: a document-feature matrix
+
+
+![](../material/img/dfm_term_matrix){fig-align="center"}
+
+**Bag-of-words representation of text**
+
+![](../material/img/dfm_docs){fig-align="center"}
+
+
+
+## Word-to-word matrix
+
+![](../material/img/word_word_matrix){fig-align="center"}
+
+
+
+## Distributional semantics
+
+- A word's meaning is given by the words that frequently appear close by
+
+  $\rightarrow$ One of the most successful ideas in Natural Language Processing
+  
+- Context
+
+  $\rightarrow$ When a word appears in a text, its context is a set of words that appear nearby (within a fixed window): `car`, `street`, `traffic`
+  
+ 
+
+## Topic models
+
+![](../material/img/topic_models){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Blei, D. M. (2012). Probabilistic topic models. [*Communications of the ACM*, 55(4), 77–84.](https://doi.org/10.1145/2133806.2133826) 
+
+:::
+
+
+## Topic models: an application
+
+![](../material/img/pegida){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Stier, S., Posch, L., Bleier, A., & Strohmaier, M. (2017). When populists become popular: Comparing Facebook use by the right-wing movement Pegida and German political parties. [*Information, Communication & Society*, 20(9), 1365–1388.](https://doi.org/10.1080/1369118X.2017.1328519)
+
+:::
+
+
+## Topic models: validate, validate! [@grimmer_text_2013]
+
+**Semantic validity**
+
+![](../material/img/semantic_validity){fig-align="center"}
+
+
+## Topic models: validate, validate! [@grimmer_text_2013]
+
+**Predictive validity**
+
+![](../material/img/predictive_validity){fig-align="center"}
+
+
+
+## Word embeddings: extracting meaning from a word-to-word matrix
+
+![](../material/img/word_word_dimension){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+https://www.scaler.com/topics/tensorflow/tensorflow-word2vwc/
+
+:::
+
+
+
+## Word embeddings
+
+![](../material/img/word_emb.png){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+[https://nlp.stanford.edu/projects/histwords/](https://doi.org/10.1177/0038038519853146)
+
+:::
+
+
+## Word embeddings
+
+![](../material/img/bonikowski_model){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. [*Sociological Methods & Research*, 51(4), 1721–1787.](https://doi.org/10.1177/00491241221122317)
+
+:::
+
+
+## Results
+
+
+![](../material/img/bonikowski_results1){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. [*Sociological Methods & Research*, 51(4), 1721–1787.](https://doi.org/10.1177/00491241221122317)
+
+:::
+
+
+# 2. Applied text analysis in *R* {background-color="#58748F"}
+
+## We will use *quanteda* 
+- Go to file **5_session_five.R** in [https://sebastianstier.com/ma_css24/material.html](https://sebastianstier.com/ma_css24/material.html)
+
+
+# 3. Large Language Models {background-color="#58748F"}
+
+
+## What are (Large) Language Models?
+
+- Language models consist of a neural network with many parameters (typically billions of weights), trained on large quantities of unlabeled text using self-supervised learning
+- Examples: BERT, GPT 2/3/4, (Google) Gemini
+
+
+## The basis of LLMs: neural networks
+
+![](../material/img/neural_network){fig-align="center"}
+
+
+## This field is evolving **quickly**
+
+![](../material/img/llm_tree.jpeg){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+[https://github.com/Mooler0410/LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide)
+
+:::
+
+
+## Neural networks in action
+
+
+![](../material/img/word_embed_inspector){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+[https://ronxin.github.io/wevi](https://ronxin.github.io/wevi)
+
+:::
+
+
+## Our two required readings
+
+- Guiding questions:
+
+::: {style="font-size: 90%;"}
+    - Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. 
+    
+    - Reflect on the main strengths and weaknesses of these papers.
+    
+    - What are the concepts, assumed social mechanisms and operationalizations used in the papers?
+    
+    - What are the data in use? How are the data analyzed? Does this seem appropriate?
+    
+    - How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?
+    
+    - Do you see any ethical concerns?
+    
+    - If applicable, are there commonalities or differences between the two papers?
+    
+:::
+
+
+## Main results from Gilardi. et al.
+
+
+![](../material/img/results_gilardi){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+Gilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. [*Proceedings of the National Academy of Sciences*, 120(30)](https://doi.org/10.1073/pnas.2305016120)
+
+
+:::
+
+
+## How to interact with LLMs
+
+- **Zero shot learning**: the user writes a natural language instruction (commonly called "prompt") for the LLM that instructs it to perform a certain task
+- **Few shot learning**: the user writes a prompt for the LLM that instructs it to perform a certain task + provides some examples
+- **Instruction tuning**: the user trains a pre-trained model on task-related data. During fine tuning, model parameters are updated. A medium to large amount of labelled training data (i.e., examples that are annotated with the desired model output) is required.
+
+
+
+# See you next week on April 17th {background-color="#58748F"} 
+
+## References

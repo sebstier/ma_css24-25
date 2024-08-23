@@ -1,0 +1,55 @@
+---
+title: Computational Social Science Methods and Digital Behavioral Data
+subtitle: "University of Mannheim<br>Fall Semester 2024"
+section-divs: false
+toc: false
+title-block-banner: "#58748F"
+title-block-banner-color: "white"
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+
+## Lecturer
+
+### Sebastian Stier
+Professor @ University of Mannheim & Scientific Director Department Computational Social Science @ GESIS
+
+
+[{{< fa house size=1x >}}](https://sebastianstier.com)
+
+
+## About the course
+
+Computational Social Science (CSS) is a young research field at the intersection of various social science disciplines, data science and computer science. The goal is to gain new insights into society through large amounts of data and the direct observation of human behavior. CSS relies on two cornerstones: digital behavioral data, which can be collected from online platforms or sensors like smartphones, and computer science methods such as automated text analysis to create appropriate measures for social science research questions. In the course, students will get to know foundational studies, theories and methods used in the field of CSS. We will discuss infrastructural, ethical and legal challenges and how to navigate these to devise appropriate research designs in CSS.
+
+The course will be application oriented. Students will familiarize themselves with the main applications of CSS methods and implement them in R. The range of applications will cover data management and preprocessing, the application of machine learning, data and results visualization, statistical data analysis and the validation of results. The hands-on application examples will cover questions from various research fields and different data types like social media data or web browsing histories. Equipped with this theoretical and methodological toolkit, students will develop their own CSS research projects.
+
+## Schedule
+
+
+```{r, echo=FALSE, warning=FALSE, out.width="80%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+read.xlsx("material/data/schedule.xlsx") %>%
+  rename(`Required reading` = "Required.reading") %>%
+  gt() %>%
+  tab_header(md("**Seminar dates and topics**")) %>%
+  fmt_markdown(columns = TRUE) %>%
+  cols_width(Date ~ px(135),
+             Topics ~ px(250),
+             Topics ~ px(5000)) %>% 
+  tab_options(data_row.padding = px(12)) %>%  
+  tab_options(heading.title.font.size = 14,
+              table.font.size = 12)
+
+```
+
+
+## Software
+- [R](https://cran.rstudio.com)
+- A text editor, e.g. [RStudio](https://posit.co/download/rstudio-desktop)
+- [Quarto](https://quarto.org)

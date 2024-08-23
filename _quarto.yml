@@ -1,0 +1,33 @@
+project:
+  type: website
+  lib-dir: "libs"
+
+website:
+  title: "Computational Social Science and Digital Behavioral Data"
+  site-url: "https://sebstier.github.io/ma_css24-25/"
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: material.qmd
+        text: Material
+      - href: slides.qmd
+        text: Slides
+    right:
+      - text: ILIAS
+        href: "https://ilias.uni-mannheim.de/ilias.php?baseClass=ilrepositorygui&ref_id=1527661"
+  page-footer:
+    left: "Sebastian Stier 2024"
+    right: "Powered by [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: 
+      - yeti
+      - custom.scss
+    css: styles.css
+    toc: true
+    
+execute: 
+  freeze: auto

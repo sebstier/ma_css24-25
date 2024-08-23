@@ -1,0 +1,225 @@
+---
+title: "Automated Text Analysis"
+author: "Sebastian Stier"
+lesson: 4
+institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
+date: "2024-03-20"
+date-format: "YYYY-MM-DD"
+bibliography: references.bib
+footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebastianstier.com/ma_css24/)"
+format: 
+  fakegesis-revealjs: 
+    code-line-numbers: false
+
+---
+
+
+## Agenda for today
+
+1. Data sources and getting data from APIs in *R*
+
+2. Automated text analysis
+
+3. Applied text analysis in *R*
+
+
+##
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/schedule.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    cols_width(Date ~ px(200),
+               Topics ~ px(250),
+               Topics ~ px(500)) %>%
+    tab_options(data_row.padding = px(5.4)) %>%
+    tab_options(heading.title.font.size = 14,
+                table.font.size = 12) %>% 
+     gt_highlight_rows(
+     rows = 4,
+     fill = "lightblue"
+   )
+
+```
+
+
+
+
+# 1. Data sources {background-color="#58748F"} 
+
+
+## The state of API-based research
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+![](../material/img/report_SM_platforms){width=100%}
+
+::: {style="font-size: 40%;"}
+Lukito, J., et al. (2023). [The State of Digital Media Data Research, 2023. Media and Democracy Data Cooperative.](https://mddatacoop.org/files/2023/State%20of%20Digital%20Media%20Data%20Research%202023.pdf)
+:::
+
+:::
+
+
+::: {.column width="40%"}
+
+![](../material/img/number_twitter_studies){width=90%}
+
+::: {style="font-size: 40%;"}
+
+Yu, J., & Muñoz-Justicia, J. (2020). A Bibliometric Overview of Twitter-Related Studies Indexed in Web of Science. [*Future Internet*, 12(5), 91.](https://doi.org/10.3390/fi12050091) 
+:::
+
+:::
+
+
+::::
+
+
+## Trump Twitter Archive
+
+
+![](../material/img/trump_twitter){width=100%}
+
+
+::: {style="font-size: 40%;"}
+[https://www.thetrumparchive.com](https://www.thetrumparchive.com)
+:::
+
+
+## Homework
+
+
+[Browse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.]{style="color:red;"}
+
+::: {style="font-size: 50%;"}
+[https://bookdown.org/paul/apis_for_social_scientists/](https://bookdown.org/paul/apis_for_social_scientists/)
+:::
+
+<br>
+
+- Which APIs did you try out?
+- Which APIs/code still work?
+- Did the data help shape your research ideas?
+
+
+# 2. Automated text analysis {background-color="#58748F"} 
+
+## Automated text analysis: The menu of options
+
+![](../material/img/grimmer_stewart){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Grimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. [*Political Analysis*, 21(3), 267--297.](https://doi.org/10.1093/pan/mps028) 
+
+:::
+
+. . . 
+
+::: {style="font-size: 50%;"}
+[Locate our two required readings on this map.]{style="color:blue;"}
+:::
+
+## Our two required readings
+
+- Guiding questions:
+
+::: {style="font-size: 90%;"}
+    - Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. 
+    
+    - Reflect on the main strengths and weaknesses of these papers.
+    
+    - What are the concepts, assumed social mechanisms and operationalizations used in the papers?
+    
+    - What are the data in use? How are the data analyzed? Does this seem appropriate?
+    
+    - How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?
+    
+    - Do you see any ethical concerns?
+    
+    - If applicable, are there commonalities or differences between the two papers?
+    
+:::
+
+
+## The state of sociology (according to Schwemmer et al.)
+
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+
+![](../material/img/schwemmer_scale){width=100%}
+
+::: {style="font-size: 40%;"}
+Schwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. [*Sociology*, 54(1), 3–21.](https://doi.org/10.1177/0038038519853146)
+:::
+
+:::
+
+
+::: {.column width="45%"}
+
+![](../material/img/schwemmer_reg_all){width=100%}
+
+:::
+
+
+::::
+
+
+## Topic models
+
+![](../material/img/topic_models){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Blei, D. M. (2012). Probabilistic topic models. [*Communications of the ACM*, 55(4), 77–84.](https://doi.org/10.1145/2133806.2133826) 
+
+:::
+
+
+## Topic models: an application
+
+![](../material/img/pegida){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Stier, S., Posch, L., Bleier, A., & Strohmaier, M. (2017). When populists become popular: Comparing Facebook use by the right-wing movement Pegida and German political parties. [*Information, Communication & Society*, 20(9), 1365–1388.](https://doi.org/10.1080/1369118X.2017.1328519)
+
+:::
+
+
+## Topic models: validate, validate! [@grimmer_text_2013]
+
+**Semantic validity**
+
+![](../material/img/semantic_validity){fig-align="center"}
+
+
+## Topic models: validate, validate! [@grimmer_text_2013]
+
+**Predictive validity**
+
+![](../material/img/predictive_validity){fig-align="center"}
+
+
+# 3. Applied text analysis in *R* {background-color="#58748F"} 
+
+## We will use *quanteda* 
+- Go to file **4_session_four.R** in [https://sebastianstier.com/ma_css24/material.html](https://sebastianstier.com/ma_css24/material.html)
+
+
+
+# Happy easter break! See you on April 17th {background-color="#58748F"} 
+
+## References

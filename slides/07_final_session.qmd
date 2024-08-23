@@ -1,0 +1,272 @@
+---
+title: "Presentation of Thesis Ideas"
+author: "Sebastian Stier"
+lesson: 7
+institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
+date: "2024-05-22"
+date-format: "YYYY-MM-DD"
+bibliography: references.bib
+footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebastianstier.com/ma_css24/)"
+format: 
+  fakegesis-revealjs: 
+    code-line-numbers: false
+
+---
+
+
+## Agenda for today
+
+1. Update on seminar logistics
+
+2. Writing a reproducible paper in *R*
+
+3. Your presentations
+
+4. Network analysis in *R*
+
+
+##
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/schedule_v2.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    fmt_markdown() %>%
+    cols_width(Date ~ px(200),
+            Topics ~ px(200),
+            Topics ~ px(450)) %>%
+       tab_options(row_group.as_column = TRUE) %>% 
+    tab_options(data_row.padding = px(5.4)) %>%
+    tab_options(heading.title.font.size = 14, table.font.size = 10) %>% 
+     gt_highlight_rows(
+     rows = 7,
+     fill = "lightblue"
+   )
+
+```
+
+
+# 1. Update on seminar logistics {background-color="#58748F"}
+
+
+## Requirements for seminar theses
+
+- Should be based on content/methods covered in the seminar: collection and analysis of DBD, use of CSS methods
+- 3,500-5,000 words
+- Fully reproducible code, including narrative comments where you explain what you do in each step
+    - You can share all materials, including data with me via [https://cryptshare.gesis.org](https://cryptshare.gesis.org)
+- Submission deadline **31 July 2024** (via email)
+
+
+## Criteria for grading seminar theses
+
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/thesis_grading.xlsx") %>%
+    rename("Very good" = "Very.good") %>%
+    gt() %>%
+    tab_header(md("**Grading scheme**")) %>%
+    fmt_markdown(columns = TRUE) %>%
+    #cols_width(starts_with("X") ~ px(210), everything() ~ px(140)) %>% 
+    cols_label(X1 = " ", X6 = " ") # %>%
+     # tab_options(data_row.padding = px(5.4)) %>%
+     # tab_options(heading.title.font.size = 14,
+     #             table.font.size = 12)
+
+```
+
+
+
+## If you do use ChatGPT in your research, how to use it responsibly
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](../material/img/dfg_llm_guidelines1)
+
+:::
+
+::: {.column width="50%"}
+
+![](../material/img/dfg_llm_guidelines2)
+
+::: {style="font-size: 50%;"}
+
+:::
+
+:::
+
+
+::: {style="font-size: 50%;"}
+
+[https://www.dfg.de/en/news/news-topics/announcements-proposals/2023/info-wissenschaft-23-72](https://www.dfg.de/en/news/news-topics/announcements-proposals/2023/info-wissenschaft-23-72)
+
+:::
+
+::::
+
+
+
+# 2. Writing a reproducible paper in *R* {background-color="#58748F"}
+
+
+## Computational reproducibility
+
+
+
+::: {style="font-size: 92%;"}
+
+Ability to **recreate the same results as the original study** (including tables, figures, and quantitative findings), using the **same input data, computational methods, and conditions of analysis**. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions. 
+
+::: 
+
+::: {style="font-size: 30%;"}
+[https://forrt.org/glossary/reproducibility](https://forrt.org/glossary/reproducibility)
+
+:::
+
+
+## The state of affairs
+
+![](../material/img/hong_open_science){fig-align="center"}
+
+::: {style="font-size: 50%;"}
+Chan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research.
+
+:::
+
+    
+    
+## Fully reproducible documents in *R*
+
+
+![](../material/img/bauer_quarto)
+
+
+::: {style="font-size: 57%;"}
+Download the template: [https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto](https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto)
+:::
+
+
+# 3. Your presentations {background-color="#58748F"}
+
+
+# 4. Network analysis in *R* {background-color="#58748F"}
+
+
+## Why study networks?
+
+Conventional research methods are often individual-based and our models tend to model relations between variables. Yet nature and culture are oftentimes structured as networks:
+
+- society
+- brain (neural networks)
+- organizations (who reports to whom)
+- economies (who sells to whom)
+- ecologies (who eats whom)
+- Position within a network is important for predicting outcomes
+
+## DBD and networks
+
+![](../material/img/lietz)
+
+
+::: {style="font-size: 50%;"}
+
+Lietz, H., Wagner, C., Bleier, A., & Strohmaier, M. (2014). When Politicians Talk: Assessing Online Conversational Practices of Political Parties on Twitter. [In *Proceedings of the 8th International AAAI Conference on Weblogs and Social Media* (pp. 285–294). AAAI Press.](https://ojs.aaai.org/index.php/ICWSM/article/view/14521/14370)
+
+:::
+
+
+## Levels of Analysis
+
+**Dyad level**  
+Fundamental unit of network data collection  
+("Does sharing offices lead to friendship?") 
+
+**Node level**  
+Aggregation of dyad level measurement  
+("Do actors with more friends have a stronger immune system?")
+
+**Network level**  
+Assessing overall structure of a network  
+("Does information diffuse faster in well-connected networks?")
+
+
+
+## Relations: network edges
+
+- Relational roles: family, coworkers, ...
+- Interactions: sold to, talked to, helped, ...
+- Flows: information, belief, money, ...
+
+
+::: {style="font-size: 80%;"}
+
+:::{.fragment}
+**undirected**  
+symmetric relation
+:::
+
+:::{.fragment}
+**directed**  
+asymmetric relation, but can be bi-directional
+:::
+
+:::{.fragment}
+**valued/weighted**  
+strength of relation, frequency of contact, etc.
+:::
+
+:::{.fragment}
+**signed**  
+positive and negative relations
+:::
+
+:::{.fragment}
+**or a mixture thereof**
+:::
+
+:::
+
+## Goals of analysis
+
+:::{.fragment}
+**Network variables as independent variable / explanatory**  
+
+> *Using network theory to explain the consequences of network properties*
+
+social capital, brokerage, adoption of innovation
+:::
+
+:::{.fragment}
+**Network variables as dependent variable / outcomes**  
+
+> *Using ______ theory to explain the antecendents of a network*
+
+homophily, balance theory
+:::
+
+
+
+## Credit where credit is due
+
+Today, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer David Schoc and Bernd Weiß. Their material is openly available on GitHub:
+
+[https://github.com/jobreu/reproducible-research-gesis-2023](https://github.com/jobreu/reproducible-research-gesis-2023)
+
+[https://schochastics.github.io/netAnaR2023](https://schochastics.github.io/netAnaR2023/#/title-slide)
+
+
+# If you have any questions, please contact me! {background-color="#58748F"}
+
+## References

@@ -1,0 +1,17 @@
+---
+page-title: "Slides"
+listing:
+  - id: slides
+    contents: "slides/*.qmd"
+    type: table
+    sort: "lesson"
+    sort-ui: false
+    filter-ui: false
+---
+
+
+## Slides
+
+:::{#slides}
+:::
+
