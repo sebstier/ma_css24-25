@@ -6,13 +6,7 @@
   {
     "listing": "/slides.html",
     "items": [
-      "/slides/01_introduction.html",
-      "/slides/02_ethics_webdata.html",
-      "/slides/03_webdata_designed_digital_data.html",
-      "/slides/04_automated_textanalysis.html",
-      "/slides/05_text_analysis_llms.html",
-      "/slides/06_text_analysis_networks.html",
-      "/slides/07_final_session.html"
+      "/slides/01_introduction.html"
     ]
   }
 ]

@@ -34,17 +34,29 @@ The course will be application oriented. Students will familiarize themselves wi
 library(openxlsx)
 library(tidyverse)
 library(gt)
-read.xlsx("material/data/schedule.xlsx") %>%
-  rename(`Required reading` = "Required.reading") %>%
-  gt() %>%
-  tab_header(md("**Seminar dates and topics**")) %>%
-  fmt_markdown(columns = TRUE) %>%
-  cols_width(Date ~ px(135),
-             Topics ~ px(250),
-             Topics ~ px(5000)) %>% 
-  tab_options(data_row.padding = px(12)) %>%  
-  tab_options(heading.title.font.size = 14,
-              table.font.size = 12)
+read.xlsx("material/data/schedule_v2.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    #tab_header("**Seminar dates and topics**") %>%
+    #fmt_markdown() %>% #columns = TRUE
+    # cols_width(Date ~ px(400)#,
+    #            #Topics ~ px(350)#,
+    #            #`Required reading` ~ px(400)
+    #            ) %>%
+    cols_width(Date ~ pct(20),
+               Topics ~ pct(30),
+               `Required reading` ~ pct(50)
+               ) %>%
+    tab_options(data_row.padding = px(3)) %>%
+    tab_options(heading.title.font.size = 14,
+                column_labels.font.weight = "bold",
+                table.font.size = 13.5) %>%
+  fmt_markdown() %>% 
+  cols_align(
+    align = "left",
+    columns = everything()
+  )
 
 ```
 

@@ -3,7 +3,7 @@
 #' author: "Sebastian Stier"
 #' lesson: 1
 #' institute: University of Mannheim & GESIS
-#' date: "2023-02-14"
+#' date: "2024-09-04"
 
 
 # Base R code snippets ----

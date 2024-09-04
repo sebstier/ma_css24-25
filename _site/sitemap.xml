@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/06_text_analysis_networks.html</loc>
-    <lastmod>2024-08-23T23:50:33.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/07_final_session.html</loc>
-    <lastmod>2024-08-23T23:50:33.115Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/04_automated_textanalysis.html</loc>
-    <lastmod>2024-08-23T23:50:33.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/02_ethics_webdata.html</loc>
-    <lastmod>2024-08-23T23:50:33.113Z</lastmod>
+    <loc>https://sebstier.github.io/ma_css24-25/slides/01_introduction.html</loc>
+    <lastmod>2024-09-03T16:40:52.330Z</lastmod>
   </url>
   <url>
     <loc>https://sebstier.github.io/ma_css24-25/material.html</loc>
-    <lastmod>2024-08-23T23:50:32.980Z</lastmod>
+    <lastmod>2024-02-13T14:24:45.000Z</lastmod>
   </url>
   <url>
     <loc>https://sebstier.github.io/ma_css24-25/slides.html</loc>
-    <lastmod>2024-08-23T23:50:33.108Z</lastmod>
+    <lastmod>2024-02-11T21:29:20.000Z</lastmod>
   </url>
   <url>
     <loc>https://sebstier.github.io/ma_css24-25/index.html</loc>
-    <lastmod>2024-08-23T23:50:32.979Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/01_introduction.html</loc>
-    <lastmod>2024-08-23T23:50:33.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/05_text_analysis_llms.html</loc>
-    <lastmod>2024-08-23T23:50:33.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/03_webdata_designed_digital_data.html</loc>
-    <lastmod>2024-08-23T23:50:33.113Z</lastmod>
+    <lastmod>2024-09-03T09:46:05.810Z</lastmod>
   </url>
 </urlset>
