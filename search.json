@@ -116,14 +116,14 @@
     "href": "slides.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nResearch Ethics and Web Data\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides.html#slides",
     "href": "slides.html#slides",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nResearch Ethics and Web Data\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html",
@@ -142,133 +142,133 @@
   {
     "objectID": "slides/2_what_is_css.html#agenda-for-today",
     "href": "slides/2_what_is_css.html#agenda-for-today",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Agenda for today",
     "text": "Agenda for today\n\nWarmup session in R, introduction to the tidyverse\nIntroduction to Computational Social Science"
   },
   {
     "objectID": "slides/2_what_is_css.html#tidyverse-the-swiss-army-knife-of-r",
     "href": "slides/2_what_is_css.html#tidyverse-the-swiss-army-knife-of-r",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "tidyverse: the Swiss Army knife of R",
     "text": "tidyverse: the Swiss Army knife of R\n\n\nÇetinkaya-Rundel, M., et al. (2021). An educator’s perspective of the tidyverse. arXiv Preprint.\n\n\nIntroduction to tidyverse: https://www.tidyverse.org/packages"
   },
   {
     "objectID": "slides/2_what_is_css.html#before-we-really-get-started-with-coding",
     "href": "slides/2_what_is_css.html#before-we-really-get-started-with-coding",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Before we really get started with coding…",
     "text": "Before we really get started with coding…\nA simple ggplot figure.\n\n\n\n\n```{r}\n#| output-location: column\n#| code-line-numbers: \"6|7|8|9|10|11\"\n\nlibrary(ggplot2)\nmtcars %&gt;%\n  ggplot(aes(x = disp, y = mpg)) +\n  # ggplot(data = mtcars, aes(x = disp, y = mpg)) +    \n  geom_point() +\n  geom_smooth(method = \"loess\", formula = \"y ~ x\") +\n  theme_minimal()\n```"
   },
   {
     "objectID": "slides/2_what_is_css.html#section",
     "href": "slides/2_what_is_css.html#section",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "",
     "text": "```{r, eval=FALSE}\nlibrary(ggplot2)\n    mtcars %&gt;%ggplot(aes(x = disp, y = mpg))+geom_point() +geom_smooth(method = \"loess\", formula = \"y ~ x\")+theme_minimal()\n```\n\n\n```{r, eval=FALSE}\nlibrary(ggplot2)\n  ggplot(mtcars,aes(x=disp, y=mpg))+geom_point()+\n      geom_smooth(method=\"loess\",formula=\"y~x\")+theme_minimal()\n```\n\n\n```{r, eval=FALSE}\nlibrary(ggplot2)\nmtcars %&gt;%\n  ggplot(aes(x = disp, y = mpg)) +\n  geom_point() +\n  geom_smooth(method = \"loess\", formula = \"y ~ x\")\n```\n\n\nLuckily, there is guidance: https://style.tidyverse.org/index.html"
   },
   {
     "objectID": "slides/2_what_is_css.html#finally-some-coding",
     "href": "slides/2_what_is_css.html#finally-some-coding",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Finally, some coding",
     "text": "Finally, some coding\n\nGo to https://sebastianstier.com/ma_css24-25/material.html\nDownload 1_class_two.R and open it in RStudio\nWe start with the first exercises together.\nI will answer questions and help."
   },
   {
     "objectID": "slides/2_what_is_css.html#section-1",
     "href": "slides/2_what_is_css.html#section-1",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "",
     "text": "What is Computational Social Science?\nAnd what is the scientific benefit of CSS?"
   },
   {
     "objectID": "slides/2_what_is_css.html#vast-amounts-of-data",
     "href": "slides/2_what_is_css.html#vast-amounts-of-data",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Vast amounts of data",
     "text": "Vast amounts of data\n\n\n\nhttps://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#44598c0460ba"
   },
   {
     "objectID": "slides/2_what_is_css.html#some-definitions-i",
     "href": "slides/2_what_is_css.html#some-definitions-i",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Some definitions I",
     "text": "Some definitions I\nWe define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data (1). […] Whereas traditional quantitative social science has focused on rows of cases and columns of variables, typically with assumptions of independence among observations, CSS encompasses language, location and movement, networks, images, and video, with the application of statistical models that capture multifarious dependencies within data.\n\nLazer, D. M. J., et al. (2020). Computational social science: Obstacles and opportunities. Science, 369(6507), 1060–1062: 1060."
   },
   {
     "objectID": "slides/2_what_is_css.html#some-definitions-ii",
     "href": "slides/2_what_is_css.html#some-definitions-ii",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Some definitions II",
     "text": "Some definitions II\nComputational social science is an interdisciplinary field that advances theories of human behavior by applying computational techniques to large datasets from social media sites, the Internet, or other digitized archives such as administrative records. Our definition forefronts sociological theory because we believe the future of the field within sociology depends not only on novel data sources and methods, but also on its capacity to produce new theories of human behavior or elaborate on existing explanations of the social world.\n\nEdelmann, A., Wolff, T., Montagne, D., & Bail, C. A. (2020). Computational Social Science and Sociology. Annual Review of Sociology, 46(1), 61–81: 62."
   },
   {
     "objectID": "slides/2_what_is_css.html#digital-behavioral-data",
     "href": "slides/2_what_is_css.html#digital-behavioral-data",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Digital behavioral data",
     "text": "Digital behavioral data\n\n\n\n\n\n“Records of activity (trace data) undertaken through an online information system (thus, digital)” (Howison et al., 2011: 769) that can be collected from a multitude of technical systems, such as websites, social media platforms, smartphone apps, or sensors.\n\n\nHowison, J., Wiggins, A., & Crowston, K. (2011). Validity issues in the use of social network analysis with digital trace data. Journal of the Association for Information Systems, 12(12), 767–797, 769.\nStier, S., Breuer, J., Siegers, P., & Thorson, K. (2020). Integrating Survey Data and Digital Trace Data: Key Issues in Developing an Emerging Field. Social Science Computer Review, 38(5), 503–516, 504."
   },
   {
     "objectID": "slides/2_what_is_css.html#how-does-css-relate-to-established-social-science-methods",
     "href": "slides/2_what_is_css.html#how-does-css-relate-to-established-social-science-methods",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "How does CSS relate to established social science methods?",
     "text": "How does CSS relate to established social science methods?"
   },
   {
     "objectID": "slides/2_what_is_css.html#measurement-problems-in-the-social-sciences",
     "href": "slides/2_what_is_css.html#measurement-problems-in-the-social-sciences",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Measurement problems in the social sciences",
     "text": "Measurement problems in the social sciences\n\n\n\n\n“This study compares self-reports of Internet use with client log files from a large household sample. Results show that the accuracy of self reported frequency and duration of Internet use is quite low, and that survey data are only moderately correlated with log file data.”\n\n\nScharkow, M. (2016). The Accuracy of Self-Reported Internet Use—A Validation Study Using Client Log Data. Communication Methods and Measures, 10(1), 13–27.\n\n\n\n\n“Based on 106 effect sizes, we found that self-reported media use correlates only moderately with logged measurements […] These findings raise concerns about the validity of findings relying solely on self-reported measures of media use.”\n\n\nParry, D. A., Davidson, B. I., Sewall, C. J. R., Fisher, J. T., Mieczkowski, H., & Quintana, D. S. (2021). A systematic review and meta-analysis of discrepancies between logged and self-reported digital media use. Nature Human Behaviour, 5, 1535–154."
   },
   {
     "objectID": "slides/2_what_is_css.html#advantages-of-digital-behavioral-data",
     "href": "slides/2_what_is_css.html#advantages-of-digital-behavioral-data",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Advantages of digital behavioral data",
     "text": "Advantages of digital behavioral data\n\nDigital behavioral data capture human behavior…\n\nnon-intrusively,\nreliably,\nwith fine-grained and multi-dimensional features,\nacross time and contexts."
   },
   {
     "objectID": "slides/2_what_is_css.html#downsides-of-digital-behavioral-data",
     "href": "slides/2_what_is_css.html#downsides-of-digital-behavioral-data",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Downsides of digital behavioral data",
     "text": "Downsides of digital behavioral data\n\nBut, digital behavioral data…\n\ncome in large volumes,\nare unstructured,\nare multi-dimensional (text, images, videos, audio, …),\nare often produced and provided with minimal or no information on the data generating process.\n\n\n\n\\(\\rightarrow\\) Analyzing digital behavioral data in a scientifically meaningful way is an immense challenge"
   },
   {
     "objectID": "slides/2_what_is_css.html#the-role-of-theory-and-existing-knowledge",
     "href": "slides/2_what_is_css.html#the-role-of-theory-and-existing-knowledge",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "The role of theory and existing knowledge",
     "text": "The role of theory and existing knowledge\n“Our definition forefronts sociological theory because we believe the future of the field within sociology depends not only on novel data sources and methods, but also on its capacity to produce new theories of human behavior or elaborate on existing explanations of the social world.” (Edelmann et al. 2020: 62)"
   },
   {
     "objectID": "slides/2_what_is_css.html#explanation-vs.-description-i",
     "href": "slides/2_what_is_css.html#explanation-vs.-description-i",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Explanation vs. description I",
     "text": "Explanation vs. description I\n\n\n\n\nMunger, K., Guess, A. M., & Hargittai, E. (2021). Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing. Journal of Quantitative Description: Digital Media, 1.\n\n\n\n“First and foremost, we respond to an undersupply of quantitative descriptive research in social science. Causal research that asks the question why has largely taken the place of descriptive research that asks the question what. Gerring (2012) diagnosed a general tendency to dismiss ‘Mere Description’ as a ‘mundane task … of little intrinsic scientific value,’ advocating instead that it be taken seriously as part of the general social scientific method.\nWe firmly agree. However, critique alone does not change the material conditions and incentives of practicing academics; we see this journal as a practical step towards raising the status of description as a method.” (Munger, Guess, and Hargittai 2021: 3-4)"
   },
   {
     "objectID": "slides/2_what_is_css.html#explanation-vs.-description-ii",
     "href": "slides/2_what_is_css.html#explanation-vs.-description-ii",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Explanation vs. description II",
     "text": "Explanation vs. description II\n\n\n\n\nMunger, K., Guess, A. M., & Hargittai, E. (2021). Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing. Journal of Quantitative Description: Digital Media, 1.\n\n\n\nSecond, rather than define our new venue in terms of existing disciplinary boundaries, we instead embrace a topical focus on digital media, broadly construed. We argue that the centrality and dynamism of digital media — information and communication technologies, including social media, that increasingly structure the way people interact with the world — necessitates increased scholarly energy devoted to sustained, continuous, quantitative description. […]\nToday, there are more hours of video uploaded to YouTube every day than were broadcast in the 1950s U.S. in a year. The daily content of Twitter is different (and different in unpredictable ways) than it was the day before.” (Munger, Guess, and Hargittai 2021: 3-4)"
   },
   {
     "objectID": "slides/2_what_is_css.html#examples-of-novel-sociotechnical-phenomena",
     "href": "slides/2_what_is_css.html#examples-of-novel-sociotechnical-phenomena",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "Examples of novel sociotechnical phenomena",
     "text": "Examples of novel sociotechnical phenomena\n\n\nHarmful online communication\n\nE.g., misinformation and deception\nE.g., violent language, harassment, racism\n\nAlgorithmic influence, bias and discrimination\nFilter bubbles and echo chambers\nSocial bots\nVirality of online content and memes\nOnline inequalities"
   },
   {
     "objectID": "slides/2_what_is_css.html#references",
     "href": "slides/2_what_is_css.html#references",
-    "title": "Research Ethics and Web Data",
+    "title": "What is Computational Social Science?",
     "section": "References",
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nEdelmann, Achim, Tom Wolff, Danielle Montagne, and Christopher A. Bail. 2020. “Computational Social Science and Sociology.” Annual Review of Sociology 46 (1): 61–81. https://doi.org/10.1146/annurev-soc-121919-054621.\n\n\nMunger, Kevin, Andrew M. Guess, and Eszter Hargittai. 2021. “Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing.” Journal of Quantitative Description: Digital Media 1. https://doi.org/10.51685/jqd.2021.000."
   }
