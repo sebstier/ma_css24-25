@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Sebastian Stier">
-  <meta name="dcterms.date" content="2024-09-04">
-  <title>Computational Social Science and Digital Behavioral Data - Introduction</title>
+  <meta name="dcterms.date" content="2024-09-11">
+  <title>Computational Social Science and Digital Behavioral Data - Research Ethics and Web Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,92 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../libs/revealjs/dist/theme/quarto.css">
   <link href="../libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -327,7 +412,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction</h1>
+  <h1 class="title">Research Ethics and Web Data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,80 +425,29 @@ Sebastian Stier
     </div>
 </div>
 
-  <p class="date">2024-09-04</p>
+  <p class="date">2024-09-11</p>
 </section>
-<section id="about-me" class="slide level2">
-<h2>About me</h2>
-<ul>
-<li>Dr.&nbsp;in Political Science in 2016 at the University of Heidelberg</li>
-<li>No R or programming training during my studies</li>
-<li>2016-2023, Postdoc/Senior Researcher at GESIS – Leibniz Institute for the Social Sciences</li>
-<li>Since November 2023
-<ul>
-<li>Scientific Director Department Computational Social Science at GESIS</li>
-<li>Professor of Computational Social Science, University of Mannheim</li>
-</ul></li>
-</ul>
-<div class="cell">
-<style type="text/css">
-.small-code{
-  font-size: 70%  
-}
-</style>
-</div>
-</section>
-<section id="my-research-interests" class="slide level2">
-<h2>My research interests</h2>
+<section class="slide level2">
 
-<img data-src="../material/img/network_sst.png" class="r-stretch"></section>
-<section id="what-are-your-expectations-for-this-class" class="slide level2">
-<h2>What are your expectations for this class?</h2>
-<p>Let’s do a survey!</p>
-
-<img data-src="../material/img/mentimeter_qr_code.png" class="r-stretch"></section>
-<section id="about-you" class="slide level2">
-<h2>About you</h2>
-<ul>
-<li>Who are you?</li>
-<li>What’s your study program and which semester are you in?</li>
-<li>What are your experiences with scientific computing/programming?</li>
-<li>Why this course? Which topics/methods/data do you want to learn more about?</li>
-</ul>
-</section>
-<section id="agenda-for-today" class="slide level2">
-<h2>Agenda for today</h2>
-<ol type="1">
-<li><p>Logistics</p></li>
-<li><p>Introduction to Computational Social Science</p></li>
-<li><p><em>R</em>: Warmup session, basics &amp; introduction to <em>tidyverse</em></p></li>
-</ol>
-</section>
-<section>
-<section id="logistics" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>1. Logistics</h1>
-
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="uwfhneosfz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uwfhneosfz table {
+<div id="ahikbvndvp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ahikbvndvp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uwfhneosfz thead, #uwfhneosfz tbody, #uwfhneosfz tfoot, #uwfhneosfz tr, #uwfhneosfz td, #uwfhneosfz th {
+#ahikbvndvp thead, #ahikbvndvp tbody, #ahikbvndvp tfoot, #ahikbvndvp tr, #ahikbvndvp td, #ahikbvndvp th {
   border-style: none;
 }
 
-#uwfhneosfz p {
+#ahikbvndvp p {
   margin: 0;
   padding: 0;
 }
 
-#uwfhneosfz .gt_table {
+#ahikbvndvp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -439,12 +473,12 @@ Sebastian Stier
   border-left-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_caption {
+#ahikbvndvp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uwfhneosfz .gt_title {
+#ahikbvndvp .gt_title {
   color: #333333;
   font-size: 14px;
   font-weight: initial;
@@ -456,7 +490,7 @@ Sebastian Stier
   border-bottom-width: 0;
 }
 
-#uwfhneosfz .gt_subtitle {
+#ahikbvndvp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -468,7 +502,7 @@ Sebastian Stier
   border-top-width: 0;
 }
 
-#uwfhneosfz .gt_heading {
+#ahikbvndvp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -480,13 +514,13 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_bottom_border {
+#ahikbvndvp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_col_headings {
+#ahikbvndvp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -501,7 +535,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_col_heading {
+#ahikbvndvp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -521,7 +555,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#uwfhneosfz .gt_column_spanner_outer {
+#ahikbvndvp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -533,15 +567,15 @@ Sebastian Stier
   padding-right: 4px;
 }
 
-#uwfhneosfz .gt_column_spanner_outer:first-child {
+#ahikbvndvp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uwfhneosfz .gt_column_spanner_outer:last-child {
+#ahikbvndvp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uwfhneosfz .gt_column_spanner {
+#ahikbvndvp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -553,11 +587,11 @@ Sebastian Stier
   width: 100%;
 }
 
-#uwfhneosfz .gt_spanner_row {
+#ahikbvndvp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uwfhneosfz .gt_group_heading {
+#ahikbvndvp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -583,7 +617,7 @@ Sebastian Stier
   text-align: left;
 }
 
-#uwfhneosfz .gt_empty_group_heading {
+#ahikbvndvp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -598,15 +632,15 @@ Sebastian Stier
   vertical-align: middle;
 }
 
-#uwfhneosfz .gt_from_md > :first-child {
+#ahikbvndvp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uwfhneosfz .gt_from_md > :last-child {
+#ahikbvndvp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uwfhneosfz .gt_row {
+#ahikbvndvp .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -625,7 +659,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#uwfhneosfz .gt_stub {
+#ahikbvndvp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -638,7 +672,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#uwfhneosfz .gt_stub_row_group {
+#ahikbvndvp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -652,15 +686,15 @@ Sebastian Stier
   vertical-align: top;
 }
 
-#uwfhneosfz .gt_row_group_first td {
+#ahikbvndvp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uwfhneosfz .gt_row_group_first th {
+#ahikbvndvp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uwfhneosfz .gt_summary_row {
+#ahikbvndvp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -670,16 +704,16 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#uwfhneosfz .gt_first_summary_row {
+#ahikbvndvp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_first_summary_row.thick {
+#ahikbvndvp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uwfhneosfz .gt_last_summary_row {
+#ahikbvndvp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -689,7 +723,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_grand_summary_row {
+#ahikbvndvp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -699,7 +733,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#uwfhneosfz .gt_first_grand_summary_row {
+#ahikbvndvp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -709,7 +743,7 @@ Sebastian Stier
   border-top-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_last_grand_summary_row_top {
+#ahikbvndvp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -719,11 +753,11 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_striped {
+#ahikbvndvp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uwfhneosfz .gt_table_body {
+#ahikbvndvp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -732,7 +766,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_footnotes {
+#ahikbvndvp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -746,7 +780,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_footnote {
+#ahikbvndvp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -755,7 +789,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#uwfhneosfz .gt_sourcenotes {
+#ahikbvndvp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -769,7 +803,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#uwfhneosfz .gt_sourcenote {
+#ahikbvndvp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -777,72 +811,72 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#uwfhneosfz .gt_left {
+#ahikbvndvp .gt_left {
   text-align: left;
 }
 
-#uwfhneosfz .gt_center {
+#ahikbvndvp .gt_center {
   text-align: center;
 }
 
-#uwfhneosfz .gt_right {
+#ahikbvndvp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uwfhneosfz .gt_font_normal {
+#ahikbvndvp .gt_font_normal {
   font-weight: normal;
 }
 
-#uwfhneosfz .gt_font_bold {
+#ahikbvndvp .gt_font_bold {
   font-weight: bold;
 }
 
-#uwfhneosfz .gt_font_italic {
+#ahikbvndvp .gt_font_italic {
   font-style: italic;
 }
 
-#uwfhneosfz .gt_super {
+#ahikbvndvp .gt_super {
   font-size: 65%;
 }
 
-#uwfhneosfz .gt_footnote_marks {
+#ahikbvndvp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uwfhneosfz .gt_asterisk {
+#ahikbvndvp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uwfhneosfz .gt_indent_1 {
+#ahikbvndvp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uwfhneosfz .gt_indent_2 {
+#ahikbvndvp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uwfhneosfz .gt_indent_3 {
+#ahikbvndvp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uwfhneosfz .gt_indent_4 {
+#ahikbvndvp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uwfhneosfz .gt_indent_5 {
+#ahikbvndvp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#uwfhneosfz .katex-display {
+#ahikbvndvp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#uwfhneosfz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ahikbvndvp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -865,21 +899,21 @@ Sebastian Stier
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>3 September 2024</p></td>
-<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
+<td class="gt_row gt_left" headers="Date"><p>3 September 2024</p></td>
+<td class="gt_row gt_left" headers="Topics"><ul>
 <li>Introduction and expectations</li>
 <li>Foundations of CSS</li>
 <li>Getting started in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"></td>
+<td class="gt_row gt_left" headers="Required reading"></td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>11 September 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
+<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>11 September 2024</p></td>
+<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
 <li>Foundations of CSS</li>
 <li>The R tidyverse</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Lazer, D., &amp; Radford, J. (2017). Data ex Machina: Introduction to Big Data. <a href="https://doi.org/10.1146/annurev-soc-060116-053457"><em>Annual Review of Sociology</em>, 43(1), 19–39.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>Lazer, D., &amp; Radford, J. (2017). Data ex Machina: Introduction to Big Data. <a href="https://doi.org/10.1146/annurev-soc-060116-053457"><em>Annual Review of Sociology</em>, 43(1), 19–39.</a></p></td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Date"><p>18 September 2024 <br><br> <strong>(Block: 15:30 - 18:45)</strong></p></td>
@@ -926,652 +960,278 @@ Sebastian Stier
 </div>
 </div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="edephdlggv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#edephdlggv table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#edephdlggv thead, #edephdlggv tbody, #edephdlggv tfoot, #edephdlggv tr, #edephdlggv td, #edephdlggv th {
-  border-style: none;
-}
-
-#edephdlggv p {
-  margin: 0;
-  padding: 0;
-}
-
-#edephdlggv .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 13.5px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#edephdlggv .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#edephdlggv .gt_title {
-  color: #333333;
-  font-size: 14px;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#edephdlggv .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#edephdlggv .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#edephdlggv .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#edephdlggv .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#edephdlggv .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#edephdlggv .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#edephdlggv .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#edephdlggv .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#edephdlggv .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#edephdlggv .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#edephdlggv .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#edephdlggv .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#edephdlggv .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#edephdlggv .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#edephdlggv .gt_row {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#edephdlggv .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#edephdlggv .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#edephdlggv .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#edephdlggv .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#edephdlggv .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#edephdlggv .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#edephdlggv .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#edephdlggv .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#edephdlggv .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#edephdlggv .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#edephdlggv .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#edephdlggv .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#edephdlggv .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#edephdlggv .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#edephdlggv .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#edephdlggv .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#edephdlggv .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#edephdlggv .gt_left {
-  text-align: left;
-}
-
-#edephdlggv .gt_center {
-  text-align: center;
-}
-
-#edephdlggv .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#edephdlggv .gt_font_normal {
-  font-weight: normal;
-}
-
-#edephdlggv .gt_font_bold {
-  font-weight: bold;
-}
-
-#edephdlggv .gt_font_italic {
-  font-style: italic;
-}
-
-#edephdlggv .gt_super {
-  font-size: 65%;
-}
-
-#edephdlggv .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#edephdlggv .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#edephdlggv .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#edephdlggv .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#edephdlggv .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#edephdlggv .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#edephdlggv .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#edephdlggv .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#edephdlggv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout: fixed;; width: 100%" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 30%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header gt_heading">
-<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border"><p><strong>Seminar dates and topics</strong></p></th>
-</tr>
-<tr class="odd gt_col_headings">
-<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
-<th id="Topics" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Topics</th>
-<th id="Required reading" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Required reading</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>30 October 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Data quality and validation in CSS</li>
-<li>Network analysis</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Sen, I., Flöck, F., Weller, K., Weiß, B., &amp; Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. <a href="https://doi.org/10.1093/poq/nfab018"><em>Public Opinion Quarterly</em>, 85(S1), 399–422.</a> <br><br> Dahlke, R., Kumar, D., Durumeric, Z., &amp; Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. <a href="https://doi.org/10.1177/08944393231218214"><em>Social Science Computer Review</em>.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>6 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Open science and reproducibility in CSS</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Chan, C.- Hong, Schatto-Eckrodt, T., &amp; Gruber, J. (2024). What makes computational communication science (ir)reproducible? <a href="https://doi.org/10.5117/CCR2024.1.5.CHAN"><em>Computational Communication Research</em>, 6(1).</a> <br><br></p>
-<p>Nyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al.&nbsp;(2023). Like-minded sources on Facebook are prevalent but not polarizing. <a href="https://doi.org/10.1038/s41586-023-06297-w"><em>Nature</em>, 620(7972), 137–144.</a></p></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>13 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Writing reproducible research papers in R</li>
-<li>R Markdown, quarto</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Bauer, P. C., &amp; Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. <a href="https://doi.org/10.31219/osf.io/ur4xn"><em>OSF Preprint</em>.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>20 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>27 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>4 December 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="learning-objectives-on-ma-level" class="slide level2">
-<h2>Learning objectives (on MA level)</h2>
+<section id="agenda-for-today" class="slide level2">
+<h2>Agenda for today</h2>
 <ol type="1">
-<li>Advanced understanding of concepts, methods, data used and challenges in CSS</li>
-<li>Critical reflection of the applicability of CSS in social science research</li>
-<li>Learning to use CSS methods in R</li>
-<li>Application of CSS methods in R for own research question</li>
+<li><p>Warmup session in R, introduction to the <em>tidyverse</em></p></li>
+<li><p>Introduction to Computational Social Science</p></li>
 </ol>
 </section>
-<section id="modus-operandi-in-the-class" class="slide level2">
-<h2>Modus operandi in the class</h2>
-<ul>
-<li>Introduction to the session’s topic by instructor</li>
-<li>Required reading: (mostly) applied papers
-<ul>
-<li>We’ll discuss these papers in the class</li>
-</ul></li>
-<li>We’ll code in the class <span class="math inline">\(\rightarrow\)</span> please bring your laptop</li>
-<li>Questions are always possible, this is supposed to be interactive</li>
-</ul>
+<section>
+<section id="warmup-session-in-r-introduction-to-the-tidyverse" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>1. Warmup session in R, introduction to the <em>tidyverse</em></h1>
+
 </section>
-<section id="requirements-for-examinationgrades" class="slide level2">
-<h2>Requirements for examination/grades</h2>
+<section id="tidyverse-the-swiss-army-knife-of-r" class="slide level2">
+<h2><em>tidyverse</em>: the Swiss Army knife of R</h2>
+
+<img data-src="../material/img/tidyverse.png" class="figure r-stretch" width="300"><div style="font-size: 40%;">
+<p>Çetinkaya-Rundel, M., et al.&nbsp;(2021). An educator’s perspective of the tidyverse. <a href="https://doi.org/10.48550/ARXIV.2108.03510">arXiv Preprint.</a></p>
+</div>
+<div style="font-size: 40%;">
+<p>Introduction to <em>tidyverse</em>: <a href="https://www.tidyverse.org/packages">https://www.tidyverse.org/packages</a></p>
+</div>
+</section>
+<section id="before-we-really-get-started-with-coding" class="slide level2">
+<h2>Before we really get started with coding…</h2>
+<p>A simple ggplot figure.</p>
+<div class="small-code">
+
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="6|7|8|9|10|11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a></a><span class="in">#| output-location: column</span></span>
+<span id="cb1-3"><a></a><span class="in">#| code-line-numbers: "6|7|8|9|10|11"</span></span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="in">library(ggplot2)</span></span>
+<span id="cb1-6"><a></a><span class="in">mtcars %&gt;%</span></span>
+<span id="cb1-7"><a></a><span class="in">  ggplot(aes(x = disp, y = mpg)) +</span></span>
+<span id="cb1-8"><a></a><span class="in">  # ggplot(data = mtcars, aes(x = disp, y = mpg)) +    </span></span>
+<span id="cb1-9"><a></a><span class="in">  geom_point() +</span></span>
+<span id="cb1-10"><a></a><span class="in">  geom_smooth(method = "loess", formula = "y ~ x") +</span></span>
+<span id="cb1-11"><a></a><span class="in">  theme_minimal()</span></span>
+<span id="cb1-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
 <div>
-<ul>
-<li class="fragment">Regular participation in class</li>
-<li class="fragment">Writing a review of the required readings for <strong>two</strong> classes to be submitted by Sunday evening before the respective class (<strong>Studienleistung/Coursework</strong>)</li>
-<li class="fragment">Presentation of your own research idea for your term paper in the last 3 classes of the semester</li>
-<li class="fragment">Written term paper based on an analysis in R (3,000-5,000 words), deadline: 31 January 2025 (<strong>Prüfungsleistung/Examination</strong>)</li>
-</ul>
+<figure>
+<p><img data-src="2_what_is_css_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a><span class="in">    mtcars %&gt;%ggplot(aes(x = disp, y = mpg))+geom_point() +geom_smooth(method = "loess", formula = "y ~ x")+theme_minimal()</span></span>
+<span id="cb2-4"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a><span class="in">  ggplot(mtcars,aes(x=disp, y=mpg))+geom_point()+</span></span>
+<span id="cb3-4"><a aria-hidden="true" tabindex="-1"></a><span class="in">      geom_smooth(method="loess",formula="y~x")+theme_minimal()</span></span>
+<span id="cb3-5"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a><span class="in">mtcars %&gt;%</span></span>
+<span id="cb4-4"><a aria-hidden="true" tabindex="-1"></a><span class="in">  ggplot(aes(x = disp, y = mpg)) +</span></span>
+<span id="cb4-5"><a aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point() +</span></span>
+<span id="cb4-6"><a aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method = "loess", formula = "y ~ x")</span></span>
+<span id="cb4-7"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>Luckily, there is guidance: <a href="https://style.tidyverse.org/index.html">https://style.tidyverse.org/index.html</a></p>
 </div>
 </section>
-<section id="format-of-the-reviews" class="slide level2">
-<h2>Format of the reviews</h2>
+<section id="finally-some-coding" class="slide level2">
+<h2>Finally, some coding</h2>
 <ul>
-<li>Guiding questions:</li>
+<li>Go to <a href="https://sebastianstier.com/ma_css24-25/material.html">https://sebastianstier.com/ma_css24-25/material.html</a></li>
+<li>Download <strong>1_class_two.R</strong> and open it in RStudio</li>
+<li>We start with the first exercises together.</li>
+<li>I will answer questions and help.</li>
 </ul>
-<div style="font-size: 90%;">
-<pre><code>- Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. 
+</section></section>
+<section>
+<section id="introduction-to-computational-social-science" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>2. Introduction to Computational Social Science</h1>
 
-- Reflect on the main strengths and weaknesses of these papers.
-
-- What are the concepts, assumed social mechanisms and operationalizations used in the papers?
-
-- What are the data in use? How are the data analyzed? Does this seem appropriate?
-
-- How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?
-
-- Do you see any ethical concerns?
-
-- If papers are empirical, how do you judge their replicability?
-
-- If applicable, are there commonalities or differences between the two papers? How do they relate to each other?</code></pre>
+</section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+<ol type="1">
+<li><p>What is Computational Social Science?</p></li>
+<li><p>And what is the scientific benefit of CSS?</p></li>
+</ol>
+</section>
+<section id="vast-amounts-of-data" class="slide level2">
+<h2>Vast amounts of data</h2>
+<div class="fragment">
+<p><img data-src="../material/img/one_minute_internet.png" style="width:68.0%"></p>
+<div style="font-size: 37%;">
+<p><a href="https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#44598c0460ba">https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#44598c0460ba</a></p>
+</div>
 </div>
 </section>
-<section id="format-of-term-paper-3000-5000-words" class="slide level2">
-<h2>Format of term paper (3,000-5,000 words)</h2>
-<ul>
-<li>Brief motivation and research question</li>
-<li>Concise theoretical overview: for what conceptual and theoretical reasons do I choose these data and methods?</li>
-<li>Research design</li>
-<li>Data and variables</li>
-<li>Method: no detailed mathematical description needed, but why does this method fit my research question and my data?</li>
-<li>Results</li>
-<li>Interpretation and conclusions</li>
-<li>Analysis code as an R script: needs to be fully reproducible</li>
-</ul>
+<section id="section-2" class="slide level2">
+<h2></h2>
+
+<img data-src="../material/img/CSS_themes.png" class="figure r-stretch" width="300"></section>
+<section id="some-definitions-i" class="slide level2">
+<h2>Some definitions I</h2>
+<p>We define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data (1). […] Whereas traditional quantitative social science has focused on rows of cases and columns of variables, typically with assumptions of independence among observations, CSS encompasses language, location and movement, networks, images, and video, with the application of statistical models that capture multifarious dependencies within data.</p>
+<div style="font-size: 50%;">
+<p>Lazer, D. M. J., et al.&nbsp;(2020). Computational social science: Obstacles and opportunities. <a href="https://doi.org/10.1126/science.aaz8170"><em>Science</em>, 369(6507), 1060–1062: 1060.</a></p>
+</div>
 </section>
-<section id="information-management-and-communication" class="slide level2">
-<h2>Information management and communication</h2>
-<ul>
-<li>Slides and materials will be online: <a href="https://sebastianstier.com/ma_css24-25">https://sebastianstier.com/ma_css24-25</a></li>
-<li>Communication
-<ul>
-<li>Via <a href="mailto:sebastian.stier@gesis.org">email</a></li>
-<li>In person after the class</li>
-<li>Via Zoom</li>
-</ul></li>
-<li>Submit the final term paper to <a href="mailto:sebastian.stier@gesis.org">sebastian.stier@gesis.org</a></li>
-<li>Data and scripts can be shared via the secure platform Cryptshare: <a href="https://cryptshare.gesis.org">https://cryptshare.gesis.org</a></li>
-</ul>
+<section id="some-definitions-ii" class="slide level2">
+<h2>Some definitions II</h2>
+<p>Computational social science is an interdisciplinary field that advances theories of human behavior by applying computational techniques to large datasets from social media sites, the Internet, or other digitized archives such as administrative records. Our definition forefronts sociological theory because we believe the future of the field within sociology depends not only on novel data sources and methods, but also on its capacity to produce new theories of human behavior or elaborate on existing explanations of the social world.</p>
+<div style="font-size: 50%;">
+<p>Edelmann, A., Wolff, T., Montagne, D., &amp; Bail, C. A. (2020). Computational Social Science and Sociology. <a href="https://doi.org/10.1146/annurev-soc-121919-054621"><em>Annual Review of Sociology</em>, 46(1), 61–81: 62.</a></p>
+</div>
 </section>
-<section id="the-elephant-in-the-room-ai-llms-chatgpt-et-al." class="slide level2">
-<h2>The elephant in the room: AI, LLMs, ChatGPT et al.</h2>
+<section id="digital-behavioral-data" class="slide level2">
+<h2>Digital behavioral data</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
-<p><img data-src="../material/img/chat_gpt_academia.png" class="figure" width="710"></p>
-<div style="font-size: 26%;">
-<p>Meyer, J. G., Urbanowicz, R. J., Martin, P. C. N., et al.&nbsp;(2023). ChatGPT and large language models in academia: Opportunities and challenges. <em>BioData Mining</em>, 16(1), 20. <a href="https://doi.org/10.1186/s13040-023-00339-9">https://doi.org/10.1186/s13040-023-00339-9</a></p>
+<p><img data-src="../material/img/platform_pics.png" class="figure" width="710"></p>
+</div><div class="column" style="width:40%;">
+<div style="font-size: 85%;">
+<p>“Records of activity (trace data) undertaken through an online information system (thus, digital)” (Howison et al., 2011: 769) that can be collected from a multitude of technical systems, such as websites, social media platforms, smartphone apps, or sensors.</p>
 </div>
-</div><div class="column" style="width:45%;">
-<div style="font-size: 68%;">
+<div style="font-size: 40%;">
+<p>Howison, J., Wiggins, A., &amp; Crowston, K. (2011). Validity issues in the use of social network analysis with digital trace data. <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1594&amp;context=jais"><em>Journal of the Association for Information Systems</em>, 12(12), 767–797, 769.</a></p>
+<p>Stier, S., Breuer, J., Siegers, P., &amp; Thorson, K. (2020). Integrating Survey Data and Digital Trace Data: Key Issues in Developing an Emerging Field. <a href="https://journals.sagepub.com/doi/epub/10.1177/0894439319843669"><em>Social Science Computer Review</em>, 38(5), 503–516, 504.</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-does-css-relate-to-established-social-science-methods" class="slide level2">
+<h2>How does CSS relate to established social science methods?</h2>
+<div class="fragment">
+<p><img data-src="../material/img/CSS_intro_questions.png" style="width:80.0%"></p>
+</div>
+</section>
+<section id="measurement-problems-in-the-social-sciences" class="slide level2">
+<h2>Measurement problems in the social sciences</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../material/img/scharkow.png" class="figure" width="710"></p>
+<div style="font-size: 70%;">
+<p>“This study compares self-reports of Internet use with client log files from a large household sample. Results show that the accuracy of self reported frequency and duration of Internet use is quite low, and that survey data are only moderately correlated with log file data.”</p>
+</div>
+<div style="font-size: 26%;">
+<p>Scharkow, M. (2016). The Accuracy of Self-Reported Internet Use—A Validation Study Using Client Log Data. <a href="https://doi.org/10.1080/19312458.2015.1118446"><em>Communication Methods and Measures</em>, 10(1), 13–27.</a></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../material/img/parry.png" style="width:85.0%"></p>
+<div style="font-size: 70%;">
+<p>“Based on 106 effect sizes, we found that self-reported media use correlates only moderately with logged measurements […] These findings raise concerns about the validity of findings relying solely on self-reported measures of media use.”</p>
+</div>
+<div style="font-size: 26%;">
+<p>Parry, D. A., Davidson, B. I., Sewall, C. J. R., Fisher, J. T., Mieczkowski, H., &amp; Quintana, D. S. (2021). A systematic review and meta-analysis of discrepancies between logged and self-reported digital media use. <a href="https://doi.org/10.1038/s41562-021-01117-5"><em>Nature Human Behaviour</em>, 5, 1535–154.</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="advantages-of-digital-behavioral-data" class="slide level2">
+<h2>Advantages of digital behavioral data</h2>
 <div>
+<p>Digital behavioral data capture human behavior…</p>
 <ul>
-<li class="fragment">It’s fine to look for help online but without an understanding of the R code base the use of AI is inefficient.</li>
-<li class="fragment">You’ll learn much more if you try to find a solution within-R, e.g., <em>?mean</em></li>
-<li class="fragment">We will code in class <span class="math inline">\(\rightarrow\)</span> applied programming.</li>
-<li class="fragment">Term paper:
-<ul>
-<li class="fragment">Synthesis of theory, research question and code.</li>
-<li class="fragment">Documentation of code: tell me why each step is needed and what it does.</li>
-</ul></li>
+<li class="fragment"><p>non-intrusively,</p></li>
+<li class="fragment"><p>reliably,</p></li>
+<li class="fragment"><p>with fine-grained and multi-dimensional features,</p></li>
+<li class="fragment"><p>across time and contexts.</p></li>
 </ul>
 </div>
+</section>
+<section id="downsides-of-digital-behavioral-data" class="slide level2">
+<h2>Downsides of digital behavioral data</h2>
+<div>
+<p>But, digital behavioral data…</p>
+<ul>
+<li class="fragment"><p>come in large volumes,</p></li>
+<li class="fragment"><p>are unstructured,</p></li>
+<li class="fragment"><p>are multi-dimensional (text, images, videos, audio, …),</p></li>
+<li class="fragment"><p>are often produced and provided with minimal or no information on the data generating process.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Analyzing digital behavioral data in a scientifically meaningful way is an immense challenge</p>
+</div>
+</section>
+<section id="the-role-of-theory-and-existing-knowledge" class="slide level2">
+<h2>The role of theory and existing knowledge</h2>
+<p>“Our definition forefronts sociological theory because we believe the future of the field within sociology depends not only on novel data sources and methods, but also on its capacity to produce new theories of human behavior or elaborate on existing explanations of the social world.” <span class="citation" data-cites="edelmann_computational_2020">(<a href="#/references" role="doc-biblioref" onclick="">Edelmann et al. 2020</a>: 62)</span></p>
+</section>
+<section id="explanation-vs.-description-i" class="slide level2">
+<h2>Explanation vs.&nbsp;description I</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="../material/img/guess_quant_descr.png" style="width:80.0%"></p>
+<div style="font-size: 26%;">
+<p>Munger, K., Guess, A. M., &amp; Hargittai, E. (2021). Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing. <a href="https://doi.org/10.51685/jqd.2021.000"><em>Journal of Quantitative Description: Digital Media</em>, 1.</a></p>
+</div>
+</div><div class="column" style="width:60%;">
+<div style="font-size: 72%;">
+<p>“First and foremost, we respond to an undersupply of quantitative descriptive research in social science. Causal research that asks the question why has largely taken the place of descriptive research that asks the question what. Gerring (2012) diagnosed a general tendency to dismiss ‘Mere Description’ as a ‘mundane task … of little intrinsic scientific value,’ advocating instead that it be taken seriously as part of the general social scientific method.</p>
+<p>We firmly agree. However, critique alone does not change the material conditions and incentives of practicing academics; we see this journal as a practical step towards raising the status of description as a method.” <span class="citation" data-cites="munger_quantitative_2021">(<a href="#/references" role="doc-biblioref" onclick="">Munger, Guess, and Hargittai 2021</a>: 3-4)</span></p>
 </div>
 </div>
+</div>
+</section>
+<section id="explanation-vs.-description-ii" class="slide level2">
+<h2>Explanation vs.&nbsp;description II</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="../material/img/guess_quant_descr.png" style="width:80.0%"></p>
+<div style="font-size: 26%;">
+<p>Munger, K., Guess, A. M., &amp; Hargittai, E. (2021). Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing. <a href="https://doi.org/10.51685/jqd.2021.000"><em>Journal of Quantitative Description: Digital Media</em>, 1.</a></p>
+</div>
+</div><div class="column" style="width:60%;">
+<div style="font-size: 72%;">
+<p>Second, rather than define our new venue in terms of existing disciplinary boundaries, we instead embrace a topical focus on digital media, broadly construed. We argue that the centrality and dynamism of digital media — information and communication technologies, including social media, that increasingly structure the way people interact with the world — necessitates increased scholarly energy devoted to sustained, continuous, quantitative description. […]</p>
+<p>Today, there are more hours of video uploaded to YouTube every day than were broadcast in the 1950s U.S. in a year. The daily content of Twitter is different (and different in unpredictable ways) than it was the day before.” <span class="citation" data-cites="munger_quantitative_2021">(<a href="#/references" role="doc-biblioref" onclick="">Munger, Guess, and Hargittai 2021</a>: 3-4)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="examples-of-novel-sociotechnical-phenomena" class="slide level2">
+<h2>Examples of novel sociotechnical phenomena</h2>
+<div>
+<ul>
+<li class="fragment">Harmful online communication
+<ul>
+<li class="fragment">E.g., misinformation and deception</li>
+<li class="fragment">E.g., violent language, harassment, racism</li>
+</ul></li>
+<li class="fragment">Algorithmic influence, bias and discrimination</li>
+<li class="fragment">Filter bubbles and echo chambers</li>
+<li class="fragment">Social bots</li>
+<li class="fragment">Virality of online content and memes</li>
+<li class="fragment">Online inequalities</li>
+</ul>
 </div>
 </section></section>
 <section>
-<section id="thank-you-for-your-attention-see-you-on-september-11" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>Thank you for your attention! See you on September 11</h1>
+<section id="thank-you-for-your-attention-see-you-on-september-18th-1530---1845" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>Thank you for your attention! See you on September 18th (15:30 - 18:45)</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="_extensions/gesiscss/fakegesis/gesis-unima_new.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://sebstier.github.io/ma_css24-25/">Computational Social Science and Digital Behavioral Data, University of Mannheim</a></p>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-edelmann_computational_2020" class="csl-entry" role="listitem">
+Edelmann, Achim, Tom Wolff, Danielle Montagne, and Christopher A. Bail. 2020. <span>“Computational <span>Social</span> <span>Science</span> and <span>Sociology</span>.”</span> <em>Annual Review of Sociology</em> 46 (1): 61–81. <a href="https://doi.org/10.1146/annurev-soc-121919-054621">https://doi.org/10.1146/annurev-soc-121919-054621</a>.
+</div>
+<div id="ref-munger_quantitative_2021" class="csl-entry" role="listitem">
+Munger, Kevin, Andrew M. Guess, and Eszter Hargittai. 2021. <span>“Quantitative <span>Description</span> of <span>Digital</span> <span>Media</span>: <span>A</span> <span>Modest</span> <span>Proposal</span> to <span>Disrupt</span> <span>Academic</span> <span>Publishing</span>.”</span> <em>Journal of Quantitative Description: Digital Media</em> 1. <a href="https://doi.org/10.51685/jqd.2021.000">https://doi.org/10.51685/jqd.2021.000</a>.
 </div>
 </div>
 </section></section>
