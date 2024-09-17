@@ -7,7 +7,6 @@
 
 
 # Base R code snippets ----
-
 #Open a new R script in the top left corner under
 #"File -> New File -> R Script"
 

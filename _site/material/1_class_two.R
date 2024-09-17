@@ -1,9 +1,9 @@
 #' class: "Computational Social Science and Digital Behavioral Data, University of Mannheim"
 #' title: "Introduction"
 #' author: "Sebastian Stier"
-#' lesson: 1
+#' lesson: 2
 #' institute: University of Mannheim & GESIS
-#' date: "2024-09-04"
+#' date: "2024-09-11"
 
 
 # Exercise 0: Install [R](https://cran.rstudio.com) and [RStudio Desktop](https://posit.co/downloads/) ----
