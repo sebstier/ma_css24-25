@@ -1,0 +1,516 @@
+---
+title: "Research ethics in CSS and web data collection"
+author: "Sebastian Stier"
+lesson: 3
+institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
+date: "2024-09-18"
+date-format: "YYYY-MM-DD"
+bibliography: references.bib
+footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebstier.github.io/ma_css24-25/)"
+format: 
+  fakegesis-revealjs: 
+    code-line-numbers: false
+
+---
+
+
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
+library(openxlsx)
+library(tidyverse)
+library(gt)
+library(gtExtras)
+read.xlsx("../material/data/schedule_v2.xlsx") %>%
+    rename(`Required reading` = "Required.reading") %>%
+    head(6) %>% 
+    gt() %>%
+    tab_header(md("**Seminar dates and topics**")) %>%
+    #tab_header("**Seminar dates and topics**") %>%
+    #fmt_markdown() %>% #columns = TRUE
+    # cols_width(Date ~ px(400)#,
+    #            #Topics ~ px(350)#,
+    #            #`Required reading` ~ px(400)
+    #            ) %>%
+    cols_width(Date ~ pct(20),
+               Topics ~ pct(30),
+               `Required reading` ~ pct(50)
+               ) %>%
+    tab_options(data_row.padding = px(3)) %>%
+    tab_options(heading.title.font.size = 14,
+                column_labels.font.weight = "bold",
+                table.font.size = 13.5) %>%
+     gt_highlight_rows(
+     rows = 3,
+     fill = "lightblue"
+   ) %>% 
+  fmt_markdown() %>% 
+  cols_align(
+    align = "left",
+    columns = everything()
+  )
+
+
+```
+
+
+
+## Agenda for today
+
+1. R session, focus on social media and text data
+
+2. Research ethics
+
+3. R session, focus on data visualization
+
+4. Introduction to web data collection and APIs
+
+
+
+# 1. R session, focus on social media and text data {background-color="#58748F"}
+
+
+
+## Advantages of digital behavioral data
+
+:::: {.incremental}
+Digital behavioral data capture human behavior...
+
+- non-intrusively,
+
+- reliably,
+
+- with fine-grained and multi-dimensional features,
+
+- across time and contexts.
+
+::::
+
+## Downsides of digital behavioral data
+
+:::: {.incremental}
+
+But, digital behavioral data...
+
+- come in large volumes,
+
+- are unstructured,
+
+- are multi-dimensional (text, images, videos, audio, ...),
+
+- are often produced and provided with minimal or no information on the data generating process.
+
+::::
+
+. . . 
+
+$\rightarrow$ Analyzing digital behavioral data in a scientifically meaningful way is an immense challenge
+
+
+
+## Trump Twitter Archive
+
+
+![](../material/img/trump_twitter){width=100%}
+
+
+::: {style="font-size: 40%;"}
+[https://www.thetrumparchive.com](https://www.thetrumparchive.com)
+:::
+
+
+
+## Coding
+- Download file **2_class_three.R** from [https://sebastianstier.com/ma_css24-25/material.html](https://sebastianstier.com/ma_css24-25/material.html)
+- Open it in RStudio, ideally within your project
+
+
+# 2. Research ethics {background-color="#58748F"}
+
+
+## Research ethics?
+
+:::{.incremental}
+
+- Moral principles and actions guiding and shaping research
+
+    - from inception to completion,
+    - through dissemination and sharing of findings,
+    - including archiving and future use.
+:::
+
+. . .
+
+:::{.incremental}
+
+
+- Research ethics in the social sciences
+    - Initially "patient protection" model of medical research
+    - Today broader scope including consideration of benefits, risks and harms to all persons connected with the research
+    - Including social responsibilities of researchers
+
+:::
+
+
+## Who are the relevant actors?
+
+. . . 
+
+![](../material/img/actors_data_protection){width=100%}
+
+
+## Data protection
+
+
+- Data protection
+    - Part of fundamental right to privacy (or "informational freedom")
+- "Privacy is a personal condition of life characterised by seclusion from, and therefore absence of acquaintance by, the public" [@neethling2005personality: 233]
+- Prevention of unwanted disclosure of personal information or the misuse of such information
+
+
+## Data protection: legal foundations
+
+- Legal framework in the European Union
+    - Charter of Fundamental Rights of the EU (Art. 8)
+    - General Data Protection Regulation (GDPR)
+    - National and sub-national data protection acts
+    - Specialized laws
+- Some legal documents and commentary
+    - [Digital Services Act data access for researchers](https://algorithmic-transparency.ec.europa.eu/news/faqs-dsa-data-access-researchers-2023-12-13_en)
+    - [German law on text and data mining](https://dejure.org/gesetze/UrhG/60d.html)
+
+
+
+## Informed consent
+
+![](../material/img/informed_consent){fig-align="center"}
+
+- Bridge between data protection and research ethics
+- Informed consent means for example:
+    - information
+    - transparency
+    - minimal requirement $\rightarrow$ chance *not* to consent
+- Status quo in social media research: lack of informed consent
+
+
+
+## Social networking sites
+
+::: {style="font-size: 93%;"}
+
+"We define social network sites as web-based services that allow individuals to 
+
+1. construct a public or semi-public profile within a bounded system, 
+2. articulate a list of other users with whom they share a connection, and 
+3. view and traverse their list of connections and those made by others within the system. 
+
+The nature and nomenclature of these connections may vary from site to site."
+[@boyd.2007: 211]
+
+$\rightarrow$ **widely differing platform affordances**
+
+:::
+
+## Are all these researchers doing something wrong?
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+![](../material/img/report_SM_platforms){width=100%}
+
+::: {style="font-size: 40%;"}
+Lukito, J., et al. (2023). [The State of Digital Media Data Research, 2023. Media and Democracy Data Cooperative.](https://mddatacoop.org/files/2023/State%20of%20Digital%20Media%20Data%20Research%202023.pdf)
+:::
+
+:::
+
+
+::: {.column width="40%"}
+
+![](../material/img/number_twitter_studies){width=90%}
+
+::: {style="font-size: 40%;"}
+
+Yu, J., & Muñoz-Justicia, J. (2020). A Bibliometric Overview of Twitter-Related Studies Indexed in Web of Science. [*Future Internet*, 12(5), 91.](https://doi.org/10.3390/fi12050091) 
+:::
+
+:::
+
+
+::::
+
+
+## Think-pair-share
+
+1. Discuss the literature for today with your neighbor (5 min.)
+2. Share+discuss your position on **trade offs between research ethics in CSS and data access restrictions** with the full class
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](../material/img/fiesler){width=90%}
+
+::: {style="font-size: 40%;"}
+Fiesler, C., & Proferes, N. (2018). ['Participant' Perceptions of Twitter Research Ethics.*Social Media + Society*, 4(1).](https://doi.org/10.1177/2056305118763366)
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](../material/img/freelon){width=100%}
+
+::: {style="font-size: 40%;"}
+
+Freelon, D. (2018). [Computational Research in the Post-API Age. *Political Communication*, 35(4), 665–668.](https://osf.io/preprints/socarxiv/56f4q)
+
+
+:::
+
+:::
+
+
+::::
+
+
+
+## Legitimate academic interests
+
+
+There are legitimate academic interests for studying online platforms!
+
+. . . 
+
+- Understanding the impact of digital media on society and democracy
+- Keeping online platforms accountable
+- Mitigating "systemic risks" (see [https://digital-strategy.ec.europa.eu/en/consultations/guidelines-providers-very-large-online-platforms-and-very-large-online-search-engines-mitigation](European Union, 2024))
+- Preserving historical material
+- ... and more reasons?
+
+
+## What can we do to ensure the integrity of our CSS research?
+
+. . . 
+
+::: {style="font-size: 88%;"}
+- Awareness: incorporate ethical considerations when designing and conducting our research
+- Define ethical "contextual factors" [@fiesler_participant_2018: 9]
+
+    - "justify what and how many tweets, what the study is about, who is conducting it, what methods researchers use"
+- Keep the DBD safe and protected
+- Analyze DBD at the aggregated group-/variable-level
+- Avoid unnecessary "forensic analysis" of individual data patterns / users
+- Not publishing/printing any personal information in a paper/thesis
+- "Rewarding" participants with monetary incentives or information
+
+:::
+
+
+
+# 3. R session with a focus on data visualization {background-color="#58748F"}
+
+## Introduction to *ggplot2*
+
+:::: {.columns}
+
+::: {.column width="57%"}
+
+![](../material/img/grammar_graphics){width=120%}
+
+::: {style="font-size: 28%;"}
+
+[https://stulp.gmw.rug.nl/dataviz/ggplottheory.html](https://stulp.gmw.rug.nl/dataviz/ggplottheory.html)
+
+:::
+
+:::
+
+::: {.column width="43%"}
+
+- *ggplot2* follows the "grammar of graphics"
+- [Cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf) with the most relevant functions
+- [Extensions](https://exts.ggplot2.tidyverse.org/gallery/) to *ggplot2* that others built
+
+:::
+
+::::
+
+
+## Back to coding
+- Go back to file **2_class_three.R** in [https://sebastianstier.com/ma_css24-25/material.html](https://sebastianstier.com/ma_css24-25/material.html)
+
+
+
+# 4. Introduction to web data collection and APIs {background-color="#58748F"}
+
+## Collecting digital behavioral data
+
+Starting 20 November 2024: Presentations of thesis ideas
+
+For that, we need to collect some DBD for your research
+
+
+## How to collect web data
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Application Programming Interfaces (APIs)**
+
+![](../material/img/apis.webp){width=100%}
+
+::: {style="font-size: 20%;"}
+[https://ninetailed.io/blog/api-calls/](https://ninetailed.io/blog/api-calls/)
+:::
+
+![](../material/img/api_possibilities){width=70%}
+:::
+
+
+::: {.column width="50%"}
+**Web scraping**
+
+![](../material/img/scraping_example){width=90%}
+
+::: {style="font-size: 20%;"}
+[https://www.faz.net/aktuell/politik/inland/bayern-muenchen-will-kita-foerderung-umstellen-19549912.html](https://www.faz.net/aktuell/politik/inland/bayern-muenchen-will-kita-foerderung-umstellen-19549912.html)
+:::
+
+:::
+
+
+::::
+
+
+
+## How does it look like in *R*?
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**APIs**
+
+
+```{r, eval=FALSE, echo=TRUE}
+library(academictwitteR)
+tweets <- get_all_tweets(
+    query = "#BlackLivesMatter",
+    start_tweets = "2020-01-01T00:00:00Z",
+    end_tweets = "2020-01-05T00:00:00Z",
+    file = "blmtweets"
+  )
+
+```
+
+![](../material/img/tweets_example){width=100%}
+
+:::
+
+
+::: {.column width="50%"}
+**Web scraping**
+
+```{r, eval=TRUE, echo=TRUE}
+library(rvest)
+url <- "https://rvest.tidyverse.org/articles/starwars.html"
+html <- read_html(url)
+
+section <- html |> html_elements("section")
+head(section, 5)
+
+```
+
+:::
+
+
+::::
+
+## Let's check out the YouTube API
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+![](../material/img/youtube_api.png){width=100%}
+:::
+
+::: {.column width="45%"}
+
+
+- You always have to register for an API; requirements differ widely
+- [Registration and endpoint documentation](https://developers.google.com/youtube/v3/getting-started) for the YouTube API 
+- Some APIs have rate limits, i.e., the number of free data requests is limited
+
+
+:::
+
+::::
+
+
+
+## Elon, we have a problem
+
+![](../material/img/elon_api_shutdowns){fig-align="center"}
+
+
+::: {style="font-size: 20%;"}
+
+[https://aoir.org/facebook-shuts-the-gate-after-the-horse-has-bolted/](https://aoir.org/facebook-shuts-the-gate-after-the-horse-has-bolted/) 
+[https://www.forbes.com/sites/antoniopequenoiv/2023/06/30/these-popular-third-party-reddit-apps-will-disappear-saturday-as-api-changes-take-effect-despite-weeks-of-user-protest/](https://www.forbes.com/sites/antoniopequenoiv/2023/06/30/these-popular-third-party-reddit-apps-will-disappear-saturday-as-api-changes-take-effect-despite-weeks-of-user-protest/) 
+[https://www.theguardian.com/technology/2023/feb/07/techscape-elon-musk-twitter-api](https://www.theguardian.com/technology/2023/feb/07/techscape-elon-musk-twitter-api)
+
+:::
+
+
+## How to (still) collect web data
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](../material/img/apis_bauer){width=115%}
+
+::: {style="font-size: 50%;"}
+[https://paulcbauer.github.io/apis_for_social_scientists_a_review/](https://paulcbauer.github.io/apis_for_social_scientists_a_review/)
+:::
+
+:::
+
+
+::: {.column width="50%"}
+
+![](../material/img/munzert_etal.jpeg){width=70%}
+
+::: {style="font-size: 50%;"}
+[http://www.r-datacollection.com](http://www.r-datacollection.com)
+:::
+
+:::
+
+::::
+
+
+## Homework
+
+<br>
+
+[Browse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.]{style="color:red;"}
+
+::: {style="font-size: 60%;"}
+[https://paulcbauer.github.io/apis_for_social_scientists_a_review/](https://paulcbauer.github.io/apis_for_social_scientists_a_review/)
+:::
+
+
+
+# Thank you for your attention! See you on October 2 {background-color="#58748F"} 
+
+## References
