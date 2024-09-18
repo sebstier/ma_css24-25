@@ -1,13 +1,14 @@
 [
   {
+    "listing": "/material.html",
+    "items": []
+  },
+  {
     "listing": "/slides.html",
     "items": [
       "/slides/01_introduction.html",
-      "/slides/2_what_is_css.html"
+      "/slides/2_what_is_css.html",
+      "/slides/03_webdata_designed_digital_data.html"
     ]
-  },
-  {
-    "listing": "/material.html",
-    "items": []
   }
 ]
