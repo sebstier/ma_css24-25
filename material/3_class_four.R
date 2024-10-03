@@ -21,10 +21,52 @@ load(filename)
 rm(filename) 
 
 # Save and load the data in csv, rds, Rda
+load("data/toy_survey.rda")
+load("data/toy_browsing.rda") #rda Rda
+#save()
+write_rds(toy_browsing, "data/toy_browsing.rds")
+df_wt <- read_rds("data/toy_browsing.rds") %>% 
+  as_tibble()
+#saveRDS()
+#write_csv()
+#read_csv()
+#read.csv()
 
 # Explore the dataset: number of rows, columns, unique persons, what date range
+glimpse(df_wt)
+nrow(df_wt)
+ncol(df_wt)
+length(unique(df_wt$panelist_id))
+n_distinct(df_wt$panelist_id)
+table(df_wt$timestamp)
+summary(df_wt)
+range(df_wt$timestamp)
 
-# Calculate the mean and median number of website visits, waves and devices per participant
+# Count the number of wave+device combinations for each person (important to know your data!)
+df_wt %>% 
+  group_by(panelist_id, wave, device) %>% 
+  summarise(n_visits = n()) %>% 
+  ungroup() %>% 
+  count(panelist_id)
+  
+# Investigate a person with less than 8 rows
+df_wt %>% 
+  filter(panelist_id == "1amvqVlZOT") %>% 
+  count(wave, device)
+
+# Investigate a person with less than 8 rows: use table()
+df_test <- df_wt %>% 
+  filter(panelist_id == "1amvqVlZOT") 
+table(df_test$wave, df_test$device)
+  
+# TO BE CONTINUED HERE
+
+# Calculate the mean and median number of website visits per wave and device
+table(df_wt$device)
+table(df_wt$wave)
+df_wt %>% 
+  group_by(wave, device) %>% 
+  summarise(sum_visits = n())
 
 # How many of the visits happened on mobile vs. desktop for each wave?
 
