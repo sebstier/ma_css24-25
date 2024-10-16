@@ -22,7 +22,7 @@ rm(filename)
 
 # Save and load the data in csv, rds, Rda
 load("data/toy_survey.rda")
-load("data/toy_browsing.rda") #rda Rda
+load("data/toy_browsing.rda") 
 #save()
 write_rds(toy_browsing, "data/toy_browsing.rds")
 df_wt <- read_rds("data/toy_browsing.rds") %>% 
@@ -32,17 +32,20 @@ df_wt <- read_rds("data/toy_browsing.rds") %>%
 #read_csv()
 #read.csv()
 
+# Create object df_wt for further analysis
+df_wt <- toy_browsing 
+
 # Explore the dataset: number of rows, columns, unique persons, what date range
 glimpse(df_wt)
 nrow(df_wt)
 ncol(df_wt)
 length(unique(df_wt$panelist_id))
 n_distinct(df_wt$panelist_id)
-table(df_wt$timestamp)
+#table(df_wt$timestamp) #don't run, many singular time stamps
 summary(df_wt)
 range(df_wt$timestamp)
 
-# Count the number of wave+device combinations for each person (important to know your data!)
+# Count the number of wave+device combinations for each person (important to know your data)
 df_wt %>% 
   group_by(panelist_id, wave, device) %>% 
   summarise(n_visits = n()) %>% 
@@ -54,21 +57,12 @@ df_wt %>%
   filter(panelist_id == "1amvqVlZOT") %>% 
   count(wave, device)
 
-# Investigate a person with less than 8 rows: use table()
-df_test <- df_wt %>% 
-  filter(panelist_id == "1amvqVlZOT") 
-table(df_test$wave, df_test$device)
-  
 # TO BE CONTINUED HERE
 
 # Calculate the mean and median number of website visits per wave and device
-table(df_wt$device)
-table(df_wt$wave)
-df_wt %>% 
-  group_by(wave, device) %>% 
-  summarise(sum_visits = n())
 
-# How many of the visits happened on mobile vs. desktop for each wave?
+# How many of the visits happened on mobile vs. desktop for each wave? 
+# What is the share of mobile vs. desktop?
 
 # Plot a time series of the number of visits per day
 
@@ -80,13 +74,15 @@ df_wt %>%
 ## Apply the relevant function from the package to extract domains from URLs
 library(adaR)
 
+
 # Inspect whether there are NAs in domain; what can explain the NAs?
 
 # Summarize the number of total visits, Google and Facebook visits per person
-
+#df_panelist <- 
+  
 # Merge the survey data with the number of total visits, Google visits and Facebook visits
 
-# Plot the relation of Facebook visits and age
+# Plot the relation of Facebook visits and age with a point diagram
 
 
 # Exercise 3: Analysis of news website visits ----
@@ -95,11 +91,11 @@ library(adaR)
 ## Load U.S. news domain list
 news_list <- read.csv("https://raw.githubusercontent.com/ercexpo/us-news-domains/main/us-news-domains-v2.0.0.csv")
 
-# First, check whether there are duplicates in the data frame that we want to merge
+# First, check whether there are duplicates in the news data 
 
 # What are the duplicated domain entries?
 
-# Remove the duplicates (several approaches)
+# Remove the duplicates
 
 # Finally, join the web tracking data with the news lists
 
@@ -110,5 +106,4 @@ news_list <- read.csv("https://raw.githubusercontent.com/ercexpo/us-news-domains
 
 # Some more explorations of our new variables: where outside of news websites does trump occur?
 
-# Let's inspect some URLs on trump
 
