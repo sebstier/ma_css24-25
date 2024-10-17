@@ -403,14 +403,14 @@
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 2:43:29 PM\n\n\n\n\n4_class_five.R\n\n\n10/16/24, 3:17:43 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 2:43:29 PM\n\n\n\n\n4_class_five.R\n\n\n10/16/24, 3:17:43 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides.html",
@@ -543,7 +543,7 @@
     "href": "slides/05_automated_textanalysis.html#agenda-for-today",
     "title": "Automated Text Analysis",
     "section": "Agenda for today",
-    "text": "Agenda for today\n\nData wrangling and joining operations in R\nAutomated text analysis\nApplied text analysis in R\nTopic models"
+    "text": "Agenda for today\n\nData wrangling and joining operations in R\nAutomated text analysis\nApplied text analysis in R"
   },
   {
     "objectID": "slides/05_automated_textanalysis.html#section",
@@ -635,41 +635,6 @@
     "title": "Automated Text Analysis",
     "section": "We will use quanteda",
     "text": "We will use quanteda\n\nGo to file 4_session_four.R in https://sebastianstier.com/ma_css24/material.html"
-  },
-  {
-    "objectID": "slides/05_automated_textanalysis.html#the-foundations-of-topic-models",
-    "href": "slides/05_automated_textanalysis.html#the-foundations-of-topic-models",
-    "title": "Automated Text Analysis",
-    "section": "The foundations of topic models",
-    "text": "The foundations of topic models\n\n\nBlei, D. M. (2012). Probabilistic topic models. Communications of the ACM, 55(4), 77–84."
-  },
-  {
-    "objectID": "slides/05_automated_textanalysis.html#topic-models-an-application",
-    "href": "slides/05_automated_textanalysis.html#topic-models-an-application",
-    "title": "Automated Text Analysis",
-    "section": "Topic models: an application",
-    "text": "Topic models: an application\n\n\nStier, S., Posch, L., Bleier, A., & Strohmaier, M. (2017). When populists become popular: Comparing Facebook use by the right-wing movement Pegida and German political parties. Information, Communication & Society, 20(9), 1365–1388."
-  },
-  {
-    "objectID": "slides/05_automated_textanalysis.html#topic-models-validate-validate-grimmer_text_2013",
-    "href": "slides/05_automated_textanalysis.html#topic-models-validate-validate-grimmer_text_2013",
-    "title": "Automated Text Analysis",
-    "section": "Topic models: validate, validate! (Grimmer and Stewart 2013)",
-    "text": "Topic models: validate, validate! (Grimmer and Stewart 2013)\nSemantic validity"
-  },
-  {
-    "objectID": "slides/05_automated_textanalysis.html#topic-models-validate-validate-grimmer_text_2013-1",
-    "href": "slides/05_automated_textanalysis.html#topic-models-validate-validate-grimmer_text_2013-1",
-    "title": "Automated Text Analysis",
-    "section": "Topic models: validate, validate! (Grimmer and Stewart 2013)",
-    "text": "Topic models: validate, validate! (Grimmer and Stewart 2013)\nPredictive validity"
-  },
-  {
-    "objectID": "slides/05_automated_textanalysis.html#topic-models-validate-validate",
-    "href": "slides/05_automated_textanalysis.html#topic-models-validate-validate",
-    "title": "Automated Text Analysis",
-    "section": "Topic models: validate, validate!",
-    "text": "Topic models: validate, validate!\nInteractive exploration\n\n\nSievert, C., & Shirley, K. (2014). LDAvis: A method for visualizing and interpreting topics. Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces, 63–70."
   },
   {
     "objectID": "slides/05_automated_textanalysis.html#references",
