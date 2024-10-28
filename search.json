@@ -56,48 +56,6 @@
     "text": "We will use quanteda\n\nGo to file 5_class_six.R in https://sebastianstier.com/ma_css24-25/material.html"
   },
   {
-    "objectID": "slides/06_text_analysis_llms.html#word-embeddings-extracting-meaning-from-a-word-to-word-matrix",
-    "href": "slides/06_text_analysis_llms.html#word-embeddings-extracting-meaning-from-a-word-to-word-matrix",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "Word embeddings: extracting meaning from a word-to-word matrix",
-    "text": "Word embeddings: extracting meaning from a word-to-word matrix\n\n\nhttps://www.scaler.com/topics/tensorflow/tensorflow-word2vwc/"
-  },
-  {
-    "objectID": "slides/06_text_analysis_llms.html#word-embeddings",
-    "href": "slides/06_text_analysis_llms.html#word-embeddings",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "Word embeddings",
-    "text": "Word embeddings\n\n\nhttps://nlp.stanford.edu/projects/histwords/"
-  },
-  {
-    "objectID": "slides/06_text_analysis_llms.html#word-embeddings-1",
-    "href": "slides/06_text_analysis_llms.html#word-embeddings-1",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "Word embeddings",
-    "text": "Word embeddings\n\n\nBonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787."
-  },
-  {
-    "objectID": "slides/06_text_analysis_llms.html#what-are-large-language-models",
-    "href": "slides/06_text_analysis_llms.html#what-are-large-language-models",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "What are (Large) Language Models?",
-    "text": "What are (Large) Language Models?\n\nLanguage models consist of a neural network with many parameters (typically billions of weights), trained on large quantities of unlabeled text using self-supervised learning\nExamples: BERT, GPT 2/3/4, (Google) Gemini"
-  },
-  {
-    "objectID": "slides/06_text_analysis_llms.html#the-basis-of-llms-neural-networks",
-    "href": "slides/06_text_analysis_llms.html#the-basis-of-llms-neural-networks",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "The basis of LLMs: neural networks",
-    "text": "The basis of LLMs: neural networks"
-  },
-  {
-    "objectID": "slides/06_text_analysis_llms.html#this-field-is-evolving-quickly",
-    "href": "slides/06_text_analysis_llms.html#this-field-is-evolving-quickly",
-    "title": "Automated Text Analysis and Large Language Models",
-    "section": "This field is evolving quickly",
-    "text": "This field is evolving quickly\n\n\nhttps://github.com/Mooler0410/LLMsPracticalGuide"
-  },
-  {
     "objectID": "slides/06_text_analysis_llms.html#think-pair-share",
     "href": "slides/06_text_analysis_llms.html#think-pair-share",
     "title": "Automated Text Analysis and Large Language Models",
@@ -361,14 +319,14 @@
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/23/24, 11:57:48 AM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/23/24, 4:45:55 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/23/24, 11:57:48 AM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/23/24, 4:45:55 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/2_what_is_css.html#agenda-for-today",

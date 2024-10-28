@@ -15,9 +15,14 @@ library(rvest)
 load("data/toy_browsing.rda") 
 
 # Subset the web tracking data to visits of the politics section of Fox News
+df_fox <- toy_browsing %>% 
+  filter(str_detect(url, "foxnews.com/politics")) %>% 
+  as_tibble()
+nrow(df_fox)
 
 # Create a vector of unique Fox News political URLs
-#urls <- 
+n_distinct(df_fox$url)
+urls <- unique(df_fox$url)
 
 # Read the HTML from a Fox News URL
 webpage <- read_html(urls[1])
@@ -37,11 +42,14 @@ body <- webpage %>%
 headline
 body
 
+# Inspect the output
+cat(body)
+
 # Use a for loop to create a data frame with the scraped results from all Fox News URLs
 
 # create an empty data frame
 df_text <- data.frame()
-for (i in 1:length(urls[1:5])) {
+for (i in 1:5) {
   
   # Read the HTML from the page
   webpage = read_html(urls[i])
@@ -68,7 +76,8 @@ for (i in 1:length(urls[1:5])) {
 }
 
 # Join the htmls with the web tracking data
-#df_fox <- 
+df_fox <- df_fox %>% 
+  left_join(df_text, by = "url")
 
 # Clean the text a little bit
 df_fox <- df_text %>% 
@@ -84,14 +93,20 @@ df_trump <- read_csv("data/tweets_01-08-2021.csv", col_types = "ccllcddTl")
 
 # Do all steps in one tidyverse pipe 
 # and remove the token "amp"
-#dfm_nostop <- 
-
+dfm_nostop <- df_trump %>% 
+  corpus(text_field = "text", docid_field = "id") %>% 
+  tokens(remove_punct = TRUE, 
+         remove_numbers = TRUE) %>% 
+  tokens_select(pattern = c("amp", stopwords("en"), "RT"), selection = "remove") %>% 
+  dfm()
+  
+# Inspect
 topfeatures(dfm_nostop)
 
 # trim the dfm to only words that appear at least 10 times to make modeling more efficient
 dfm_nostop
 dfm_trimmed <- dfm_nostop %>% 
-  dfm_trim(min_termfreq = 10) 
+  dfm_trim(min_termfreq = 100) 
 dfm_trimmed
 
 
@@ -123,10 +138,9 @@ dfm_dict <- dfm_lookup(dfm_nostop, dictionary = dict)
 textstat_frequency(dfm_dict)
 
 # Add a grouping variable and info on the total number of documents
-dfm_dict <- dfm_lookup(dfm_nostop, dictionary = dict, nomatch = "n_unmatched") %>% 
+dfm_dict <- dfm_lookup(dfm_nostop, dictionary = dict, 
+                       nomatch = "n_unmatched") %>% 
     dfm_group(device) 
-dfm_dict
-
 
 #* Keyness analysis ----
 # We can easily plot differences in word use by group (e.g., parties, gender, etc.)
@@ -143,6 +157,9 @@ library(seededlda)
 dfm_trimmed <- dfm_nostop %>% 
   dfm_trim(min_termfreq = 50) # only features that appear at least 50 times
 dfm_trimmed
+
+# set a seed in order to keep the output consistent
+set.seed(111)
 
 # run the LDA Topic Model
 tmod_lda <- textmodel_lda(dfm_trimmed, k = 10)
