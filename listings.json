@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/material.html",
+    "items": []
+  },
+  {
     "listing": "/slides.html",
     "items": [
       "/slides/01_introduction.html",
@@ -7,11 +11,8 @@
       "/slides/03_webdata_designed_digital_data.html",
       "/slides/04_designed_dbd.html",
       "/slides/05_automated_textanalysis.html",
-      "/slides/06_text_analysis_llms.html"
+      "/slides/06_text_analysis_llms.html",
+      "/slides/07_llms_data_quality.html"
     ]
-  },
-  {
-    "listing": "/material.html",
-    "items": []
   }
 ]

@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Sebastian Stier">
-  <meta name="dcterms.date" content="2024-10-23">
-  <title>Computational Social Science and Digital Behavioral Data - Automated Text Analysis and Large Language Models</title>
+  <meta name="dcterms.date" content="2024-10-30">
+  <title>Computational Social Science and Digital Behavioral Data - Data Quality and Validation in CSS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,27 +30,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../libs/revealjs/dist/theme/quarto.css">
   <link href="../libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -347,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Automated Text Analysis and Large Language Models</h1>
+  <h1 class="title">Data Quality and Validation in CSS</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -360,36 +340,37 @@ Sebastian Stier
     </div>
 </div>
 
-  <p class="date">2024-10-23</p>
+  <p class="date">2024-10-30</p>
 </section>
 <section id="agenda-for-today" class="slide level2">
 <h2>Agenda for today</h2>
 <ol type="1">
-<li><p>Automated text analysis: topic models</p></li>
+<li><p>Large Language Models</p></li>
 <li><p>Applied text analysis in <em>R</em></p></li>
+<li><p>Data quality in CSS</p></li>
 </ol>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="vemhhxjvzy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vemhhxjvzy table {
+<div id="ormsicimet" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ormsicimet table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vemhhxjvzy thead, #vemhhxjvzy tbody, #vemhhxjvzy tfoot, #vemhhxjvzy tr, #vemhhxjvzy td, #vemhhxjvzy th {
+#ormsicimet thead, #ormsicimet tbody, #ormsicimet tfoot, #ormsicimet tr, #ormsicimet td, #ormsicimet th {
   border-style: none;
 }
 
-#vemhhxjvzy p {
+#ormsicimet p {
   margin: 0;
   padding: 0;
 }
 
-#vemhhxjvzy .gt_table {
+#ormsicimet .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -415,12 +396,12 @@ Sebastian Stier
   border-left-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_caption {
+#ormsicimet .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vemhhxjvzy .gt_title {
+#ormsicimet .gt_title {
   color: #333333;
   font-size: 14px;
   font-weight: initial;
@@ -432,7 +413,7 @@ Sebastian Stier
   border-bottom-width: 0;
 }
 
-#vemhhxjvzy .gt_subtitle {
+#ormsicimet .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -444,7 +425,7 @@ Sebastian Stier
   border-top-width: 0;
 }
 
-#vemhhxjvzy .gt_heading {
+#ormsicimet .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -456,13 +437,13 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_bottom_border {
+#ormsicimet .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_col_headings {
+#ormsicimet .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -477,7 +458,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_col_heading {
+#ormsicimet .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -497,7 +478,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#vemhhxjvzy .gt_column_spanner_outer {
+#ormsicimet .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -509,15 +490,15 @@ Sebastian Stier
   padding-right: 4px;
 }
 
-#vemhhxjvzy .gt_column_spanner_outer:first-child {
+#ormsicimet .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vemhhxjvzy .gt_column_spanner_outer:last-child {
+#ormsicimet .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vemhhxjvzy .gt_column_spanner {
+#ormsicimet .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -529,11 +510,11 @@ Sebastian Stier
   width: 100%;
 }
 
-#vemhhxjvzy .gt_spanner_row {
+#ormsicimet .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vemhhxjvzy .gt_group_heading {
+#ormsicimet .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -559,7 +540,7 @@ Sebastian Stier
   text-align: left;
 }
 
-#vemhhxjvzy .gt_empty_group_heading {
+#ormsicimet .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -574,15 +555,15 @@ Sebastian Stier
   vertical-align: middle;
 }
 
-#vemhhxjvzy .gt_from_md > :first-child {
+#ormsicimet .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vemhhxjvzy .gt_from_md > :last-child {
+#ormsicimet .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vemhhxjvzy .gt_row {
+#ormsicimet .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -601,7 +582,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#vemhhxjvzy .gt_stub {
+#ormsicimet .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -614,7 +595,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#vemhhxjvzy .gt_stub_row_group {
+#ormsicimet .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -628,15 +609,15 @@ Sebastian Stier
   vertical-align: top;
 }
 
-#vemhhxjvzy .gt_row_group_first td {
+#ormsicimet .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vemhhxjvzy .gt_row_group_first th {
+#ormsicimet .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vemhhxjvzy .gt_summary_row {
+#ormsicimet .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -646,16 +627,16 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#vemhhxjvzy .gt_first_summary_row {
+#ormsicimet .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_first_summary_row.thick {
+#ormsicimet .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vemhhxjvzy .gt_last_summary_row {
+#ormsicimet .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -665,7 +646,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_grand_summary_row {
+#ormsicimet .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -675,7 +656,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#vemhhxjvzy .gt_first_grand_summary_row {
+#ormsicimet .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -685,7 +666,7 @@ Sebastian Stier
   border-top-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_last_grand_summary_row_top {
+#ormsicimet .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -695,11 +676,11 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_striped {
+#ormsicimet .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vemhhxjvzy .gt_table_body {
+#ormsicimet .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -708,7 +689,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_footnotes {
+#ormsicimet .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -722,7 +703,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_footnote {
+#ormsicimet .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -731,7 +712,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#vemhhxjvzy .gt_sourcenotes {
+#ormsicimet .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -745,7 +726,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#vemhhxjvzy .gt_sourcenote {
+#ormsicimet .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -753,72 +734,72 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#vemhhxjvzy .gt_left {
+#ormsicimet .gt_left {
   text-align: left;
 }
 
-#vemhhxjvzy .gt_center {
+#ormsicimet .gt_center {
   text-align: center;
 }
 
-#vemhhxjvzy .gt_right {
+#ormsicimet .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vemhhxjvzy .gt_font_normal {
+#ormsicimet .gt_font_normal {
   font-weight: normal;
 }
 
-#vemhhxjvzy .gt_font_bold {
+#ormsicimet .gt_font_bold {
   font-weight: bold;
 }
 
-#vemhhxjvzy .gt_font_italic {
+#ormsicimet .gt_font_italic {
   font-style: italic;
 }
 
-#vemhhxjvzy .gt_super {
+#ormsicimet .gt_super {
   font-size: 65%;
 }
 
-#vemhhxjvzy .gt_footnote_marks {
+#ormsicimet .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vemhhxjvzy .gt_asterisk {
+#ormsicimet .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vemhhxjvzy .gt_indent_1 {
+#ormsicimet .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vemhhxjvzy .gt_indent_2 {
+#ormsicimet .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vemhhxjvzy .gt_indent_3 {
+#ormsicimet .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vemhhxjvzy .gt_indent_4 {
+#ormsicimet .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vemhhxjvzy .gt_indent_5 {
+#ormsicimet .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vemhhxjvzy .katex-display {
+#ormsicimet .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vemhhxjvzy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ormsicimet div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -841,59 +822,52 @@ Sebastian Stier
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>3 September 2024</p></td>
+<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>30 October 2024</p></td>
+<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
+<li>Data quality and validation in CSS</li>
+<li>Network analysis</li>
+</ul></td>
+<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>Sen, I., Flöck, F., Weller, K., Weiß, B., &amp; Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. <a href="https://doi.org/10.1093/poq/nfab018"><em>Public Opinion Quarterly</em>, 85(S1), 399–422.</a> <br><br> Dahlke, R., Kumar, D., Durumeric, Z., &amp; Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. <a href="https://doi.org/10.1177/08944393231218214"><em>Social Science Computer Review</em>.</a></p></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Date"><p>6 November 2024</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>Introduction and expectations</li>
-<li>Foundations of CSS</li>
-<li>Getting started in R</li>
+<li>Open science and reproducibility in CSS</li>
+</ul></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Chan, C.- Hong, Schatto-Eckrodt, T., &amp; Gruber, J. (2024). What makes computational communication science (ir)reproducible? <a href="https://doi.org/10.5117/CCR2024.1.5.CHAN"><em>Computational Communication Research</em>, 6(1).</a> <br><br></p>
+<p>Nyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al.&nbsp;(2023). Like-minded sources on Facebook are prevalent but not polarizing. <a href="https://doi.org/10.1038/s41586-023-06297-w"><em>Nature</em>, 620(7972), 137–144.</a></p></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Date"><p>13 November 2024</p></td>
+<td class="gt_row gt_left" headers="Topics"><ul>
+<li>Writing reproducible research papers in R</li>
+<li>quarto, OSF, pipelines and workflows</li>
+</ul></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Bauer, P. C., &amp; Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. <a href="https://doi.org/10.31219/osf.io/ur4xn"><em>OSF Preprint</em>.</a></p></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Date"><p>20 November 2024</p></td>
+<td class="gt_row gt_left" headers="Topics"><ul>
+<li>Presentations of thesis ideas</li>
+<li>Coding: troubleshooting</li>
+</ul></td>
+<td class="gt_row gt_left" headers="Required reading"></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Date"><p>27 November 2024</p></td>
+<td class="gt_row gt_left" headers="Topics"><ul>
+<li>Presentations of thesis ideas</li>
+<li>Coding: troubleshooting</li>
 </ul></td>
 <td class="gt_row gt_left" headers="Required reading"></td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>11 September 2024</p></td>
+<td class="gt_row gt_left" headers="Date"><p>4 December 2024</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>Foundations of CSS</li>
-<li>The R tidyverse</li>
+<li>Presentations of thesis ideas</li>
+<li>Coding: troubleshooting</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Lazer, D., &amp; Radford, J. (2017). Data ex Machina: Introduction to Big Data. <a href="https://doi.org/10.1146/annurev-soc-060116-053457"><em>Annual Review of Sociology</em>, 43(1), 19–39.</a></p></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>18 September 2024 <br><br> <strong>(Block: 15:30 - 18:45)</strong></p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Research ethics in CSS</li>
-<li>Social media, web data and web scraping</li>
-<li>APIs and web data collection</li>
-<li>Data visualization</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Fiesler, C., &amp; Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. <a href="https://doi.org/10.1177/2056305118763366"><em>Social Media + Society</em>, 4(1).</a> <br><br> Freelon, D. (2018). Computational Research in the Post-API Age. <a href="https://osf.io/preprints/socarxiv/56f4q"><em>Political Communication</em>, 35(4), 665–668.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>2 October 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>APIs and web data collection, continued</li>
-<li>Linked surveys and DBD</li>
-<li>Web tracking data</li>
-<li>Smartphone-based data collection</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Tromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. <a href="https://doi.org/10.1177/2056305121988929">Social Media + Society, 7(1).</a> <br><br> Silber, H., et al.&nbsp;Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. <a href="https://doi.org/10.1111/rssa.12954"><em>Journal of the Royal Statistical Society Series A: Statistics in Society</em>, 185(S2), S387–S407.</a></p></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>16 October 2024 <br><br> <strong>(Block: 15:30 - 18:45)</strong></p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Introduction to automated text analysis</li>
-<li>Supervised and unsupervised models</li>
-<li>Validation of model results</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Schwemmer, C., &amp; Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. <a href="https://doi.org/10.1177/0038038519853146"><em>Sociology</em>, 54(1), 3–21.</a> <br><br> Bonikowski, B., Luo, Y., &amp; Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. <a href="https://doi.org/10.31235/osf.io/uhvbp"><em>Sociological Methods &amp; Research</em>, 51(4), 1721–1787.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>23 October 2024</p></td>
-<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
-<li>Machine learning</li>
-<li>Large Language Models</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>Gilardi, F., Alizadeh, M., &amp; Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <a href="https://doi.org/10.1073/pnas.2305016120"><em>PNAS</em>, 120(30).</a> <br><br></p>
-<p>Reiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. <a href="http://arxiv.org/abs/2304.11085"><em>arXiv Preprint</em>.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading"></td>
 </tr>
 </tbody>
 </table>
@@ -902,41 +876,75 @@ Sebastian Stier
 </div>
 </div>
 </section>
+<section id="homework" class="slide level2">
+<h2>Homework</h2>
+<div style="font-size: 50%;">
+<p><a href="https://bookdown.org/paul/apis_for_social_scientists/">https://bookdown.org/paul/apis_for_social_scientists/</a></p>
+</div>
+<p><br></p>
+<ul>
+<li>Which APIs did you try out?</li>
+<li>Which APIs/code still work?</li>
+<li>Did the data help shape your research ideas?</li>
+</ul>
+</section>
 <section>
-<section id="automated-text-analysis-topic-models" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>1. Automated text analysis: topic models</h1>
+<section id="large-language-models" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>1. Large Language Models</h1>
 
 </section>
-<section id="the-foundations-of-topic-models" class="slide level2">
-<h2>The foundations of topic models</h2>
+<section id="word-embeddings-extracting-meaning-from-a-word-to-word-matrix" class="slide level2">
+<h2>Word embeddings: extracting meaning from a word-to-word matrix</h2>
 
-<img data-src="../material/img/topic_models.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
-<p>Blei, D. M. (2012). Probabilistic topic models. <a href="https://doi.org/10.1145/2133806.2133826"><em>Communications of the ACM</em>, 55(4), 77–84.</a></p>
+<img data-src="../material/img/word_word_dimension.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
+<p><a href="https://www.scaler.com/topics/tensorflow/tensorflow-word2vwc/">https://www.scaler.com/topics/tensorflow/tensorflow-word2vwc/</a></p>
 </div>
 </section>
-<section id="topic-models-an-application" class="slide level2">
-<h2>Topic models: an application</h2>
+<section id="word-embeddings" class="slide level2">
+<h2>Word embeddings</h2>
 
-<img data-src="../material/img/pegida.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
-<p>Stier, S., Posch, L., Bleier, A., &amp; Strohmaier, M. (2017). When populists become popular: Comparing Facebook use by the right-wing movement Pegida and German political parties. <a href="https://doi.org/10.1080/1369118X.2017.1328519"><em>Information, Communication &amp; Society</em>, 20(9), 1365–1388.</a></p>
+<img data-src="../material/img/bonikowski_model.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 40%;">
+<p>Bonikowski, B., Luo, Y., &amp; Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. <a href="https://doi.org/10.1177/00491241221122317"><em>Sociological Methods &amp; Research</em>, 51(4), 1721–1787.</a></p>
 </div>
 </section>
-<section id="topic-models-validate-validate-grimmer_text_2013" class="slide level2">
-<h2>Topic models: validate, validate! <span class="citation" data-cites="grimmer_text_2013">(<a href="#/references" role="doc-biblioref" onclick="">Grimmer and Stewart 2013</a>)</span></h2>
-<p><strong>Semantic validity</strong></p>
+<section id="word-embeddings-1" class="slide level2">
+<h2>Word embeddings</h2>
 
-<img data-src="../material/img/semantic_validity.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="topic-models-validate-validate-grimmer_text_2013-1" class="slide level2">
-<h2>Topic models: validate, validate! <span class="citation" data-cites="grimmer_text_2013">(<a href="#/references" role="doc-biblioref" onclick="">Grimmer and Stewart 2013</a>)</span></h2>
-<p><strong>Predictive validity</strong></p>
+<img data-src="../material/img/word_emb.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
+<p><a href="https://doi.org/10.1177/0038038519853146">https://nlp.stanford.edu/projects/histwords/</a></p>
+</div>
+</section>
+<section id="what-are-large-language-models" class="slide level2">
+<h2>What are (Large) Language Models?</h2>
+<ul>
+<li>Language models consist of a neural network with many parameters (typically billions of weights), trained on large quantities of unlabeled text using self-supervised learning</li>
+<li>Examples: BERT, GPT 2/3/4, (Google) Gemini</li>
+</ul>
+</section>
+<section id="the-basis-of-llms-neural-networks" class="slide level2">
+<h2>The basis of LLMs: neural networks</h2>
 
-<img data-src="../material/img/predictive_validity.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="topic-models-validate-validate" class="slide level2">
-<h2>Topic models: validate, validate!</h2>
-<p>Interactive exploration</p>
+<img data-src="../material/img/neural_network.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="this-field-is-evolving-quickly" class="slide level2">
+<h2>This field is evolving <strong>quickly</strong></h2>
 
-<img data-src="../material/img/LDAvis.png" style="width:70.0%" class="r-stretch"><div style="font-size: 40%;">
-<p>Sievert, C., &amp; Shirley, K. (2014). LDAvis: A method for visualizing and interpreting topics. <a href="https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf"><em>Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces</em>, 63–70.</a></p>
+<img data-src="../material/img/llm_tree.jpeg" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
+<p><a href="https://github.com/Mooler0410/LLMsPracticalGuide">https://github.com/Mooler0410/LLMsPracticalGuide</a></p>
+</div>
+</section>
+<section id="if-you-do-use-chatgpt-in-your-research-use-it-responsibly-and-transparently" class="slide level2">
+<h2>If you do use ChatGPT in your research, use it responsibly and transparently</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../material/img/dfg_llm_guidelines1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../material/img/dfg_llm_guidelines2.png"></p>
+<div style="font-size: 50%;">
+
+</div>
+</div><div style="font-size: 50%;">
+<p><a href="https://www.dfg.de/en/news/news-topics/announcements-proposals/2023/info-wissenschaft-23-72">https://www.dfg.de/en/news/news-topics/announcements-proposals/2023/info-wissenschaft-23-72</a></p>
+</div>
 </div>
 </section></section>
 <section>
@@ -944,11 +952,92 @@ Sebastian Stier
 <h1>2. Applied text analysis in <em>R</em></h1>
 
 </section>
-<section id="we-will-use-quanteda" class="slide level2">
-<h2>We will use <em>quanteda</em></h2>
+<section id="we-will-keep-using-quanteda" class="slide level2">
+<h2>We will keep using <em>quanteda</em></h2>
 <ul>
-<li>Go to file <strong>5_class_six.R</strong> in <a href="https://sebastianstier.com/ma_css24-25/material.html">https://sebastianstier.com/ma_css24-25/material.html</a></li>
+<li>Go to file <strong>6_class_seven.R</strong> in <a href="https://sebastianstier.com/ma_css24-25/material.html">https://sebastianstier.com/ma_css24-25/material.html</a></li>
 </ul>
+</section>
+<section id="validation" class="slide level2">
+<h2>Validation</h2>
+
+<img data-src="../material/img/grundl.png" class="r-stretch"><div style="font-size: 40%;">
+<p>Gründl, J. (2022). Populist ideas on social media: A dictionary-based measurement of populist communication. <a href="https://doi.org/10.1177/1461444820976970"><em>New Media &amp; Society</em>, 24(6), 1481–1499.</a></p>
+</div>
+</section>
+<section id="validation-1" class="slide level2">
+<h2>Validation</h2>
+
+<img data-src="../material/img/prec_recall.png" class="r-stretch"><div style="font-size: 40%;">
+<p><a href="https://medium.com/@weidagang/demystifying-precision-and-recall-in-machine-learning-6f756a4c54ac">https://medium.com/weidagang/demystifying-precision-and-recall-in-machine-learning-6f756a4c54ac</a></p>
+</div>
+</section>
+<section id="automated-text-analysis-the-menu-of-options" class="slide level2">
+<h2>Automated text analysis: The menu of options</h2>
+
+<img data-src="../material/img/grimmer_stewart_checkboxes.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
+<p>Grimmer, J., &amp; Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <a href="https://doi.org/10.1093/pan/mps028"><em>Political Analysis</em>, 21(3), 267–297.</a></p>
+</div>
+</section></section>
+<section>
+<section id="data-quality-in-css" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>3. Data quality in CSS</h1>
+
+</section>
+<section id="data-quality" class="slide level2">
+<h2>Data quality</h2>
+<ul>
+<li><p>What are relevant dimensions of data quality?</p></li>
+<li><p>How do you assess data quality in your research?</p></li>
+<li><p>How do you ensure data quality in your research?</p></li>
+</ul>
+</section>
+<section id="data-quality-relevant-dimensions" class="slide level2">
+<h2>Data quality: relevant dimensions</h2>
+
+<img data-src="../material/img/data_qual_definition.png" class="r-stretch"><div style="font-size: 30%;">
+<p>Birkenmaier, L., … Ziaja, S. (2024). Defining and Evaluating Data Quality for the Social Sciences: Position Paper. <a href="https://doi.org/10.21241/SSOAR.96764">GESIS Papers.</a></p>
+</div>
+</section>
+<section id="what-is-a-measurement" class="slide level2">
+<h2>What is a measurement?</h2>
+<div class="fragment">
+<ul>
+<li><p>A measurement is the process of linking an abstract concept to empirical indicators</p></li>
+<li><p>A measurement is typically an inference since we almost never observe “all data” perfectly. We use measurements to draw inferences based on incomplete/sampled data</p></li>
+</ul>
+</div>
+</section>
+<section id="drawing-inferences-social-sciences" class="slide level2">
+<h2>Drawing inferences: social sciences</h2>
+
+<img data-src="../material/img/inferences_socsci.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="drawing-inferences-css" class="slide level2">
+<h2>Drawing inferences: CSS</h2>
+
+<img data-src="../material/img/inferences_css.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="theory-and-causal-mechanisms" class="slide level2">
+<h2>Theory and causal mechanisms</h2>
+
+<img data-src="../material/img/inferences_merkel.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="applications-to-election-prediction" class="slide level2">
+<h2>Applications to election prediction</h2>
+<p><img data-src="../material/img/tumasjan.png" style="width:70.0%"></p>
+<div style="font-size: 30%;">
+<p>Tumasjan, A., Sprenger, T. O., Sandner, P. G., &amp; Welpe, I. M. (2010). Predicting elections with Twitter: What 140 characters reveal about political sentiment. In: <a href="https://doi.org/10.1609/icwsm.v4i1.14009"><em>Proceedings of the 4th International AAAI Conference on Weblogs and Social Media</em> (pp.&nbsp;178–185).</a></p>
+</div>
+<p><img data-src="../material/img/tumasjan_reply.png" style="width:70.0%"></p>
+<div style="font-size: 30%;">
+<p>Jungherr, A., Jürgens, P., &amp; Schoen, H. (2012). Why the Pirate Party Won the German Election of 2009 or The Trouble With Predictions. <a href="https://doi.org/10.1177/0894439311404119"><em>Social Science Computer Review</em>, 30(2), 229–234.</a></p>
+</div>
+</section>
+<section id="the-micro-macro-link" class="slide level2">
+<h2>The micro-macro link</h2>
+
+<img data-src="../material/img/jungherr_causal.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
+<p>Jungherr, A., Schoen, H., &amp; Jürgens, P. (2016). The Mediation of Politics through Twitter: An Analysis of Messages posted during the Campaign for the German Federal Election 2013. <a href="https://doi.org/10.1111/jcc4.12143"><em>Journal of Computer-Mediated Communication</em>, 21(1), 50–68.</a></p>
+<p>See also: Coleman, J. S. (1990). <em>Foundations of social theory</em>. Belknap Press of Harvard University Press.</p>
+</div>
 </section>
 <section id="think-pair-share" class="slide level2">
 <h2>Think-pair-share</h2>
@@ -958,38 +1047,43 @@ Sebastian Stier
 <li>Share and discuss your results with the full class</li>
 </ol>
 </section>
-<section id="main-results-from-gilardi.-et-al." class="slide level2">
-<h2>Main results from Gilardi. et al.</h2>
+<section id="an-error-framework-perspective" class="slide level2">
+<h2>An error framework perspective</h2>
 
-<img data-src="../material/img/results_gilardi.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
-<p>Gilardi, F., Alizadeh, M., &amp; Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <a href="https://doi.org/10.1073/pnas.2305016120"><em>Proceedings of the National Academy of Sciences</em>, 120(30)</a></p>
+<img data-src="../material/img/tse_groves.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
+<p>Groves, R. M., &amp; Lyberg, L. (2010). Total Survey Error: Past, Present, and Future. <a href="https://doi.org/10.1093/poq/nfq065"><em>Public Opinion Quarterly</em>, 74(5), 849–879.</a></p>
 </div>
 </section>
-<section id="how-to-interact-with-llms" class="slide level2">
-<h2>How to interact with LLMs</h2>
+<section id="an-error-framework-for-dbd" class="slide level2">
+<h2>An error framework for DBD</h2>
+
+<img data-src="../material/img/tse_dbd.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 50%;">
+<p>Sen, I., Flöck, F., Weller, K., Weiß, B., &amp; Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. <a href="https://doi.org/10.1093/poq/nfab018"><em>Public Opinion Quarterly</em>, 85(S1), 399–422.</a></p>
+</div>
+</section>
+<section id="error-framework-for-dbd" class="slide level2">
+<h2>Error framework for DBD</h2>
 <ul>
-<li><strong>Zero shot learning</strong>: the user writes a natural language instruction (commonly called “prompt”) for the LLM that instructs it to perform a certain task</li>
-<li><strong>Few shot learning</strong>: the user writes a prompt for the LLM that instructs it to perform a certain task + provides some examples</li>
-<li><strong>Instruction tuning</strong>: the user trains a pre-trained model on task-related data. During fine tuning, model parameters are updated. A medium to large amount of labelled training data (i.e., examples that are annotated with the desired model output) is required.</li>
+<li>Can improve communication between different social science and CSS communities</li>
+<li>May help you to systematically reflect on the validity and reliability of your measurement</li>
+<li>But this framework is just a starting point! There are always research design and platform specific things to consider</li>
 </ul>
+</section>
+<section id="validation-of-text-analysis" class="slide level2">
+<h2>Validation of text analysis</h2>
 </section></section>
 <section>
-<section id="see-you-next-week-on-october-30" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>See you next week on October 30</h1>
+<section id="see-you-on-november-6" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>See you on November 6</h1>
 
 </section>
-<section id="references" class="slide level2 smaller scrollable">
+<section id="references" class="slide level2">
 <h2>References</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="_extensions/gesiscss/fakegesis/gesis-unima_new.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://sebstier.github.io/ma_css24-25/">Computational Social Science and Digital Behavioral Data, University of Mannheim</a></p>
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-grimmer_text_2013" class="csl-entry" role="listitem">
-Grimmer, Justin, and Brandon M. Stewart. 2013. <span>“Text as <span>Data</span>: <span>The</span> <span>Promise</span> and <span>Pitfalls</span> of <span>Automatic</span> <span>Content</span> <span>Analysis</span> <span>Methods</span> for <span>Political</span> <span>Texts</span>.”</span> <em>Political Analysis</em> 21 (3): 267–97. <a href="https://doi.org/10.1093/pan/mps028">https://doi.org/10.1093/pan/mps028</a>.
 </div>
 </div>
 </section></section>
