@@ -17,11 +17,18 @@ library(quanteda.textplots)
 # read in party manifestos of German parties in 2013 and 2017
 corp_ger <- read_rds("https://www.dropbox.com/s/uysdoep4unfz3zp/data_corpus_germanifestos.rds?dl=1")
 summary(corp_ger)
+docvars(corp_ger)
 
 # Remove German stopwords, use only features that occur at least 50 times and create a dfm
-#dfm_ger <-
+dfm_ger <- corp_ger %>% 
+  tokens(remove_punct = TRUE, remove_numbers = TRUE, remove_url = TRUE) %>% 
+  tokens_select(pattern = stopwords("de"), selection = "remove") %>%
+  dfm() %>%
+  dfm_trim(min_termfreq = 30)
+  
+# Run a wordfish
 model_wf <- textmodel_wordfish(dfm_ger)
-textplot_scale1d(tmod_wf)
+textplot_scale1d(model_wf)
 
 
 # Wordscores ----
@@ -50,13 +57,26 @@ corp_nyt <- df_nyt %>%
 corp_nyt$id <- 1:ndoc(corp_nyt)
 
 # Group work: Turn the NY Times dataframe into a dfm and trim the number of features to a manageable size
-#dfm <- 
+dfm <- df_nyt %>% 
+  mutate(title_summary = paste0(title, " ", summary)) %>% 
+  # create a corpus
+  corpus(text_field = "title_summary") %>% 
+  # create tokens
+  tokens(remove_punct = TRUE, remove_numbers = TRUE) %>% 
+  tokens_select(pattern = stopwords("en"), selection = "remove") %>% 
+  # create a dfm
+  dfm() %>% 
+  # trim the dfm
+  dfm_trim(min_termfreq = 20)
+dfm
 
 # Create a training-test split
 nrow(df_nyt)
-# generate 25000 numbers without replacement
+
+# generate the ids for an 80% training sample
 set.seed(300)
-id_train <- sample(1:nrow(df_nyt), 25000, replace = FALSE)
+id_train <- sample(1:nrow(df_nyt), size = nrow(df_nyt)*0.8, replace = FALSE)
+length(id_train)
 
 # get training set
 dfmat_training <- dfm_subset(dfm, id %in% id_train)
@@ -65,29 +85,21 @@ dfmat_training <- dfm_subset(dfm, id %in% id_train)
 dfmat_test <- dfm_subset(dfm, !id %in% id_train)
 
 # Train a Naive Bayes model and evaluate performance
-nrow(df_nyt)
 model_nb <- textmodel_nb(dfmat_training, dfmat_training$majortopic)
 
-# Naive Bayes can only take features into consideration that occur both in the training set and the test set
-dfmat_matched <- dfm_match(dfmat_test, features = featnames(dfmat_training))
+# Naive Bayes can only take features into consideration that occur both in the training set 
+# and the test set
+dfmat_matched <- dfm_match(dfmat_test, features = featnames(dfmat_training)) 
+# not needed because we did the proprocessing at the top
+head(docvars(dfmat_matched))
+head(dfmat_matched)
 
 # Check the output
-actual_class <- dfmat_matched$sentiment
-predicted_class <- predict(tmod_nb, newdata = dfmat_matched)
-tab_class <- table(actual_class, predicted_class)
+actual_class <- dfmat_matched$majortopic
+dfmat_matched$predictions <- predict(model_nb, newdata = dfmat_matched)
+tab_class <- table(dfmat_matched$majortopic, dfmat_matched$predictions)
 tab_class
-
-
-# Check the distribution of topics in original and predictions
-table(df_nyt$majortopic)
-table(df_nyt$predictions)
-table(df_nyt$majortopic, df_nyt$predictions)
-prop.table(table(df_nyt$predictions == df_nyt$majortopic))
 
 # Precision and recall
 library(caret)
-tab_result <- table(df_nyt$majortopic, df_nyt$predictions)
-confusionMatrix(tab_result, mode = "everything")
-
-
-
+confusionMatrix(tab_class, mode = "everything")
