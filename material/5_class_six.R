@@ -16,7 +16,7 @@ load("data/toy_browsing.rda")
 
 # Subset the web tracking data to visits of the politics section of Fox News
 df_fox <- toy_browsing %>% 
-  filter(str_detect(url, "foxnews.com/politics")) %>% 
+  filter(str_detect(url, "foxnews.com/politics")) %>%
   as_tibble()
 nrow(df_fox)
 
