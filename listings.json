@@ -12,7 +12,9 @@
       "/slides/04_designed_dbd.html",
       "/slides/05_automated_textanalysis.html",
       "/slides/06_text_analysis_llms.html",
-      "/slides/07_llms_data_quality.html"
+      "/slides/07_llms_data_quality.html",
+      "/slides/08_open_science.html",
+      "/slides/09_reproducibility.html"
     ]
   }
 ]

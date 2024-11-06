@@ -1,5 +1,5 @@
 #' class: "Computational Social Science and Digital Behavioral Data, University of Mannheim"
-#' title: "Some leftover scripts, especially network analysis"
+#' title: "Text Analysis, Continued and Validation"
 #' author: "Sebastian Stier"
 #' lesson: 7
 #' institute: University of Mannheim & GESIS
