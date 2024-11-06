@@ -6,6 +6,7 @@
 #' date: "2024-11-06"
 
 library(quanteda)
+library(caret)
 
 # Validation of text classification ----
 
@@ -46,7 +47,7 @@ dict_rooduijn <- c("elit*",
 # Build dictionary using quanteda
 pop_dict <- dictionary(list(rooduijn = dict_rooduijn,
                             populism_own = c("elite*", "volk*", "korrupt*", "*deutsch*", "migrat*",
-                                             "ausländ*", "flüchtl*")))
+                                             "ausländ*", "flüchtl*", "umwelt")))
 
 # Build dfm and apply dictionary
 toks <- corp_ger %>% 
@@ -59,12 +60,12 @@ toks %>%
   convert(to = "data.frame")
 
 # Refine keyword lists
-kwic(pattern = "elite*", toks, window = 5)
-kwic(pattern = "volk*", toks, window = 5)
+head(kwic(pattern = "*deutsch*", toks, window = 5), 5)
+kwic(pattern = "*volk*", toks, window = 5)
 
 # And finally, hand code a paragraph or sentence sample for validation
 df_manifesto_paragraphs <- corp_ger %>% 
-  corpus_reshape(to = "paragraphs") %>% 
+  corpus_reshape(to = "paragraphs") %>% #sentences
   convert(to = "data.frame")
 
 # Check frequencies
@@ -84,4 +85,8 @@ df_manifesto_paragraphs <- corp_parag %>%
 # Recover the text
 df_manifesto_paragraphs$text <- as.character(corp_parag)
 
+# Binary cross-tab of the two dictionaries
+tab_class <- table(df_manifesto_paragraphs$rooduijn >= 1, df_manifesto_paragraphs$populism_own >= 1)
 
+# Confusion matrix and F1 scores
+confusionMatrix(tab_class, mode = "everything") #bad precision, high recall, not a good F1 score

@@ -424,14 +424,14 @@
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 2:22:24 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 2:22:24 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/2_what_is_css.html#agenda-for-today",
@@ -742,81 +742,11 @@
     "text": "Required reading: one of the “Facebook papers”\n\n\nGonzález-Bailón, S., Lazer, D., Barberá, P., Zhang, M., Allcott, H., Brown, T., Crespo-Tenorio, A., Freelon, D., Gentzkow, M., Guess, A. M., Iyengar, S., Kim, Y. M., Malhotra, N., Moehler, D., Nyhan, B., Pan, J., Rivera, C. V., Settle, J., Thorson, E., … Tucker, J. A. (2023). Asymmetric ideological segregation in exposure to political news on Facebook. Science, 381(6656), 392–398."
   },
   {
-    "objectID": "slides/08_open_science.html#what-is-reproducibility",
-    "href": "slides/08_open_science.html#what-is-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "What is reproducibility?",
-    "text": "What is reproducibility?\nDefining reproducibility\nA minimum standard on a spectrum of activities (“reproducibility spectrum”) for assessing the value or accuracy of scientific claims based on the original methods, data, and code. […] In some fields, this meaning is, instead, associated with the term “replicability” or “repeatability”.\n\nhttps://forrt.org/glossary/reproducibility\n\n\nReproducibility ensures that research is transparent, verifiable, and trustworthy.\nStudies have repeatedly shown suboptimal reproducibility of research in the social sciences (e.g. Chan, Schatto-Eckrodt, and Gruber 2024)"
-  },
-  {
-    "objectID": "slides/08_open_science.html#motivations-for-reproducibility",
-    "href": "slides/08_open_science.html#motivations-for-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Motivations for reproducibility",
-    "text": "Motivations for reproducibility\n\nIncreasing the robustness and trustworthiness of your own research\nFacilitating collaboration (through the use of common tools and standards)\nBeing kind to future you:\n\nEditing and reusing your own code (e.g., for a paper revision or a follow-up study)\nEasily being able to pick up a project after a break or finding and understanding things again after a longer time"
-  },
-  {
-    "objectID": "slides/08_open_science.html#the-turing-way-definition",
-    "href": "slides/08_open_science.html#the-turing-way-definition",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "The Turing Way definition",
-    "text": "The Turing Way definition\n\n\nhttps://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html"
-  },
-  {
-    "objectID": "slides/08_open_science.html#computational-reproducibility",
-    "href": "slides/08_open_science.html#computational-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Computational reproducibility",
-    "text": "Computational reproducibility\nThere also are distinctions between different types (or components) of reproducibility. One type/component that is especially relevant for our course is “computational reproducibility”:\n\n\nAbility to recreate the same results as the original study (including tables, figures, and quantitative findings), using the same input data, computational methods, and conditions of analysis. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions.\n\n\nhttps://forrt.org/glossary/reproducibility"
-  },
-  {
-    "objectID": "slides/08_open_science.html#the-state-of-affairs",
-    "href": "slides/08_open_science.html#the-state-of-affairs",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "The state of affairs",
-    "text": "The state of affairs\n\n\nChan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research."
-  },
-  {
-    "objectID": "slides/08_open_science.html#tools-workflows",
-    "href": "slides/08_open_science.html#tools-workflows",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Tools & workflows",
-    "text": "Tools & workflows\nIn our case, tools are programming languages, programs, and other pieces of software that we can use to make our research (more easily) reproducible.\nWorkflows are the ways in which we combine these tools to achieve our goal.\n\nChoosing tools and establishing workflows are somewhat idiosyncratic processes that depend on…\n\nthe requirements of your project (methods, data types, …)\nthe availability of tools\nyour skills and knowledge\nthe preferences of collaborators"
-  },
-  {
-    "objectID": "slides/08_open_science.html#reproducible-research-workflows",
-    "href": "slides/08_open_science.html#reproducible-research-workflows",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Reproducible research workflows",
-    "text": "Reproducible research workflows\nBeing an open scientist means adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows (Klein et al. 2018: 11)"
-  },
-  {
-    "objectID": "slides/08_open_science.html#research-management-practices",
-    "href": "slides/08_open_science.html#research-management-practices",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Research management practices",
-    "text": "Research management practices\nThere are quite a few practices that researchers can adopt to increase the reproducibility of their work.\n\nUsing free and open source software (FOSS)\nProject-oriented workflow\nThe tidyverse style guide\nClear folder structures\nNaming things"
-  },
-  {
-    "objectID": "slides/08_open_science.html#fully-reproducible-documents-in-r",
-    "href": "slides/08_open_science.html#fully-reproducible-documents-in-r",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Fully reproducible documents in R",
-    "text": "Fully reproducible documents in R\n\nNext session"
-  },
-  {
-    "objectID": "slides/08_open_science.html#credit-where-credit-is-due",
-    "href": "slides/08_open_science.html#credit-where-credit-is-due",
-    "title": "Open Science and Reproducibility in CSS",
-    "section": "Credit where credit is due",
-    "text": "Credit where credit is due\nToday, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer David Schoch and Bernd Weiß. Their material is openly available on GitHub:\nhttps://github.com/jobreu/reproducible-research-gesis-2023\nhttps://schochastics.github.io/netAnaR2023"
-  },
-  {
     "objectID": "slides/08_open_science.html#references",
     "href": "slides/08_open_science.html#references",
     "title": "Open Science and Reproducibility in CSS",
     "section": "References",
-    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nChan, Chung-hong, Tim Schatto-Eckrodt, and Johannes B. Gruber. 2024. “What Makes Computational Communication Science (Ir)reproducible?” Computational Communication Research.\n\n\nKlein, Olivier, Tom E. Hardwicke, Frederik Aust, Johannes Breuer, Henrik Danielsson, Alicia Hofelich Mohr, Hans IJzerman, Gustav Nilsonne, Wolf Vanpaemel, and Michael C. Frank. 2018. “A Practical Guide for Transparency in Psychological Science.” Edited by Michéle Nuijten and Simine Vazire. Collabra: Psychology 4 (1). https://doi.org/10.1525/collabra.158."
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim"
   },
   {
     "objectID": "slides/04_designed_dbd.html#agenda-for-today",
