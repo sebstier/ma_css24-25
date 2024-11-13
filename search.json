@@ -415,147 +415,147 @@
   {
     "objectID": "slides/09_reproducibility.html#agenda-for-today",
     "href": "slides/09_reproducibility.html#agenda-for-today",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Agenda for today",
     "text": "Agenda for today\n\nOpen science and reproducibility in CSS, continued\nWriting a reproducible paper in R\nNetwork analysis in R"
   },
   {
     "objectID": "slides/09_reproducibility.html#section",
     "href": "slides/09_reproducibility.html#section",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "",
     "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting"
   },
   {
     "objectID": "slides/09_reproducibility.html#what-is-reproducibility",
     "href": "slides/09_reproducibility.html#what-is-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "What is reproducibility?",
     "text": "What is reproducibility?\nDefining reproducibility\nA minimum standard on a spectrum of activities (“reproducibility spectrum”) for assessing the value or accuracy of scientific claims based on the original methods, data, and code. […] In some fields, this meaning is, instead, associated with the term “replicability” or “repeatability”.\n\nhttps://forrt.org/glossary/reproducibility\n\n\nReproducibility ensures that research is transparent, verifiable, and trustworthy."
   },
   {
     "objectID": "slides/09_reproducibility.html#motivations-for-reproducibility",
     "href": "slides/09_reproducibility.html#motivations-for-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Motivations for reproducibility",
     "text": "Motivations for reproducibility\n\nIncreasing the robustness and trustworthiness of your own research\nFacilitating collaboration (through the use of common tools and standards)\nBeing kind to future you:\n\nEditing and reusing your own code (e.g., for a paper revision or a follow-up study)\nEasily being able to pick up a project after a break or finding and understanding things again after a longer time"
   },
   {
     "objectID": "slides/09_reproducibility.html#the-turing-way-definition",
     "href": "slides/09_reproducibility.html#the-turing-way-definition",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "The Turing Way definition",
     "text": "The Turing Way definition\n\n\nhttps://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html"
   },
   {
     "objectID": "slides/09_reproducibility.html#computational-reproducibility",
     "href": "slides/09_reproducibility.html#computational-reproducibility",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Computational reproducibility",
     "text": "Computational reproducibility\nThere also are distinctions between different types (or components) of reproducibility. One type/component that is especially relevant for our course is “computational reproducibility”:\n\n\n\nAbility to recreate the same results as the original study (including tables, figures, and quantitative findings), using the same input data, computational methods, and conditions of analysis. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions.\n\n\n\nhttps://forrt.org/glossary/reproducibility"
   },
   {
     "objectID": "slides/09_reproducibility.html#the-state-of-affairs",
     "href": "slides/09_reproducibility.html#the-state-of-affairs",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "The state of affairs",
     "text": "The state of affairs\n\n\nChan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research.\n\n\nTake 3-5 minutes with your neighbor(s) to quickly recap the key findings of Chan, Schatto-Eckrodt, and Gruber (2024)."
   },
   {
     "objectID": "slides/09_reproducibility.html#tools-workflows",
     "href": "slides/09_reproducibility.html#tools-workflows",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Tools & workflows",
     "text": "Tools & workflows\nTools are programming languages, scripts and other pieces of software that we use to make our research reproducible.\nWorkflows are the ways in which we combine these tools to achieve our goal.\n\nChoosing tools and establishing workflows are somewhat idiosyncratic processes that depend on…\n\nthe requirements of your project (methods, data types, …)\nthe availability of tools\nyour skills and knowledge\nthe preferences of collaborators"
   },
   {
     "objectID": "slides/09_reproducibility.html#research-management-practices",
     "href": "slides/09_reproducibility.html#research-management-practices",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Research management practices",
     "text": "Research management practices\nBeing an open scientist means adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows (Klein et al. 2018: 11)\n\nUsing free and open source software (FOSS)\nProject-oriented workflow\nThe tidyverse style guide\nClear folder structures\nNaming things"
   },
   {
     "objectID": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
     "href": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Reproducibility: best practices in your term papers",
     "text": "Reproducibility: best practices in your term papers\n\nIf a login is required (e.g., YouTube API), please provide the data you downloaded to me (big files via https://cryptshare.gesis.org)\nIf you have chunks of code that need a long time to run (especially downloads from APIs), please provide intermediate files with the results, e.g.: read_rds(\"output/youtube_data.rds\")\nMake sure that the folder structure you use (e.g., data or plots) is maintained in the files you send me \\(\\rightarrow\\) zip before sending"
   },
   {
     "objectID": "slides/09_reproducibility.html#exploring-quarto",
     "href": "slides/09_reproducibility.html#exploring-quarto",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Exploring quarto",
     "text": "Exploring quarto\n\nTogether with your neighbor(s), explore the quarto logic and try to render your first quarto document as pdf and then as docx.\n5 Minutes"
   },
   {
     "objectID": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
     "href": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Fully reproducible documents in R",
     "text": "Fully reproducible documents in R\n\n\nDownload the template: https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto"
   },
   {
     "objectID": "slides/09_reproducibility.html#why-study-networks",
     "href": "slides/09_reproducibility.html#why-study-networks",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Why study networks?",
     "text": "Why study networks?\nConventional research methods are often individual-based and our models tend to model relations between variables. Yet nature and culture are oftentimes structured as networks:\n\nsociety\nbrain (neural networks)\norganizations (who reports to whom)\neconomies (who sells to whom)\necologies (who eats whom)\nPosition within a network is important for predicting outcomes"
   },
   {
     "objectID": "slides/09_reproducibility.html#dbd-and-networks",
     "href": "slides/09_reproducibility.html#dbd-and-networks",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "DBD and networks",
     "text": "DBD and networks\n\n\nLietz, H., Wagner, C., Bleier, A., & Strohmaier, M. (2014). When Politicians Talk: Assessing Online Conversational Practices of Political Parties on Twitter. In Proceedings of the 8th International AAAI Conference on Weblogs and Social Media (pp. 285–294). AAAI Press."
   },
   {
     "objectID": "slides/09_reproducibility.html#key-terms",
     "href": "slides/09_reproducibility.html#key-terms",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Key terms",
     "text": "Key terms\n\nNode/vertex: the units\nEdges: the connections between the nodes"
   },
   {
     "objectID": "slides/09_reproducibility.html#levels-of-analysis",
     "href": "slides/09_reproducibility.html#levels-of-analysis",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Levels of analysis",
     "text": "Levels of analysis\nDyad level\nFundamental unit of network data collection\n(“Does sharing offices lead to friendship?”)\nNode level\nAggregation of dyad level measurement\n(“Do actors with more friends have a stronger immune system?”)\nNetwork level\nAssessing overall structure of a network\n(“Does information diffuse faster in well-connected networks?”)"
   },
   {
     "objectID": "slides/09_reproducibility.html#relations-network-edges",
     "href": "slides/09_reproducibility.html#relations-network-edges",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Relations: network edges",
     "text": "Relations: network edges\n\nRelational roles: family, coworkers, …\nInteractions: sold to, talked to, helped, …\nFlows: information, belief, money, …\n\n\n\nundirected\nsymmetric relation\n\n\ndirected\nasymmetric relation\n\n\nvalued/weighted\nstrength of relation, frequency of contact, etc.\n\n\nsigned\npositive and negative relations\n\n\nor a mixture thereof"
   },
   {
     "objectID": "slides/09_reproducibility.html#goals-of-analysis",
     "href": "slides/09_reproducibility.html#goals-of-analysis",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Goals of analysis",
     "text": "Goals of analysis\n\nNetwork variables as independent variable / explanatory\n\nUsing network theory to explain the consequences of network properties\n\nsocial capital, brokerage, adoption of innovation\n\n\nNetwork variables as dependent variable / outcomes\n\nUsing ______ theory to explain the antecendents of a network\n\nhomophily, balance theory"
   },
   {
     "objectID": "slides/09_reproducibility.html#credit-where-credit-is-due",
     "href": "slides/09_reproducibility.html#credit-where-credit-is-due",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Credit where credit is due",
     "text": "Credit where credit is due\nToday, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer, David Schoch and Bernd Weiß. Their material is openly available on GitHub:\nhttps://github.com/jobreu/reproducible-research-gesis-2023\nhttps://schochastics.github.io/netAnaR2023"
   },
   {
     "objectID": "slides/09_reproducibility.html#network-analysis-in-r-1",
     "href": "slides/09_reproducibility.html#network-analysis-in-r-1",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Network analysis in R",
     "text": "Network analysis in R\nGo to file 8_class_nine.R in https://sebastianstier.com/ma_css24-25/material.html"
   },
   {
     "objectID": "slides/09_reproducibility.html#references",
     "href": "slides/09_reproducibility.html#references",
-    "title": "Open Science and Reproducibility in CSS",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "References",
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nChan, Chung-hong, Tim Schatto-Eckrodt, and Johannes B. Gruber. 2024. “What Makes Computational Communication Science (Ir)reproducible?” Computational Communication Research.\n\n\nKlein, Olivier, Tom E. Hardwicke, Frederik Aust, Johannes Breuer, Henrik Danielsson, Alicia Hofelich Mohr, Hans IJzerman, Gustav Nilsonne, Wolf Vanpaemel, and Michael C. Frank. 2018. “A Practical Guide for Transparency in Psychological Science.” Edited by Michéle Nuijten and Simine Vazire. Collabra: Psychology 4 (1). https://doi.org/10.1525/collabra.158."
   },
@@ -578,14 +578,14 @@
     "href": "slides.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS, continued\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides.html#slides",
     "href": "slides.html#slides",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS, continued\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
