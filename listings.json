@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/material.html",
+    "items": []
+  },
+  {
     "listing": "/slides.html",
     "items": [
       "/slides/01_introduction.html",
@@ -9,11 +13,8 @@
       "/slides/05_automated_textanalysis.html",
       "/slides/06_text_analysis_llms.html",
       "/slides/07_llms_data_quality.html",
-      "/slides/08_open_science.html"
+      "/slides/08_open_science.html",
+      "/slides/09_reproducibility.html"
     ]
-  },
-  {
-    "listing": "/material.html",
-    "items": []
   }
 ]

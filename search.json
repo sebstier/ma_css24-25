@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Copyright © 2020, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2018 - 2024 Isaac Muse isaacmuse@gmail.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
     "objectID": "slides/06_text_analysis_llms.html#agenda-for-today",
     "href": "slides/06_text_analysis_llms.html#agenda-for-today",
     "title": "Automated Text Analysis and Large Language Models",
@@ -399,39 +413,186 @@
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Computational Social Science Methods and Digital Behavioral Data",
-    "section": "",
-    "text": "Lecturer\nSebastian Stier\nProfessor @ University of Mannheim & Scientific Director Department Computational Social Science @ GESIS\n\nAbout the course\nComputational Social Science (CSS) is a young research field at the intersection of various social science disciplines, data science and computer science. The goal is to gain new insights into society through large amounts of data and the direct observation of human behavior. CSS relies on two cornerstones: digital behavioral data, which can be collected from online platforms or sensors like smartphones, and computer science methods such as automated text analysis to create appropriate measures for social science research questions. In the course, students will get to know foundational studies, theories and methods used in the field of CSS. We will discuss infrastructural, ethical and legal challenges and how to navigate these to devise appropriate research designs in CSS.\nThe course will be application oriented. Students will familiarize themselves with the main applications of CSS methods and implement them in R. The range of applications will cover data management and preprocessing, the application of machine learning, data and results visualization, statistical data analysis and the validation of results. The hands-on application examples will cover questions from various research fields and different data types like social media data or web browsing histories. Equipped with this theoretical and methodological toolkit, students will develop their own CSS research projects.\nSchedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint.\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n\n\n\n\n\nSoftware\n\nR\nA text editor, e.g. RStudio\nQuarto"
+    "objectID": "slides/09_reproducibility.html#agenda-for-today",
+    "href": "slides/09_reproducibility.html#agenda-for-today",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nOpen science and reproducibility in CSS, continued\nWriting a reproducible paper in R\nNetwork analysis in R"
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Computational Social Science and Digital Behavioral Data",
+    "objectID": "slides/09_reproducibility.html#section",
+    "href": "slides/09_reproducibility.html#section",
+    "title": "Open Science and Reproducibility in CSS",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting"
   },
   {
-    "objectID": "slides.html#slides",
-    "href": "slides.html#slides",
-    "title": "Computational Social Science and Digital Behavioral Data",
-    "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/09_reproducibility.html#what-is-reproducibility",
+    "href": "slides/09_reproducibility.html#what-is-reproducibility",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "What is reproducibility?",
+    "text": "What is reproducibility?\nDefining reproducibility\nA minimum standard on a spectrum of activities (“reproducibility spectrum”) for assessing the value or accuracy of scientific claims based on the original methods, data, and code. […] In some fields, this meaning is, instead, associated with the term “replicability” or “repeatability”.\n\nhttps://forrt.org/glossary/reproducibility\n\n\nReproducibility ensures that research is transparent, verifiable, and trustworthy."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#motivations-for-reproducibility",
+    "href": "slides/09_reproducibility.html#motivations-for-reproducibility",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Motivations for reproducibility",
+    "text": "Motivations for reproducibility\n\nIncreasing the robustness and trustworthiness of your own research\nFacilitating collaboration (through the use of common tools and standards)\nBeing kind to future you:\n\nEditing and reusing your own code (e.g., for a paper revision or a follow-up study)\nEasily being able to pick up a project after a break or finding and understanding things again after a longer time"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#the-turing-way-definition",
+    "href": "slides/09_reproducibility.html#the-turing-way-definition",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "The Turing Way definition",
+    "text": "The Turing Way definition\n\n\nhttps://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#computational-reproducibility",
+    "href": "slides/09_reproducibility.html#computational-reproducibility",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Computational reproducibility",
+    "text": "Computational reproducibility\nThere also are distinctions between different types (or components) of reproducibility. One type/component that is especially relevant for our course is “computational reproducibility”:\n\n\n\nAbility to recreate the same results as the original study (including tables, figures, and quantitative findings), using the same input data, computational methods, and conditions of analysis. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions.\n\n\n\nhttps://forrt.org/glossary/reproducibility"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#the-state-of-affairs",
+    "href": "slides/09_reproducibility.html#the-state-of-affairs",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "The state of affairs",
+    "text": "The state of affairs\n\n\nChan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research.\n\n\nTake 3-5 minutes with your neighbor(s) to quickly recap the key findings of Chan, Schatto-Eckrodt, and Gruber (2024)."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#tools-workflows",
+    "href": "slides/09_reproducibility.html#tools-workflows",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Tools & workflows",
+    "text": "Tools & workflows\nTools are programming languages, scripts and other pieces of software that we use to make our research reproducible.\nWorkflows are the ways in which we combine these tools to achieve our goal.\n\nChoosing tools and establishing workflows are somewhat idiosyncratic processes that depend on…\n\nthe requirements of your project (methods, data types, …)\nthe availability of tools\nyour skills and knowledge\nthe preferences of collaborators"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#research-management-practices",
+    "href": "slides/09_reproducibility.html#research-management-practices",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Research management practices",
+    "text": "Research management practices\nBeing an open scientist means adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows (Klein et al. 2018: 11)\n\nUsing free and open source software (FOSS)\nProject-oriented workflow\nThe tidyverse style guide\nClear folder structures\nNaming things"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
+    "href": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Reproducibility: best practices in your term papers",
+    "text": "Reproducibility: best practices in your term papers\n\nIf a login is required (e.g., YouTube API), please provide the data you downloaded to me (big files via https://cryptshare.gesis.org)\nIf you have chunks of code that need a long time to run (especially downloads from APIs), please provide intermediate files with the results, e.g.: read_rds(\"output/youtube_data.rds\")\nMake sure that the folder structure you use (e.g., data or plots) is maintained in the files you send me \\(\\rightarrow\\) zip before sending"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#exploring-quarto",
+    "href": "slides/09_reproducibility.html#exploring-quarto",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Exploring quarto",
+    "text": "Exploring quarto\n\nTogether with your neighbor(s), explore the quarto logic and try to render your first quarto document as pdf and then as docx.\n5 Minutes"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
+    "href": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Fully reproducible documents in R",
+    "text": "Fully reproducible documents in R\n\n\nDownload the template: https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#why-study-networks",
+    "href": "slides/09_reproducibility.html#why-study-networks",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Why study networks?",
+    "text": "Why study networks?\nConventional research methods are often individual-based and our models tend to model relations between variables. Yet nature and culture are oftentimes structured as networks:\n\nsociety\nbrain (neural networks)\norganizations (who reports to whom)\neconomies (who sells to whom)\necologies (who eats whom)\nPosition within a network is important for predicting outcomes"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#dbd-and-networks",
+    "href": "slides/09_reproducibility.html#dbd-and-networks",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "DBD and networks",
+    "text": "DBD and networks\n\n\nLietz, H., Wagner, C., Bleier, A., & Strohmaier, M. (2014). When Politicians Talk: Assessing Online Conversational Practices of Political Parties on Twitter. In Proceedings of the 8th International AAAI Conference on Weblogs and Social Media (pp. 285–294). AAAI Press."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#key-terms",
+    "href": "slides/09_reproducibility.html#key-terms",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Key terms",
+    "text": "Key terms\n\nNode/vertex: the units\nEdges: the connections between the nodes"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#levels-of-analysis",
+    "href": "slides/09_reproducibility.html#levels-of-analysis",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Levels of analysis",
+    "text": "Levels of analysis\nDyad level\nFundamental unit of network data collection\n(“Does sharing offices lead to friendship?”)\nNode level\nAggregation of dyad level measurement\n(“Do actors with more friends have a stronger immune system?”)\nNetwork level\nAssessing overall structure of a network\n(“Does information diffuse faster in well-connected networks?”)"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#relations-network-edges",
+    "href": "slides/09_reproducibility.html#relations-network-edges",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Relations: network edges",
+    "text": "Relations: network edges\n\nRelational roles: family, coworkers, …\nInteractions: sold to, talked to, helped, …\nFlows: information, belief, money, …\n\n\n\nundirected\nsymmetric relation\n\n\ndirected\nasymmetric relation\n\n\nvalued/weighted\nstrength of relation, frequency of contact, etc.\n\n\nsigned\npositive and negative relations\n\n\nor a mixture thereof"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#goals-of-analysis",
+    "href": "slides/09_reproducibility.html#goals-of-analysis",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Goals of analysis",
+    "text": "Goals of analysis\n\nNetwork variables as independent variable / explanatory\n\nUsing network theory to explain the consequences of network properties\n\nsocial capital, brokerage, adoption of innovation\n\n\nNetwork variables as dependent variable / outcomes\n\nUsing ______ theory to explain the antecendents of a network\n\nhomophily, balance theory"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#credit-where-credit-is-due",
+    "href": "slides/09_reproducibility.html#credit-where-credit-is-due",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Credit where credit is due",
+    "text": "Credit where credit is due\nToday, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer, David Schoch and Bernd Weiß. Their material is openly available on GitHub:\nhttps://github.com/jobreu/reproducible-research-gesis-2023\nhttps://schochastics.github.io/netAnaR2023"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#network-analysis-in-r-1",
+    "href": "slides/09_reproducibility.html#network-analysis-in-r-1",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Network analysis in R",
+    "text": "Network analysis in R\nGo to file 8_class_nine.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#references",
+    "href": "slides/09_reproducibility.html#references",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nChan, Chung-hong, Tim Schatto-Eckrodt, and Johannes B. Gruber. 2024. “What Makes Computational Communication Science (Ir)reproducible?” Computational Communication Research.\n\n\nKlein, Olivier, Tom E. Hardwicke, Frederik Aust, Johannes Breuer, Henrik Danielsson, Alicia Hofelich Mohr, Hans IJzerman, Gustav Nilsonne, Wolf Vanpaemel, and Michael C. Frank. 2018. “A Practical Guide for Transparency in Psychological Science.” Edited by Michéle Nuijten and Simine Vazire. Collabra: Psychology 4 (1). https://doi.org/10.1525/collabra.158."
   },
   {
     "objectID": "material.html",
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 1:58:00 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 1:58:00 PM\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides.html#slides",
+    "href": "slides.html#slides",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch Ethics in CSS and Web Data Collection\n\n\nSebastian Stier\n\n\n\n\nOct 2, 2024\n\n\nDesigned Digital Data\n\n\nSebastian Stier\n\n\n\n\nOct 16, 2024\n\n\nAutomated Text Analysis\n\n\nSebastian Stier\n\n\n\n\nOct 23, 2024\n\n\nAutomated Text Analysis and Large Language Models\n\n\nSebastian Stier\n\n\n\n\nOct 30, 2024\n\n\nText Analysis, Continued and Validation\n\n\nSebastian Stier\n\n\n\n\nNov 6, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\nNov 13, 2024\n\n\nOpen Science and Reproducibility in CSS\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Social Science Methods and Digital Behavioral Data",
+    "section": "",
+    "text": "Lecturer\nSebastian Stier\nProfessor @ University of Mannheim & Scientific Director Department Computational Social Science @ GESIS\n\nAbout the course\nComputational Social Science (CSS) is a young research field at the intersection of various social science disciplines, data science and computer science. The goal is to gain new insights into society through large amounts of data and the direct observation of human behavior. CSS relies on two cornerstones: digital behavioral data, which can be collected from online platforms or sensors like smartphones, and computer science methods such as automated text analysis to create appropriate measures for social science research questions. In the course, students will get to know foundational studies, theories and methods used in the field of CSS. We will discuss infrastructural, ethical and legal challenges and how to navigate these to devise appropriate research designs in CSS.\nThe course will be application oriented. Students will familiarize themselves with the main applications of CSS methods and implement them in R. The range of applications will cover data management and preprocessing, the application of machine learning, data and results visualization, statistical data analysis and the validation of results. The hands-on application examples will cover questions from various research fields and different data types like social media data or web browsing histories. Equipped with this theoretical and methodological toolkit, students will develop their own CSS research projects.\nSchedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint.\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n\n\n\n\n\nSoftware\n\nR\nA text editor, e.g. RStudio\nQuarto"
   },
   {
     "objectID": "slides/2_what_is_css.html#agenda-for-today",
@@ -1013,5 +1174,26 @@
     "title": "Research Ethics in CSS and Web Data Collection",
     "section": "References",
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nboyd, danah m., and Nicole B. Ellison. 2007. “Social Network Sites: Definition, History, and Scholarship.” Journal of Computer-Mediated Communication 13 (1): 210–30. https://doi.org/https://doi.org/10.1111/j.1083-6101.2007.00393.x.\n\n\nFiesler, Casey, and Nicholas Proferes. 2018. “\"Participant\"\" Perceptions of Twitter Research Ethics.” Social Media + Society 4 (1): 205630511876336. https://doi.org/10.1177/2056305118763366.\n\n\nNeethling, Johann. 2005. “Personality Rights: A Comparative Overview.” Comparative and International Law Journal of Southern Africa 38 (2): 210–45."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2013-2024, Kim Davies and contributors. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Copyright © 2019, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2009-2012, Brian Granger, Min Ragan-Kelley\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
   }
 ]
