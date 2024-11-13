@@ -487,14 +487,14 @@
     "href": "slides/09_reproducibility.html#exploring-quarto",
     "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Exploring quarto",
-    "text": "Exploring quarto\n\nTogether with your neighbor(s), explore the quarto logic and try to render your first quarto document as pdf and then as docx.\n5 Minutes"
+    "text": "Exploring quarto\n\nTogether with your neighbor(s), explore the quarto logic and try to render your first quarto document as pdf and then as docx.\nThe documentation of quarto can be found here: https://quarto.org/docs/output-formats/pdf-basics.html"
   },
   {
     "objectID": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
     "href": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
     "title": "Open Science and Reproducibility in CSS, continued",
     "section": "Fully reproducible documents in R",
-    "text": "Fully reproducible documents in R\n\n\nDownload the template: https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto"
+    "text": "Fully reproducible documents in R\n\n\nDownload the template (zip file) from GitHub: https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto"
   },
   {
     "objectID": "slides/09_reproducibility.html#why-study-networks",
@@ -564,14 +564,14 @@
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 1:58:00 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 4:57:45 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 1:58:00 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 4:57:45 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides.html",

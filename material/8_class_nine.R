@@ -5,6 +5,11 @@
 #' institute: University of Mannheim & GESIS
 #' date: "2024-11-13"
 
+
+# How to run a script from R
+source("1_data_collection.R") # read_rds("data/youtube_data.rds")
+source("2_preprocessing.R")
+
 # Exercise 1: Brief introduction to network analysis ----
 
 # If you're interested in network analysis, please consult David Schoch's materials:
@@ -59,7 +64,7 @@ got_palette <- c("#1A5878", "#C44237", "#AD8941", "#E99093",
 ggraph(gotS1, layout = "stress") +
   geom_edge_link0(aes(edge_linewidth = weight), edge_colour = "grey66") +
   geom_node_point(aes(fill = clu, size = size), shape = 21) +
-  geom_node_text(aes(filter = size >= 26, label = name), family = "serif") +
+  geom_node_text(aes(filter = size >= 10, label = name), family = "serif") +
   scale_fill_manual(values = got_palette) +
   scale_edge_width(range = c(0.2, 3)) +
   scale_size(range = c(1, 6)) +
