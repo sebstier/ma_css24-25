@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>material – Data Science in Comparative Politics</title>
+<title>material – Computational Social Science and Digital Behavioral Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Data Science in Comparative Politics</span>
+    <span class="navbar-title">Computational Social Science and Digital Behavioral Data</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -142,6 +142,12 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="./slides.html"> 
 <span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://ilias.uni-mannheim.de/ilias.php?baseClass=ilrepositorygui&amp;ref_id=1527661"> 
+<span class="menu-text">ILIAS</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -184,12 +190,76 @@ Modified
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1725464144135" data-listing-filename-sort="1_introduction.R">
+<tr data-index="0" data-listing-file-modified-sort="1725464144135" data-listing-filename-sort="0_basics.R">
 <td>
-<a href="./material/1_introduction.R" class="filename listing-filename">1_introduction.R</a>
+<a href="./material/0_basics.R" class="filename listing-filename">0_basics.R</a>
 </td>
 <td>
 <span class="listing-file-modified">9/4/24, 5:35:44 PM</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-file-modified-sort="1726054059378" data-listing-filename-sort="1_class_two.R">
+<td>
+<a href="./material/1_class_two.R" class="filename listing-filename">1_class_two.R</a>
+</td>
+<td>
+<span class="listing-file-modified">9/11/24, 1:27:39 PM</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-file-modified-sort="1726680667513" data-listing-filename-sort="2_class_three.R">
+<td>
+<a href="./material/2_class_three.R" class="filename listing-filename">2_class_three.R</a>
+</td>
+<td>
+<span class="listing-file-modified">9/18/24, 7:31:07 PM</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-file-modified-sort="1729090852390" data-listing-filename-sort="3_class_four.R">
+<td>
+<a href="./material/3_class_four.R" class="filename listing-filename">3_class_four.R</a>
+</td>
+<td>
+<span class="listing-file-modified">10/16/24, 5:00:52 PM</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-file-modified-sort="1729142445993" data-listing-filename-sort="4_class_five.R">
+<td>
+<a href="./material/4_class_five.R" class="filename listing-filename">4_class_five.R</a>
+</td>
+<td>
+<span class="listing-file-modified">10/17/24, 7:20:45 AM</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-file-modified-sort="1730387524376" data-listing-filename-sort="5_class_six.R">
+<td>
+<a href="./material/5_class_six.R" class="filename listing-filename">5_class_six.R</a>
+</td>
+<td>
+<span class="listing-file-modified">10/31/24, 4:12:04 PM</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-file-modified-sort="1730712824351" data-listing-filename-sort="6_class_seven.R">
+<td>
+<a href="./material/6_class_seven.R" class="filename listing-filename">6_class_seven.R</a>
+</td>
+<td>
+<span class="listing-file-modified">11/4/24, 10:33:44 AM</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-file-modified-sort="1730925009846" data-listing-filename-sort="7_class_eight.R">
+<td>
+<a href="./material/7_class_eight.R" class="filename listing-filename">7_class_eight.R</a>
+</td>
+<td>
+<span class="listing-file-modified">11/6/24, 9:30:09 PM</span>
+</td>
+</tr>
+<tr data-index="8" data-listing-file-modified-sort="1731513465275" data-listing-filename-sort="8_class_nine.R">
+<td>
+<a href="./material/8_class_nine.R" class="filename listing-filename">8_class_nine.R</a>
+</td>
+<td>
+<span class="listing-file-modified">11/13/24, 4:57:45 PM</span>
 </td>
 </tr>
 </tbody>
@@ -296,7 +366,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/sebstier\.github\.io\/ds_comp_pol25\/");
+      var filterRegex = new RegExp("https:\/\/sebstier\.github\.io\/ma_css24-25\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -628,7 +698,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Sebastian Stier 2025</p>
+<p>Sebastian Stier 2024</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
