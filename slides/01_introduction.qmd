@@ -2,7 +2,7 @@
 title: "Social media in comparative politics"
 author: "Sebastian Stier"
 lesson: 6
-institute: Teaching Presentation, University of Hamburg
+institute: Teaching Presentation University of Hamburg, Summer semester 2025
 date: "2025-05-13"
 date-format: "YYYY-MM-DD"
 bibliography: references.bib

@@ -1,83 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html</loc>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html</loc>
     <lastmod>2024-11-13T09:20:36.717Z</lastmod>
   </url>
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/cffi/recompiler.html</loc>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/cffi/recompiler.html</loc>
     <lastmod>2024-11-13T09:20:36.769Z</lastmod>
   </url>
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html</loc>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html</loc>
     <lastmod>2024-11-13T09:20:31.999Z</lastmod>
   </url>
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/06_text_analysis_llms.html</loc>
-    <lastmod>2024-10-30T13:17:08.231Z</lastmod>
+    <loc>https://sebstier.github.io/ds_comp_pol25/slides/01_introduction.html</loc>
+    <lastmod>2024-11-26T16:15:28.419Z</lastmod>
   </url>
   <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/05_automated_textanalysis.html</loc>
-    <lastmod>2024-10-17T07:23:19.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/01_introduction.html</loc>
-    <lastmod>2024-11-26T15:24:54.479Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/07_llms_data_quality.html</loc>
-    <lastmod>2024-11-05T22:21:13.444Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/09_reproducibility.html</loc>
-    <lastmod>2024-11-13T16:45:50.324Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/material.html</loc>
+    <loc>https://sebstier.github.io/ds_comp_pol25/material.html</loc>
     <lastmod>2024-02-13T14:24:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides.html</loc>
-    <lastmod>2024-02-11T21:29:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/index.html</loc>
-    <lastmod>2024-09-03T09:46:05.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/2_what_is_css.html</loc>
-    <lastmod>2024-09-11T13:08:34.207Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/08_open_science.html</loc>
-    <lastmod>2024-11-06T20:36:40.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/04_designed_dbd.html</loc>
-    <lastmod>2024-10-02T13:22:43.049Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/slides/03_webdata_designed_digital_data.html</loc>
-    <lastmod>2024-10-30T21:07:21.148Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html</loc>
-    <lastmod>2024-11-13T09:20:34.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html</loc>
-    <lastmod>2024-11-13T09:20:37.077Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sebstier.github.io/ma_css24-25/myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html</loc>
-    <lastmod>2024-11-13T09:20:32.726Z</lastmod>
   </url>
   <url>
     <loc>https://sebstier.github.io/ds_comp_pol25/slides.html</loc>
     <lastmod>2024-02-11T21:29:20.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sebstier.github.io/ds_comp_pol25/slides/01_introduction.html</loc>
-    <lastmod>2024-11-26T15:44:11.879Z</lastmod>
+    <loc>https://sebstier.github.io/ds_comp_pol25/index.html</loc>
+    <lastmod>2024-09-03T09:46:05.810Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html</loc>
+    <lastmod>2024-11-13T09:20:34.465Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html</loc>
+    <lastmod>2024-11-13T09:20:37.077Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sebstier.github.io/ds_comp_pol25/myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html</loc>
+    <lastmod>2024-11-13T09:20:32.726Z</lastmod>
   </url>
 </urlset>
