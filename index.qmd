@@ -1,6 +1,6 @@
 ---
-title: Computational Social Science Methods and Digital Behavioral Data
-subtitle: "University of Mannheim<br>Fall Semester 2024"
+title: Data Science in Comparative Politics
+subtitle: "Teaching Presentation University of Hamburg, Summer semester 2025"
 section-divs: false
 toc: false
 title-block-banner: "#58748F"
@@ -29,13 +29,16 @@ The course will be application oriented. Students will familiarize themselves wi
 
 ## Schedule
 
-
-```{r, echo=FALSE, warning=FALSE, out.width="80%", message=FALSE}
+```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
 library(openxlsx)
 library(tidyverse)
+library(gapminder)
+library(plotly)
 library(gt)
-read.xlsx("material/data/schedule_v2.xlsx") %>%
+library(gtExtras)
+read.xlsx("material/data/schedule.xlsx") %>%
     rename(`Required reading` = "Required.reading") %>%
+    head(6) %>% 
     gt() %>%
     tab_header(md("**Seminar dates and topics**")) %>%
     #tab_header("**Seminar dates and topics**") %>%
@@ -58,7 +61,9 @@ read.xlsx("material/data/schedule_v2.xlsx") %>%
     columns = everything()
   )
 
+
 ```
+
 
 
 ## Software
