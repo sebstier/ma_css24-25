@@ -1,12 +1,12 @@
 ---
-title: "Introduction"
+title: "Social media in comparative politics"
 author: "Sebastian Stier"
-lesson: 1
-institute: University of Mannheim & GESIS -- Leibniz Institute for the Social Sciences
-date: "2024-09-04"
+lesson: 6
+institute: Teaching Presentation, University of Hamburg
+date: "2025-05-13"
 date-format: "YYYY-MM-DD"
 bibliography: references.bib
-footer: "[Computational Social Science and Digital Behavioral Data, University of Mannheim](https://sebstier.github.io/ma_css24-25/)"
+footer: "[Data Science in Comparative Politics](https://sebstier.github.io/ds_comp_pol25/)"
 format: 
   fakegesis-revealjs: 
     code-line-numbers: false
@@ -14,63 +14,16 @@ format:
 ---
 
 
-
-## About me
-
-- Dr. in Political Science in 2016 at the University of Heidelberg
-- No R or programming training during my studies
-- 2016-2023, Postdoc/Senior Researcher at GESIS -- Leibniz Institute for the Social Sciences
-- Since November 2023 
-  - Scientific Director Department Computational Social Science at GESIS 
-  - Professor of Computational Social Science, University of Mannheim
-
-
-```{css echo=FALSE}
-.small-code{
-  font-size: 70%  
-}
-```
-
-## My research interests
-
-![](../material/img/network_sst)
-
-
-## What are your expectations for this class?
-
-
-Let's do a survey!
-
-![](../material/img/mentimeter_qr_code.png)
-
-
-## About you
-
-- Who are you?
-- What's your study program and which semester are you in?
-- What are your experiences with scientific computing/programming? 
-- Why this course? Which topics/methods/data do you want to learn more about?
-
-
-## Agenda for today
-
-1. Logistics
-
-2. Introduction to Computational Social Science
-
-3. *R*: Warmup session, basics & introduction to *tidyverse*
-
-
-# 1. Logistics {background-color="#58748F"} 
-
 ##
 
 ```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
 library(openxlsx)
 library(tidyverse)
+library(gapminder)
+library(plotly)
 library(gt)
 library(gtExtras)
-read.xlsx("../material/data/schedule_v2.xlsx") %>%
+read.xlsx("../material/data/schedule.xlsx") %>%
     rename(`Required reading` = "Required.reading") %>%
     head(6) %>% 
     gt() %>%
@@ -90,7 +43,7 @@ read.xlsx("../material/data/schedule_v2.xlsx") %>%
                 column_labels.font.weight = "bold",
                 table.font.size = 13.5) %>%
      gt_highlight_rows(
-     rows = 1,
+     rows = 6,
      fill = "lightblue"
    ) %>% 
   fmt_markdown() %>% 
@@ -102,55 +55,63 @@ read.xlsx("../material/data/schedule_v2.xlsx") %>%
 
 ```
 
-##
 
-```{r, echo=FALSE, warning=FALSE, out.width="105%", message=FALSE}
-read.xlsx("../material/data/schedule.xlsx") %>%
-    rename(`Required reading` = "Required.reading") %>%
-    tail(6) %>% 
-    gt() %>%
-    tab_header(md("**Seminar dates and topics**")) %>%
-    cols_width(Date ~ pct(20),
-               Topics ~ pct(30),
-               `Required reading` ~ pct(50)
-               ) %>%
-    tab_options(data_row.padding = px(3)) %>%
-    tab_options(heading.title.font.size = 14,
-                column_labels.font.weight = "bold",
-                table.font.size = 13.5) %>%
-  fmt_markdown() %>% 
-  cols_align(
-    align = "left",
-    columns = everything()
-  )
+## Agenda for today
+
+
+1. Recap
+
+2. Social media data in political science
+
+3. Text as data in *R*
+
+4. Text as data in political science
+
+
+## Learning objectives for today
+
+After this class you will be able to... 
+
+1. describe the role of social media and politics,
+2. critically reflect upon the value of social media data in comparative politics,
+3. work with text as data using *quanteda* in R.
+
+
+# 1. Recap {background-color="#58748F"}
+
+
+```{r}
+# Inspecting the dataset
+head(gapminder)
 
 ```
 
 
-## Learning objectives (on MA level)
+```{r}
+#| echo: fenced
+#| output-location: column-fragment
+#| code-line-numbers: "|2"
 
-1. Advanced understanding of concepts, methods, data used and challenges in CSS
-2. Critical reflection of the applicability of CSS in social science research
-3. Learning to use CSS methods in R
-4. Application of CSS methods in R for own research question
+library(ggplot2)
 
-
-## Modus operandi in the class
-- Introduction to the session's topic by instructor
-- Required reading: (mostly) applied papers
-  - We'll discuss these papers in the class
-- We'll code in the class $\rightarrow$ please bring your laptop
-- Questions are always possible, this is supposed to be interactive 
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
 
 
-## Requirements for examination/grades
-:::{.incremental}
-- Regular participation in class
-- Writing a review of the required readings for **two** classes to be submitted by Sunday evening before the respective class (**Studienleistung/Coursework**)
-- Presentation of your own research idea for your term paper in the last 3 classes of the semester
-- Written term paper based on an analysis in R (3,000-5,000 words), deadline: 31 January 2025 (**Prüfungsleistung/Examination**)
+# 2. Social media data in political science {background-color="#58748F"}
 
-:::
+
+## Think-pair-share
+
+1. Discuss the literature for today with your neighbor (5 min.)
+2. Focus on the used methods, their pros and cons, feasibility, etc. 
+3. Locate our two required readings on the map of @grimmer_text_2013
+4. Share and discuss your results with the full class
+
+
 
 ## Format of the reviews
 - Guiding questions:
@@ -174,65 +135,52 @@ read.xlsx("../material/data/schedule.xlsx") %>%
     
 :::
 
-## Format of term paper (3,000-5,000 words)
-- Brief motivation and research question
-- Concise theoretical overview: for what conceptual and theoretical reasons do I choose these data and methods?
-- Research design
-- Data and variables
-- Method: no detailed mathematical description needed, but why does this method fit my research question and my data?
-- Results
-- Interpretation and conclusions
-- Analysis code as an R script: needs to be fully reproducible
 
 
-## Information management and communication
-
-- Slides and materials will be online: [https://sebastianstier.com/ma_css24-25](https://sebastianstier.com/ma_css24-25)
-- Communication
-    - Via [email](mailto:sebastian.stier@gesis.org)
-    - In person after the class
-    - Via Zoom
-- Submit the final term paper to [sebastian.stier@gesis.org](mailto:sebastian.stier@gesis.org)
-- Data and scripts can be shared via the secure platform Cryptshare: [https://cryptshare.gesis.org](https://cryptshare.gesis.org)
+# 3. Text as data in *R* {background-color="#58748F"}
 
 
-## The elephant in the room: AI, LLMs, ChatGPT et al.
+## Automated text analysis in *R*
 
+![](../material/img/quanteda){fig-align="center"}
 
-:::: {.columns}
-
-::: {.column width="55%"}
-![](../material/img/chat_gpt_academia.png){.figure width="710"}
-
-::: {style="font-size: 26%;"}
-Meyer, J. G., Urbanowicz, R. J., Martin, P. C. N., et al. (2023). ChatGPT and large language models in academia: Opportunities and challenges. *BioData Mining*, 16(1), 20. [https://doi.org/10.1186/s13040-023-00339-9](https://doi.org/10.1186/s13040-023-00339-9)
+::: {style="font-size: 30%;"}
+Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., Matsuo, A., Perry, P. O., Kuha, J., & Lauderdale, B. (2018). quanteda: An R package for the quantitative analysis of textual data. [*Journal of Open Source Software*, 3(30), 774.](https://joss.theoj.org/papers/10.21105/joss.00774)
 
 :::
 
+
+## Trump Twitter Archive
+
+
+![](../material/img/trump_twitter){width=100%}
+
+
+::: {style="font-size: 40%;"}
+[https://www.thetrumparchive.com](https://www.thetrumparchive.com)
 :::
 
-::: {.column width="45%"}
 
-::: {style="font-size: 68%;"}
+## Coding
+- Download file **06_text_as_data.R** from [https://sebastianstier.com/ds_comp_pol25/material.html](https://sebastianstier.com/ds_comp_pol25/material.html)
+- Open it in *RStudio* within your project
 
-:::{.incremental}
 
-- It's fine to look for help online but without an understanding of the R code base the use of AI is inefficient.
-- You'll learn much more if you try to find a solution within-R, e.g., *?mean*
-- We will code in class $\rightarrow$ applied programming.
-- Term paper: 
-  - Synthesis of theory, research question and code.
-  - Documentation of code: tell me why each step is needed and what it does.
+
+# 4. Text as data in political science {background-color="#58748F"} 
+
+
+## Automated text analysis: The menu of options
+
+![](../material/img/grimmer_stewart){fig-align="center"}
+
+::: {style="font-size: 30%;"}
+Grimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. [*Political Analysis*, 21(3), 267--297.](https://doi.org/10.1093/pan/mps028)
+
 :::
 
-:::
-
-:::
-
-::::
 
 
-
-# Thank you for your attention! See you on September 11 {background-color="#58748F"} 
+# Thank you for your attention! See you on May 20 2025 {background-color="#58748F"} 
 
 ## References

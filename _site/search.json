@@ -1,143 +1,598 @@
 [
   {
+    "objectID": "myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/httpcore-1.0.6.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Copyright © 2020, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/soupsieve-2.6.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2018 - 2024 Isaac Muse isaacmuse@gmail.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#agenda-for-today",
+    "href": "slides/06_text_analysis_llms.html#agenda-for-today",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nAutomated text analysis: topic models\nApplied text analysis in R"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#section",
+    "href": "slides/06_text_analysis_llms.html#section",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "",
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#the-foundations-of-topic-models",
+    "href": "slides/06_text_analysis_llms.html#the-foundations-of-topic-models",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "The foundations of topic models",
+    "text": "The foundations of topic models\n\n\nBlei, D. M. (2012). Probabilistic topic models. Communications of the ACM, 55(4), 77–84."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#topic-models-an-application",
+    "href": "slides/06_text_analysis_llms.html#topic-models-an-application",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Topic models: an application",
+    "text": "Topic models: an application\n\n\nStier, S., Posch, L., Bleier, A., & Strohmaier, M. (2017). When populists become popular: Comparing Facebook use by the right-wing movement Pegida and German political parties. Information, Communication & Society, 20(9), 1365–1388."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#topic-models-validate-validate-grimmer_text_2013",
+    "href": "slides/06_text_analysis_llms.html#topic-models-validate-validate-grimmer_text_2013",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Topic models: validate, validate! (Grimmer and Stewart 2013)",
+    "text": "Topic models: validate, validate! (Grimmer and Stewart 2013)\nSemantic validity"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#topic-models-validate-validate-grimmer_text_2013-1",
+    "href": "slides/06_text_analysis_llms.html#topic-models-validate-validate-grimmer_text_2013-1",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Topic models: validate, validate! (Grimmer and Stewart 2013)",
+    "text": "Topic models: validate, validate! (Grimmer and Stewart 2013)\nPredictive validity"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#topic-models-validate-validate",
+    "href": "slides/06_text_analysis_llms.html#topic-models-validate-validate",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Topic models: validate, validate!",
+    "text": "Topic models: validate, validate!\nInteractive exploration\n\n\nSievert, C., & Shirley, K. (2014). LDAvis: A method for visualizing and interpreting topics. Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces, 63–70."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#we-will-use-quanteda",
+    "href": "slides/06_text_analysis_llms.html#we-will-use-quanteda",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "We will use quanteda",
+    "text": "We will use quanteda\n\nGo to file 5_class_six.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#think-pair-share",
+    "href": "slides/06_text_analysis_llms.html#think-pair-share",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nFocus on the used methods, their pros and cons, and the disagreements between the papers\nShare and discuss your results with the full class"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#main-results-from-gilardi.-et-al.",
+    "href": "slides/06_text_analysis_llms.html#main-results-from-gilardi.-et-al.",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "Main results from Gilardi. et al.",
+    "text": "Main results from Gilardi. et al.\n\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. Proceedings of the National Academy of Sciences, 120(30)"
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#how-to-interact-with-llms",
+    "href": "slides/06_text_analysis_llms.html#how-to-interact-with-llms",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "How to interact with LLMs",
+    "text": "How to interact with LLMs\n\nZero shot learning: the user writes a natural language instruction (commonly called “prompt”) for the LLM that instructs it to perform a certain task\nFew shot learning: the user writes a prompt for the LLM that instructs it to perform a certain task + provides some examples\nInstruction tuning: the user trains a pre-trained model on task-related data. During fine tuning, model parameters are updated. A medium to large amount of labelled training data (i.e., examples that are annotated with the desired model output) is required."
+  },
+  {
+    "objectID": "slides/06_text_analysis_llms.html#references",
+    "href": "slides/06_text_analysis_llms.html#references",
+    "title": "Automated Text Analysis and Large Language Models",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nGrimmer, Justin, and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.” Political Analysis 21 (3): 267–97. https://doi.org/10.1093/pan/mps028."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#agenda-for-today",
+    "href": "slides/05_automated_textanalysis.html#agenda-for-today",
+    "title": "Automated Text Analysis",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nData wrangling and joining operations in R\nAutomated text analysis\nApplied text analysis in R"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#section",
+    "href": "slides/05_automated_textanalysis.html#section",
+    "title": "Automated Text Analysis",
+    "section": "",
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#asignment-of-persons-to-presentation-slots",
+    "href": "slides/05_automated_textanalysis.html#asignment-of-persons-to-presentation-slots",
+    "title": "Automated Text Analysis",
+    "section": "Asignment of persons to presentation slots",
+    "text": "Asignment of persons to presentation slots\nWe will run the randomization in R."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#homework",
+    "href": "slides/05_automated_textanalysis.html#homework",
+    "title": "Automated Text Analysis",
+    "section": "Homework",
+    "text": "Homework\nBrowse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.\n\nhttps://bookdown.org/paul/apis_for_social_scientists/\n\n\n\nWhich APIs did you try out?\nWhich APIs/code still work?\nDid the data help shape your research ideas?"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#the-data-we-will-use-today",
+    "href": "slides/05_automated_textanalysis.html#the-data-we-will-use-today",
+    "title": "Automated Text Analysis",
+    "section": "The data we will use today",
+    "text": "The data we will use today\n\n\nWojcieszak, M., Clemm Von Hohenberg, B., Casas, A., Menchen-Trevino, E., De Leeuw, S., Gonçalves, A., & Boon, M. (2022). Null effects of news exposure: A test of the (un)desirable effects of a ‘news vacation’ and ‘news binging’. Humanities and Social Sciences Communications, 9(1), 413.\n\n\n\nWe are still in file 3_class_four.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#automated-text-analysis-the-menu-of-options",
+    "href": "slides/05_automated_textanalysis.html#automated-text-analysis-the-menu-of-options",
+    "title": "Automated Text Analysis",
+    "section": "Automated text analysis: The menu of options",
+    "text": "Automated text analysis: The menu of options\n\n\nGrimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#think-pair-share",
+    "href": "slides/05_automated_textanalysis.html#think-pair-share",
+    "title": "Automated Text Analysis",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nFocus on the used methods, their pros and cons, feasibility, etc.\nLocate our two required readings on the map of Grimmer and Stewart (2013)\nShare and discuss your results with the full class"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#the-state-of-sociology",
+    "href": "slides/05_automated_textanalysis.html#the-state-of-sociology",
+    "title": "Automated Text Analysis",
+    "section": "The state of sociology",
+    "text": "The state of sociology\n\n\n\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#important-terms",
+    "href": "slides/05_automated_textanalysis.html#important-terms",
+    "title": "Automated Text Analysis",
+    "section": "Important terms",
+    "text": "Important terms\n\nDocument: the main unit of analysis containing the text\n\nThere might be document-level variables like an author, time, source, etc.\n\nCorpus: a collection of several documents\nToken: converting a sequence of text into smaller parts, e.g., words\nDocument-Feature Matrix (DFM): a matrix of documents and features (tokens)\nStopwords: commonly used words in a language (e.g., the, a, are) that do not carry much useful information when you want to classify text"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#automated-text-analysis-in-r",
+    "href": "slides/05_automated_textanalysis.html#automated-text-analysis-in-r",
+    "title": "Automated Text Analysis",
+    "section": "Automated text analysis in R",
+    "text": "Automated text analysis in R\n\n\nBenoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., Matsuo, A., Perry, P. O., Kuha, J., & Lauderdale, B. (2018). quanteda: An R package for the quantitative analysis of textual data. Journal of Open Source Software, 3(30), 774."
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#from-text-to-numbers-word-to-word-matrix",
+    "href": "slides/05_automated_textanalysis.html#from-text-to-numbers-word-to-word-matrix",
+    "title": "Automated Text Analysis",
+    "section": "From text to numbers: word-to-word matrix",
+    "text": "From text to numbers: word-to-word matrix"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#from-text-to-numbers-a-document-feature-matrix",
+    "href": "slides/05_automated_textanalysis.html#from-text-to-numbers-a-document-feature-matrix",
+    "title": "Automated Text Analysis",
+    "section": "From text to numbers: a document-feature matrix",
+    "text": "From text to numbers: a document-feature matrix\n\n\n\n\n\nBag-of-words representation of text"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#distributional-semantics",
+    "href": "slides/05_automated_textanalysis.html#distributional-semantics",
+    "title": "Automated Text Analysis",
+    "section": "Distributional semantics",
+    "text": "Distributional semantics\n\nA word’s meaning is given by the words that frequently appear close by\n\\(\\rightarrow\\) One of the most successful ideas in Natural Language Processing\nContext\n\\(\\rightarrow\\) When a word appears in a text, its context is a set of words that appear nearby (within a fixed window): car, street, traffic"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#we-will-use-quanteda",
+    "href": "slides/05_automated_textanalysis.html#we-will-use-quanteda",
+    "title": "Automated Text Analysis",
+    "section": "We will use quanteda",
+    "text": "We will use quanteda\n\nGo to file 4_session_four.R in https://sebastianstier.com/ma_css24/material.html"
+  },
+  {
+    "objectID": "slides/05_automated_textanalysis.html#references",
+    "href": "slides/05_automated_textanalysis.html#references",
+    "title": "Automated Text Analysis",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nGrimmer, Justin, and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.” Political Analysis 21 (3): 267–97. https://doi.org/10.1093/pan/mps028."
+  },
+  {
     "objectID": "slides/01_introduction.html#about-me",
     "href": "slides/01_introduction.html#about-me",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "About me",
     "text": "About me\n\nDr. in Political Science in 2016 at the University of Heidelberg\nNo R or programming training during my studies\n2016-2023, Postdoc/Senior Researcher at GESIS – Leibniz Institute for the Social Sciences\nSince November 2023\n\nScientific Director Department Computational Social Science at GESIS\nProfessor of Computational Social Science, University of Mannheim"
   },
   {
     "objectID": "slides/01_introduction.html#my-research-interests",
     "href": "slides/01_introduction.html#my-research-interests",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "My research interests",
     "text": "My research interests"
   },
   {
     "objectID": "slides/01_introduction.html#what-are-your-expectations-for-this-class",
     "href": "slides/01_introduction.html#what-are-your-expectations-for-this-class",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "What are your expectations for this class?",
     "text": "What are your expectations for this class?\nLet’s do a survey!"
   },
   {
     "objectID": "slides/01_introduction.html#about-you",
     "href": "slides/01_introduction.html#about-you",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "About you",
     "text": "About you\n\nWho are you?\nWhat’s your study program and which semester are you in?\nWhat are your experiences with scientific computing/programming?\nWhy this course? Which topics/methods/data do you want to learn more about?"
   },
   {
     "objectID": "slides/01_introduction.html#agenda-for-today",
     "href": "slides/01_introduction.html#agenda-for-today",
-    "title": "Introduction",
+    "title": "Social media in comparative politics",
     "section": "Agenda for today",
-    "text": "Agenda for today\n\nLogistics\nIntroduction to Computational Social Science\nR: Warmup session, basics & introduction to tidyverse"
+    "text": "Agenda for today\n\nRecap\nSocial media data in political science\nText as data in R\nText as data in political science"
   },
   {
     "objectID": "slides/01_introduction.html#section",
     "href": "slides/01_introduction.html#section",
-    "title": "Introduction",
+    "title": "Social media in comparative politics",
     "section": "",
-    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint."
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n8 April 2025\n\nIntroduction and expectations\nSetup in R\n\n\n\n\n15 April 2025\n\nFoundations of data science\nFoundations of comparative politics\nThe tidyverse in R\n\nCaramani, D. (Ed.). (2017). Comparative politics (4th edition). Oxford University Press.  Lazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n22 April 2025\n\nDemocracy and autocracy\nData sources in comparative politics\nData wrangling in R: joining, grouping and reshaping data\n\nCoppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Altman, D., Angiolillo, F., Bernhard, M., Borella, C., & Cornell, A. (2024). V-Dem Codebook v14.  Moses, J., & Knutsen, T. L. (2012). The comparative method. In J. Moses & T. L. Knutsen (Eds.), Ways of knowing: Competing methodologies in social and political research (2. ed, pp. 94–115). Palgrave Macmillan.\n\n\n29 April 2025\n\nParty competition and ideology in Europe\nParty manifestos and legislative speech\nData visualization in R\n\nKriesi, H., & Hutter, S. (2019). Crises and the transformation of the national political space in Europe. In H. Kriesi & S. Hutter (Eds.), European party politics in times of crisis (pp. 3–32). Cambridge University Press. Sebők, M., Proksch, S.-O., Rauh, C., Visnovitz, P., Balázs, G., & Schwalbach, J. (2023). Comparative European legislative research in the age of large-scale computational text analysis: A review article. International Political Science Review.\n\n\n6 May 2025\n\nThe Internet and democracy\nRegression analysis and presentation of results in R\n\nKeremoğlu, E., & Weidmann, N. B. (2020). How dictators control the internet: A review essay. Comparative Political Studies, 53(10–11), 1690–1703.  Tucker, J. A., Theocharis, Y., Roberts, M. E., & Barberá, P. (2017). From liberation to turmoil: Social media and democracy. Journal of Democracy, 28(4), 46–59.\n\n\n13 May 2025\n\nSocial media in comparative politics\nText as data in R\n\nBarberá, P., Gohdes, A. R., Iakhnis, E., & Zeitzoff, T. (2024). Distract and Divert: How World Leaders Use Social Media During Contentious Politics. The International Journal of Press/Politics, 29(1), 47–73.  Grimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297."
   },
   {
     "objectID": "slides/01_introduction.html#section-1",
     "href": "slides/01_introduction.html#section-1",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "",
-    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nR Markdown, quarto\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n27 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting"
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n8 April 2025\n\nIntroduction and expectations\nSetup in R\n\n\n\n\n15 April 2025\n\nFoundations of data science\nFoundations of comparative politics\nThe R tidyverse\n\nCaramani, D. (Ed.). (2017). Comparative politics (4th edition). Oxford University Press.  Lazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n22 April 2025\n\nDemocracy and autocracy\nData sources in comparative politics\nData wrangling: joining, grouping and reshaping data\n\nCoppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Altman, D., Angiolillo, F., Bernhard, M., Borella, C., & Cornell, A. (2024). V-Dem Codebook v14.  Moses, J., & Knutsen, T. L. (2012). The comparative method. In J. Moses & T. L. Knutsen (Eds.), Ways of knowing: Competing methodologies in social and political research (2. ed, pp. 94–115). Palgrave Macmillan.\n\n\n29 April 2025\n\nParty competition and ideology in Europe\nParty manifestos and legislative speech\nData visualization\n\nKriesi, H., & Hutter, S. (2019). Crises and the transformation of the national political space in Europe. In H. Kriesi & S. Hutter (Eds.), European party politics in times of crisis (pp. 3–32). Cambridge University Press. Sebők, M., Proksch, S.-O., Rauh, C., Visnovitz, P., Balázs, G., & Schwalbach, J. (2023). Comparative European legislative research in the age of large-scale computational text analysis: A review article. International Political Science Review.\n\n\n6 May 2025\n\nThe Internet and democracy\nText as data\nFirst string operations\n\nGrimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297.  Tucker, J. A., Theocharis, Y., Roberts, M. E., & Barberá, P. (2017). From liberation to turmoil: Social media and democracy. Journal of Democracy, 28(4), 46–59."
   },
   {
     "objectID": "slides/01_introduction.html#learning-objectives-on-ma-level",
     "href": "slides/01_introduction.html#learning-objectives-on-ma-level",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "Learning objectives (on MA level)",
     "text": "Learning objectives (on MA level)\n\nAdvanced understanding of concepts, methods, data used and challenges in CSS\nCritical reflection of the applicability of CSS in social science research\nLearning to use CSS methods in R\nApplication of CSS methods in R for own research question"
   },
   {
     "objectID": "slides/01_introduction.html#modus-operandi-in-the-class",
     "href": "slides/01_introduction.html#modus-operandi-in-the-class",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "Modus operandi in the class",
     "text": "Modus operandi in the class\n\nIntroduction to the session’s topic by instructor\nRequired reading: (mostly) applied papers\n\nWe’ll discuss these papers in the class\n\nWe’ll code in the class \\(\\rightarrow\\) please bring your laptop\nQuestions are always possible, this is supposed to be interactive"
   },
   {
     "objectID": "slides/01_introduction.html#requirements-for-examinationgrades",
     "href": "slides/01_introduction.html#requirements-for-examinationgrades",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "Requirements for examination/grades",
     "text": "Requirements for examination/grades\n\n\nRegular participation in class\nWriting a review of the required readings for two classes to be submitted by Sunday evening before the respective class (Studienleistung/Coursework)\nPresentation of your own research idea for your term paper in the last 3 classes of the semester\nWritten term paper based on an analysis in R (3,000-5,000 words), deadline: 31 January 2025 (Prüfungsleistung/Examination)"
   },
   {
     "objectID": "slides/01_introduction.html#format-of-the-reviews",
     "href": "slides/01_introduction.html#format-of-the-reviews",
-    "title": "Introduction",
+    "title": "Social media in comparative politics",
     "section": "Format of the reviews",
     "text": "Format of the reviews\n\nGuiding questions:\n\n\n- Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. \n\n- Reflect on the main strengths and weaknesses of these papers.\n\n- What are the concepts, assumed social mechanisms and operationalizations used in the papers?\n\n- What are the data in use? How are the data analyzed? Does this seem appropriate?\n\n- How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?\n\n- Do you see any ethical concerns?\n\n- If papers are empirical, how do you judge their replicability?\n\n- If applicable, are there commonalities or differences between the two papers? How do they relate to each other?"
   },
   {
     "objectID": "slides/01_introduction.html#format-of-term-paper-3000-5000-words",
     "href": "slides/01_introduction.html#format-of-term-paper-3000-5000-words",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "Format of term paper (3,000-5,000 words)",
     "text": "Format of term paper (3,000-5,000 words)\n\nBrief motivation and research question\nConcise theoretical overview: for what conceptual and theoretical reasons do I choose these data and methods?\nResearch design\nData and variables\nMethod: no detailed mathematical description needed, but why does this method fit my research question and my data?\nResults\nInterpretation and conclusions\nAnalysis code as an R script: needs to be fully reproducible"
   },
   {
     "objectID": "slides/01_introduction.html#information-management-and-communication",
     "href": "slides/01_introduction.html#information-management-and-communication",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "Information management and communication",
     "text": "Information management and communication\n\nSlides and materials will be online: https://sebastianstier.com/ma_css24-25\nCommunication\n\nVia email\nIn person after the class\nVia Zoom\n\nSubmit the final term paper to sebastian.stier@gesis.org\nData and scripts can be shared via the secure platform Cryptshare: https://cryptshare.gesis.org"
   },
   {
     "objectID": "slides/01_introduction.html#the-elephant-in-the-room-ai-llms-chatgpt-et-al.",
     "href": "slides/01_introduction.html#the-elephant-in-the-room-ai-llms-chatgpt-et-al.",
-    "title": "Introduction",
+    "title": "The Internet and Democracy & Text as Data",
     "section": "The elephant in the room: AI, LLMs, ChatGPT et al.",
     "text": "The elephant in the room: AI, LLMs, ChatGPT et al.\n\n\n\n\nMeyer, J. G., Urbanowicz, R. J., Martin, P. C. N., et al. (2023). ChatGPT and large language models in academia: Opportunities and challenges. BioData Mining, 16(1), 20. https://doi.org/10.1186/s13040-023-00339-9\n\n\n\n\n\nIt’s fine to look for help online but without an understanding of the R code base the use of AI is inefficient.\nYou’ll learn much more if you try to find a solution within-R, e.g., ?mean\nWe will code in class \\(\\rightarrow\\) applied programming.\nTerm paper:\n\nSynthesis of theory, research question and code.\nDocumentation of code: tell me why each step is needed and what it does."
   },
   {
     "objectID": "slides/01_introduction.html#references",
     "href": "slides/01_introduction.html#references",
-    "title": "Introduction",
+    "title": "Social media in comparative politics",
+    "section": "References",
+    "text": "References\n\n\n\nData Science in Comparative Politics\n\n\n\n\nGrimmer, Justin, and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.” Political Analysis 21 (3): 267–97. https://doi.org/10.1093/pan/mps028."
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#agenda-for-today",
+    "href": "slides/07_llms_data_quality.html#agenda-for-today",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nLarge Language Models\nApplied text analysis in R"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#section",
+    "href": "slides/07_llms_data_quality.html#section",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "",
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#homework",
+    "href": "slides/07_llms_data_quality.html#homework",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Homework",
+    "text": "Homework\n\nhttps://bookdown.org/paul/apis_for_social_scientists/\n\n\n\nWhich APIs did you try out?\nWhich APIs/code still work?\nDid the data help shape your research ideas?"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#word-embeddings-extracting-meaning-from-a-word-to-word-matrix",
+    "href": "slides/07_llms_data_quality.html#word-embeddings-extracting-meaning-from-a-word-to-word-matrix",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Word embeddings: extracting meaning from a word-to-word matrix",
+    "text": "Word embeddings: extracting meaning from a word-to-word matrix\n\n\nhttps://www.scaler.com/topics/tensorflow/tensorflow-word2vwc/"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#word-embeddings",
+    "href": "slides/07_llms_data_quality.html#word-embeddings",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Word embeddings",
+    "text": "Word embeddings\n\n\nBonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787."
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#word-embeddings-1",
+    "href": "slides/07_llms_data_quality.html#word-embeddings-1",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Word embeddings",
+    "text": "Word embeddings\n\n\nhttps://nlp.stanford.edu/projects/histwords/"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#what-are-large-language-models",
+    "href": "slides/07_llms_data_quality.html#what-are-large-language-models",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "What are (Large) Language Models?",
+    "text": "What are (Large) Language Models?\n\nLanguage models consist of a neural network with many parameters (typically billions of weights), trained on large quantities of unlabeled text using self-supervised learning\nExamples: BERT, GPT 2/3/4, (Google) Gemini"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#the-basis-of-llms-neural-networks",
+    "href": "slides/07_llms_data_quality.html#the-basis-of-llms-neural-networks",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "The basis of LLMs: neural networks",
+    "text": "The basis of LLMs: neural networks"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#this-field-is-evolving-quickly",
+    "href": "slides/07_llms_data_quality.html#this-field-is-evolving-quickly",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "This field is evolving quickly",
+    "text": "This field is evolving quickly\n\n\nhttps://github.com/Mooler0410/LLMsPracticalGuide"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#if-you-do-use-chatgpt-in-your-research-use-it-responsibly-and-transparently",
+    "href": "slides/07_llms_data_quality.html#if-you-do-use-chatgpt-in-your-research-use-it-responsibly-and-transparently",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "If you do use ChatGPT in your research, use it responsibly and transparently",
+    "text": "If you do use ChatGPT in your research, use it responsibly and transparently\n\n\n\n\n\n\n\n\n\nhttps://www.dfg.de/en/news/news-topics/announcements-proposals/2023/info-wissenschaft-23-72"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#we-will-keep-using-quanteda",
+    "href": "slides/07_llms_data_quality.html#we-will-keep-using-quanteda",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "We will keep using quanteda",
+    "text": "We will keep using quanteda\n\nGo to file 6_class_seven.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#validation",
+    "href": "slides/07_llms_data_quality.html#validation",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Validation",
+    "text": "Validation\n\n\nGründl, J. (2022). Populist ideas on social media: A dictionary-based measurement of populist communication. New Media & Society, 24(6), 1481–1499."
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#validation-1",
+    "href": "slides/07_llms_data_quality.html#validation-1",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Validation",
+    "text": "Validation\n\n\nhttps://medium.com/weidagang/demystifying-precision-and-recall-in-machine-learning-6f756a4c54ac"
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#automated-text-analysis-the-menu-of-options",
+    "href": "slides/07_llms_data_quality.html#automated-text-analysis-the-menu-of-options",
+    "title": "Text Analysis, Continued and Validation",
+    "section": "Automated text analysis: The menu of options",
+    "text": "Automated text analysis: The menu of options\n\n\nGrimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297."
+  },
+  {
+    "objectID": "slides/07_llms_data_quality.html#references",
+    "href": "slides/07_llms_data_quality.html#references",
+    "title": "Text Analysis, Continued and Validation",
     "section": "References",
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Computational Social Science Methods and Digital Behavioral Data",
-    "section": "",
-    "text": "Lecturer\nSebastian Stier\nProfessor @ University of Mannheim & Scientific Director Department Computational Social Science @ GESIS\n\nAbout the course\nComputational Social Science (CSS) is a young research field at the intersection of various social science disciplines, data science and computer science. The goal is to gain new insights into society through large amounts of data and the direct observation of human behavior. CSS relies on two cornerstones: digital behavioral data, which can be collected from online platforms or sensors like smartphones, and computer science methods such as automated text analysis to create appropriate measures for social science research questions. In the course, students will get to know foundational studies, theories and methods used in the field of CSS. We will discuss infrastructural, ethical and legal challenges and how to navigate these to devise appropriate research designs in CSS.\nThe course will be application oriented. Students will familiarize themselves with the main applications of CSS methods and implement them in R. The range of applications will cover data management and preprocessing, the application of machine learning, data and results visualization, statistical data analysis and the validation of results. The hands-on application examples will cover questions from various research fields and different data types like social media data or web browsing histories. Equipped with this theoretical and methodological toolkit, students will develop their own CSS research projects.\nSchedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint.\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n27 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n\n\n\n\n\nSoftware\n\nR\nA text editor, e.g. RStudio\nQuarto"
+    "objectID": "slides/09_reproducibility.html#agenda-for-today",
+    "href": "slides/09_reproducibility.html#agenda-for-today",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nOpen science and reproducibility in CSS, continued\nWriting a reproducible paper in R\nNetwork analysis in R"
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Computational Social Science and Digital Behavioral Data",
+    "objectID": "slides/09_reproducibility.html#section",
+    "href": "slides/09_reproducibility.html#section",
+    "title": "Open Science and Reproducibility in CSS, continued",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch ethics in CSS and web data collection\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting"
   },
   {
-    "objectID": "slides.html#slides",
-    "href": "slides.html#slides",
-    "title": "Computational Social Science and Digital Behavioral Data",
-    "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 4, 2024\n\n\nIntroduction\n\n\nSebastian Stier\n\n\n\n\nSep 11, 2024\n\n\nWhat is Computational Social Science?\n\n\nSebastian Stier\n\n\n\n\nSep 18, 2024\n\n\nResearch ethics in CSS and web data collection\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/09_reproducibility.html#what-is-reproducibility",
+    "href": "slides/09_reproducibility.html#what-is-reproducibility",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "What is reproducibility?",
+    "text": "What is reproducibility?\nDefining reproducibility\nA minimum standard on a spectrum of activities (“reproducibility spectrum”) for assessing the value or accuracy of scientific claims based on the original methods, data, and code. […] In some fields, this meaning is, instead, associated with the term “replicability” or “repeatability”.\n\nhttps://forrt.org/glossary/reproducibility\n\n\nReproducibility ensures that research is transparent, verifiable, and trustworthy."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#motivations-for-reproducibility",
+    "href": "slides/09_reproducibility.html#motivations-for-reproducibility",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Motivations for reproducibility",
+    "text": "Motivations for reproducibility\n\nIncreasing the robustness and trustworthiness of your own research\nFacilitating collaboration (through the use of common tools and standards)\nBeing kind to future you:\n\nEditing and reusing your own code (e.g., for a paper revision or a follow-up study)\nEasily being able to pick up a project after a break or finding and understanding things again after a longer time"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#the-turing-way-definition",
+    "href": "slides/09_reproducibility.html#the-turing-way-definition",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "The Turing Way definition",
+    "text": "The Turing Way definition\n\n\nhttps://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#computational-reproducibility",
+    "href": "slides/09_reproducibility.html#computational-reproducibility",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Computational reproducibility",
+    "text": "Computational reproducibility\nThere also are distinctions between different types (or components) of reproducibility. One type/component that is especially relevant for our course is “computational reproducibility”:\n\n\n\nAbility to recreate the same results as the original study (including tables, figures, and quantitative findings), using the same input data, computational methods, and conditions of analysis. The availability of code and data facilitates computational reproducibility, as does preparation of these materials (annotating data, delineating software versions used, sharing computational environments, etc). Ideally, computational reproducibility should be achievable by another second researcher (or the original researcher, at a future time), using only a set of files and written instructions.\n\n\n\nhttps://forrt.org/glossary/reproducibility"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#the-state-of-affairs",
+    "href": "slides/09_reproducibility.html#the-state-of-affairs",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "The state of affairs",
+    "text": "The state of affairs\n\n\nChan, C., Schatto-Eckrodt, T., & Gruber, J. B. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research.\n\n\nTake 3-5 minutes with your neighbor(s) to quickly recap the key findings of Chan, Schatto-Eckrodt, and Gruber (2024)."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#tools-workflows",
+    "href": "slides/09_reproducibility.html#tools-workflows",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Tools & workflows",
+    "text": "Tools & workflows\nTools are programming languages, scripts and other pieces of software that we use to make our research reproducible.\nWorkflows are the ways in which we combine these tools to achieve our goal.\n\nChoosing tools and establishing workflows are somewhat idiosyncratic processes that depend on…\n\nthe requirements of your project (methods, data types, …)\nthe availability of tools\nyour skills and knowledge\nthe preferences of collaborators"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#research-management-practices",
+    "href": "slides/09_reproducibility.html#research-management-practices",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Research management practices",
+    "text": "Research management practices\nBeing an open scientist means adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows (Klein et al. 2018: 11)\n\nUsing free and open source software (FOSS)\nProject-oriented workflow\nThe tidyverse style guide\nClear folder structures\nNaming things"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
+    "href": "slides/09_reproducibility.html#reproducibility-best-practices-in-your-term-papers",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Reproducibility: best practices in your term papers",
+    "text": "Reproducibility: best practices in your term papers\n\nIf a login is required (e.g., YouTube API), please provide the data you downloaded to me (big files via https://cryptshare.gesis.org)\nIf you have chunks of code that need a long time to run (especially downloads from APIs), please provide intermediate files with the results, e.g.: read_rds(\"output/youtube_data.rds\")\nMake sure that the folder structure you use (e.g., data or plots) is maintained in the files you send me \\(\\rightarrow\\) zip before sending"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#exploring-quarto",
+    "href": "slides/09_reproducibility.html#exploring-quarto",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Exploring quarto",
+    "text": "Exploring quarto\n\nTogether with your neighbor(s), explore the quarto logic and try to render your first quarto document as pdf and then as docx.\nThe documentation of quarto can be found here: https://quarto.org/docs/output-formats/pdf-basics.html"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
+    "href": "slides/09_reproducibility.html#fully-reproducible-documents-in-r",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Fully reproducible documents in R",
+    "text": "Fully reproducible documents in R\n\n\nDownload the template (zip file) from GitHub: https://github.com/paulcbauer/Writing_a_reproducable_paper_with_quarto"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#why-study-networks",
+    "href": "slides/09_reproducibility.html#why-study-networks",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Why study networks?",
+    "text": "Why study networks?\nConventional research methods are often individual-based and our models tend to model relations between variables. Yet nature and culture are oftentimes structured as networks:\n\nsociety\nbrain (neural networks)\norganizations (who reports to whom)\neconomies (who sells to whom)\necologies (who eats whom)\nPosition within a network is important for predicting outcomes"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#dbd-and-networks",
+    "href": "slides/09_reproducibility.html#dbd-and-networks",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "DBD and networks",
+    "text": "DBD and networks\n\n\nLietz, H., Wagner, C., Bleier, A., & Strohmaier, M. (2014). When Politicians Talk: Assessing Online Conversational Practices of Political Parties on Twitter. In Proceedings of the 8th International AAAI Conference on Weblogs and Social Media (pp. 285–294). AAAI Press."
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#key-terms",
+    "href": "slides/09_reproducibility.html#key-terms",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Key terms",
+    "text": "Key terms\n\nNode/vertex: the units\nEdges: the connections between the nodes"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#levels-of-analysis",
+    "href": "slides/09_reproducibility.html#levels-of-analysis",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Levels of analysis",
+    "text": "Levels of analysis\nDyad level\nFundamental unit of network data collection\n(“Does sharing offices lead to friendship?”)\nNode level\nAggregation of dyad level measurement\n(“Do actors with more friends have a stronger immune system?”)\nNetwork level\nAssessing overall structure of a network\n(“Does information diffuse faster in well-connected networks?”)"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#relations-network-edges",
+    "href": "slides/09_reproducibility.html#relations-network-edges",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Relations: network edges",
+    "text": "Relations: network edges\n\nRelational roles: family, coworkers, …\nInteractions: sold to, talked to, helped, …\nFlows: information, belief, money, …\n\n\n\nundirected\nsymmetric relation\n\n\ndirected\nasymmetric relation\n\n\nvalued/weighted\nstrength of relation, frequency of contact, etc.\n\n\nsigned\npositive and negative relations\n\n\nor a mixture thereof"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#goals-of-analysis",
+    "href": "slides/09_reproducibility.html#goals-of-analysis",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Goals of analysis",
+    "text": "Goals of analysis\n\nNetwork variables as independent variable / explanatory\n\nUsing network theory to explain the consequences of network properties\n\nsocial capital, brokerage, adoption of innovation\n\n\nNetwork variables as dependent variable / outcomes\n\nUsing ______ theory to explain the antecendents of a network\n\nhomophily, balance theory"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#credit-where-credit-is-due",
+    "href": "slides/09_reproducibility.html#credit-where-credit-is-due",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Credit where credit is due",
+    "text": "Credit where credit is due\nToday, I was drawing heavily on course material of my GESIS colleagues Arnim Bleier, Johannes Breuer, David Schoch and Bernd Weiß. Their material is openly available on GitHub:\nhttps://github.com/jobreu/reproducible-research-gesis-2023\nhttps://schochastics.github.io/netAnaR2023"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#network-analysis-in-r-1",
+    "href": "slides/09_reproducibility.html#network-analysis-in-r-1",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "Network analysis in R",
+    "text": "Network analysis in R\nGo to file 8_class_nine.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/09_reproducibility.html#references",
+    "href": "slides/09_reproducibility.html#references",
+    "title": "Open Science and Reproducibility in CSS, continued",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nChan, Chung-hong, Tim Schatto-Eckrodt, and Johannes B. Gruber. 2024. “What Makes Computational Communication Science (Ir)reproducible?” Computational Communication Research.\n\n\nKlein, Olivier, Tom E. Hardwicke, Frederik Aust, Johannes Breuer, Henrik Danielsson, Alicia Hofelich Mohr, Hans IJzerman, Gustav Nilsonne, Wolf Vanpaemel, and Michael C. Frank. 2018. “A Practical Guide for Transparency in Psychological Science.” Edited by Michéle Nuijten and Simine Vazire. Collabra: Psychology 4 (1). https://doi.org/10.1525/collabra.158."
   },
   {
     "objectID": "material.html",
     "href": "material.html",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 4:57:45 PM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "material.html#material-for-sessions",
     "href": "material.html#material-for-sessions",
     "title": "Computational Social Science and Digital Behavioral Data",
     "section": "",
-    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n\nNo matching items"
+    "text": "File Name\n\n\nModified\n\n\n\n\n\n\n0_basics.R\n\n\n9/4/24, 5:35:44 PM\n\n\n\n\n1_class_two.R\n\n\n9/11/24, 1:27:39 PM\n\n\n\n\n2_class_three.R\n\n\n9/18/24, 7:31:07 PM\n\n\n\n\n3_class_four.R\n\n\n10/16/24, 5:00:52 PM\n\n\n\n\n4_class_five.R\n\n\n10/17/24, 7:20:45 AM\n\n\n\n\n5_class_six.R\n\n\n10/31/24, 4:12:04 PM\n\n\n\n\n6_class_seven.R\n\n\n11/4/24, 10:33:44 AM\n\n\n\n\n7_class_eight.R\n\n\n11/6/24, 9:30:09 PM\n\n\n\n\n8_class_nine.R\n\n\n11/13/24, 4:57:45 PM\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Data Science in Comparative Politics",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 13, 2025\n\n\nSocial media in comparative politics\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides.html#slides",
+    "href": "slides.html#slides",
+    "title": "Data Science in Comparative Politics",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 13, 2025\n\n\nSocial media in comparative politics\n\n\nSebastian Stier\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computational Social Science Methods and Digital Behavioral Data",
+    "section": "",
+    "text": "Lecturer\nSebastian Stier\nProfessor @ University of Mannheim & Scientific Director Department Computational Social Science @ GESIS\n\nAbout the course\nComputational Social Science (CSS) is a young research field at the intersection of various social science disciplines, data science and computer science. The goal is to gain new insights into society through large amounts of data and the direct observation of human behavior. CSS relies on two cornerstones: digital behavioral data, which can be collected from online platforms or sensors like smartphones, and computer science methods such as automated text analysis to create appropriate measures for social science research questions. In the course, students will get to know foundational studies, theories and methods used in the field of CSS. We will discuss infrastructural, ethical and legal challenges and how to navigate these to devise appropriate research designs in CSS.\nThe course will be application oriented. Students will familiarize themselves with the main applications of CSS methods and implement them in R. The range of applications will cover data management and preprocessing, the application of machine learning, data and results visualization, statistical data analysis and the validation of results. The hands-on application examples will cover questions from various research fields and different data types like social media data or web browsing histories. Equipped with this theoretical and methodological toolkit, students will develop their own CSS research projects.\nSchedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nSocial media, web data and web scraping\nAPIs and web data collection\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nAPIs and web data collection, continued\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.\n\n\n16 October 2024  (Block: 15:30 - 18:45)\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint.\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n\n\n\n\n\nSoftware\n\nR\nA text editor, e.g. RStudio\nQuarto"
   },
   {
     "objectID": "slides/2_what_is_css.html#agenda-for-today",
@@ -273,318 +728,514 @@
     "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nEdelmann, Achim, Tom Wolff, Danielle Montagne, and Christopher A. Bail. 2020. “Computational Social Science and Sociology.” Annual Review of Sociology 46 (1): 61–81. https://doi.org/10.1146/annurev-soc-121919-054621.\n\n\nMunger, Kevin, Andrew M. Guess, and Eszter Hargittai. 2021. “Quantitative Description of Digital Media: A Modest Proposal to Disrupt Academic Publishing.” Journal of Quantitative Description: Digital Media 1. https://doi.org/10.51685/jqd.2021.000."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#agenda-for-today",
-    "href": "slides/03_webdata_designed_digital_data.html#agenda-for-today",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/08_open_science.html#agenda-for-today",
+    "href": "slides/08_open_science.html#agenda-for-today",
+    "title": "Open Science and Reproducibility in CSS",
     "section": "Agenda for today",
-    "text": "Agenda for today\n\nR session, focus on social media and text data\nResearch ethics\nR session, focus on data visualization\nIntroduction to web data collection and APIs"
+    "text": "Agenda for today\n\nSeminar evaluation and update on seminar logistics\nLLMs, continued\nData quality in CSS\nOpen science and reproducibility in CSS"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#research-ethics-1",
-    "href": "slides/03_webdata_designed_digital_data.html#research-ethics-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Research ethics?",
-    "text": "Research ethics?\n\n\nMoral principles and actions guiding and shaping research\n\nfrom inception to completion,\nthrough dissemination and sharing of findings,\nincluding archiving and future use.\n\n\n\n\n\n\nResearch ethics in the social sciences\n\nInitially “patient protection” model of medical research\nToday broader scope including consideration of benefits, risks and harms to all persons connected with the research\nIncluding social responsibilities of researchers"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#who-are-the-relevant-actors",
-    "href": "slides/03_webdata_designed_digital_data.html#who-are-the-relevant-actors",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Who are the relevant actors?",
-    "text": "Who are the relevant actors?"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#data-protection",
-    "href": "slides/03_webdata_designed_digital_data.html#data-protection",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Data protection",
-    "text": "Data protection\n\nData protection\n\nPart of fundamental right to privacy (or “informational freedom”)\n\n“Privacy is a personal condition of life characterised by seclusion from, and therefore absence of acquaintance by, the public” (Neethling 2005: 233)\nPrevention of unwanted disclosure of personal information or the misuse of such information"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations",
-    "href": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Data protection: legal foundations",
-    "text": "Data protection: legal foundations\n\nLegal framework in the European Union\n\nCharter of Fundamental Rights of the EU (Art. 8)\nGeneral Data Protection Regulation (GDPR)\nNational and sub-national data protection acts\nSpecialized laws\n\nSome legal documents and commentary\n\nDigital Services Act data access for researchers\nGerman law on text and data mining"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#informed-consent",
-    "href": "slides/03_webdata_designed_digital_data.html#informed-consent",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Informed consent",
-    "text": "Informed consent\n\n\nBridge between data protection and research ethics\nInformed consent means for example:\n\ninformation\ntransparency\nminimal requirement \\(\\rightarrow\\) chance not to consent\n\nStatus quo in social media research: lack of informed consent"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#back-to-coding",
-    "href": "slides/03_webdata_designed_digital_data.html#back-to-coding",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Back to coding",
-    "text": "Back to coding\n\nGo back to file 2_class_three.R in https://sebastianstier.com/ma_css24-25/material.html"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#back-to-coding-1",
-    "href": "slides/03_webdata_designed_digital_data.html#back-to-coding-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Back to coding",
-    "text": "Back to coding\n\nGo to file 3_session_three.R in https://sebastianstier.com/ma_css24/material.html"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#section",
-    "href": "slides/03_webdata_designed_digital_data.html#section",
-    "title": "Web Data and Designed Digital Data",
+    "objectID": "slides/08_open_science.html#section",
+    "href": "slides/08_open_science.html#section",
+    "title": "Open Science and Reproducibility in CSS",
     "section": "",
-    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n3 September 2024\n\nIntroduction and expectations\nFoundations of CSS\nGetting started in R\n\n\n\n\n11 September 2024\n\nFoundations of CSS\nThe R tidyverse\n\nLazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.\n\n\n18 September 2024  (Block: 15:30 - 18:45)\n\nResearch ethics in CSS\nData visualization\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. Social Media + Society, 4(1).  Freelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668.\n\n\n2 October 2024\n\nSocial media, web data and web scraping\nAPIs and web data collection\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).  RatSWD (2019): Big data in social, behavioural, and economic sciences. RatSWD Output 4(6).\n\n\n9 October 2024\n\nLinked surveys and DBD\nWeb tracking data\nSmartphone-based data collection\n\nGuess, A. M., Barberá, P., Munzert, S., & Yang, J. (2021). The consequences of online partisan media. PNAS, 118(14).  Silber, H., et al. Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(S2), S387–S407.”\n\n\n16 October 2024\n\nIntroduction to automated text analysis\nSupervised and unsupervised models\nValidation of model results\n\nSchwemmer, C., & Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. Sociology, 54(1), 3–21.  Bonikowski, B., Luo, Y., & Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. Sociological Methods & Research, 51(4), 1721–1787.\n\n\n23 October 2024\n\nMachine learning\nLarge Language Models\n\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. PNAS, 120(30). \nReiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. arXiv Preprint.\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nR Markdown, quarto\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n27 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting"
+    "text": "Seminar dates and topics\n\n\nDate\nTopics\nRequired reading\n\n\n\n\n30 October 2024\n\nData quality and validation in CSS\nNetwork analysis\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422.  Dahlke, R., Kumar, D., Durumeric, Z., & Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. Social Science Computer Review.\n\n\n6 November 2024\n\nOpen science and reproducibility in CSS\n\nChan, C.- Hong, Schatto-Eckrodt, T., & Gruber, J. (2024). What makes computational communication science (ir)reproducible? Computational Communication Research, 6(1). \nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144.\n\n\n13 November 2024\n\nWriting reproducible research papers in R\nquarto, OSF, pipelines and workflows\n\nBauer, P. C., & Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. OSF Preprint.\n\n\n20 November 2024\n\nPresentations of thesis ideas\nCoding: troubleshooting\n\n\n\n\n4 December 2024  (Block: 15:30 - 18:45)\n\nPresentations of thesis ideas\nCoding: troubleshooting"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#research-ethics-in-css",
-    "href": "slides/03_webdata_designed_digital_data.html#research-ethics-in-css",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Research ethics in CSS",
-    "text": "Research ethics in CSS"
+    "objectID": "slides/08_open_science.html#lets-take-7-minutes-for-the-evaluation",
+    "href": "slides/08_open_science.html#lets-take-7-minutes-for-the-evaluation",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Let’s take 7 minutes for the evaluation",
+    "text": "Let’s take 7 minutes for the evaluation\n\nPlease actively encourage your students to participate in the survey starting from November 4, and ideally allocate the necessary time for completing the online questionnaire during your class (taking a maximum of 5 to 7 minutes). The invitation link will be automatically sent to students by email on November 4."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations-1",
-    "href": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Data protection: legal foundations",
-    "text": "Data protection: legal foundations\n\nLegal framework in the European Union\n\nCharter of Fundamental Rights of the EU (Art. 8)\nGeneral Data Protection Regulation (GDPR)\nNational and sub-national data protection acts\nSpecialized laws\n\nSome legal documents and commentary\n\nDigital Services Act data access for researchers\nGerman law on text and data mining"
+    "objectID": "slides/08_open_science.html#requirements-for-term-paper",
+    "href": "slides/08_open_science.html#requirements-for-term-paper",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Requirements for term paper",
+    "text": "Requirements for term paper\n\nShould be based on content/methods covered in the seminar: collection and analysis of DBD, use of CSS methods in R\n3,500-5,000 words\nSubmission deadline: 31 January 2025 (Prüfungsleistung/Examination)\nFully reproducible code, including narrative comments where you explain what you do in each step\n\nYou can share all materials, including data with me via https://cryptshare.gesis.org"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#informed-consent-1",
-    "href": "slides/03_webdata_designed_digital_data.html#informed-consent-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Informed consent",
-    "text": "Informed consent\n\n\nBridge between data protection and research ethics\n\n\n\nInformed consent means for example:\n\ninformation\ntransparency\nminimal requirement \\(\\rightarrow\\) chance not to consent\n\nStatus quo in social media research: lack of informed consent"
+    "objectID": "slides/08_open_science.html#format-of-term-paper",
+    "href": "slides/08_open_science.html#format-of-term-paper",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Format of term paper",
+    "text": "Format of term paper\n\nMotivation and research question\nConcise theoretical overview: for what conceptual and theoretical reasons do I choose these data and methods?\nResearch design\nData and variables\nMethod: no detailed mathematical description needed, but why does this method fit my research question and my data?\nResults\nInterpretation and conclusions\nAnalysis code as an R script: needs to be fully reproducible"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#social-networking-sites",
-    "href": "slides/03_webdata_designed_digital_data.html#social-networking-sites",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Social networking sites",
-    "text": "Social networking sites\n\n“We define social network sites as web-based services that allow individuals to\n\nconstruct a public or semi-public profile within a bounded system,\narticulate a list of other users with whom they share a connection, and\nview and traverse their list of connections and those made by others within the system.\n\nThe nature and nomenclature of these connections may vary from site to site.” (boyd and Ellison 2007: 211)\n\\(\\rightarrow\\) widely differing platform affordances"
+    "objectID": "slides/08_open_science.html#criteria-for-grading-seminar-theses",
+    "href": "slides/08_open_science.html#criteria-for-grading-seminar-theses",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Criteria for grading seminar theses",
+    "text": "Criteria for grading seminar theses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrading scheme\n\n\n\nVery good\nGood\nSatisfactory\nInsufficient\n\n\n\n\n\nResearch question clear\n\n\n\n\nResearch question fuzzy/unclear\n\n\nClear structure\n\n\n\n\nFuzzy/unclear structure\n\n\nWell-justfied theoretical foundations (and hypotheses)\n\n\n\n\nMissing link theory-analysis\n\n\nThorough review of state of research\n\n\n\n\nThesis is not embedded in literature\n\n\nClear justification of data and method\n\n\n\n\nUnclear why data and method was used\n\n\nClear, logical analysis\n\n\n\n\nUnclear order and execution of analysis steps\n\n\nComputational reproducibility\n\n\n\n\nCode is breaking and cannot be easily fixed\n\n\nClear style of writing\n\n\n\n\nConfusing writing\n\n\nBonus: sophisticated, demanding data analysis"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#are-all-of-these-researchers-bad-people",
-    "href": "slides/03_webdata_designed_digital_data.html#are-all-of-these-researchers-bad-people",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Are all of these researchers bad people?",
-    "text": "Are all of these researchers bad people?\n\n\n\n\nLukito, J., et al. (2023). The State of Digital Media Data Research, 2023. Media and Democracy Data Cooperative.\n\n\n\n\nYu, J., & Muñoz-Justicia, J. (2020). A Bibliometric Overview of Twitter-Related Studies Indexed in Web of Science. Future Internet, 12(5), 91."
+    "objectID": "slides/08_open_science.html#presentations",
+    "href": "slides/08_open_science.html#presentations",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Presentations",
+    "text": "Presentations\n\nShort 5 minute elevator pitch of your ideas\nA structure with three slides could look like this\n\nMotivation, research question and theory\nData source and data acquisition\nCurrent status / preliminary data collection / analysis"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#legitimate-academic-interests",
-    "href": "slides/03_webdata_designed_digital_data.html#legitimate-academic-interests",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Legitimate academic interests",
-    "text": "Legitimate academic interests\nThere are legitimate academic interests for studying online platforms!\n\n\nUnderstanding the impact of digital media on society and democracy\nKeeping online platforms accountable\nMitigating “systemic risks” (see https://digital-strategy.ec.europa.eu/en/consultations/guidelines-providers-very-large-online-platforms-and-very-large-online-search-engines-mitigation)\nPreserving historical material\n… and more reasons?"
+    "objectID": "slides/08_open_science.html#how-do-llms-work",
+    "href": "slides/08_open_science.html#how-do-llms-work",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "How do LLMs work?",
+    "text": "How do LLMs work?\n\n\nOpenAI, Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F. L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., Avila, R., Babuschkin, I., Balaji, S., Balcom, V., Baltescu, P., Bao, H., Bavarian, M., Belgum, J., … Zoph, B. (2024). GPT-4 Technical Report.\nTouvron, H., Lavril, T., Izacard, G., Martinet, X., Lachaux, M.-A., Lacroix, T., Rozière, B., Goyal, N., Hambro, E., Azhar, F., Rodriguez, A., Joulin, A., Grave, E., & Lample, G. (2023). LLaMA: Open and Efficient Foundation Language Models."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#what-can-we-do-to-ensure-the-integrity-of-our-css-research",
-    "href": "slides/03_webdata_designed_digital_data.html#what-can-we-do-to-ensure-the-integrity-of-our-css-research",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "What can we do to ensure the integrity of our CSS research?",
-    "text": "What can we do to ensure the integrity of our CSS research?\n\n\n\nAwareness: incorporate ethical considerations when designing and conducting our research\nDefine ethical “contextual factors” (Fiesler and Proferes 2018: 9)\n\n“justify what and how many tweets, what the study is about, who is conducting it, what methods researchers use”\n\nKeep the DBD safe and protected\nAnalyze DBD at the aggregated group-/variable-level\nAvoid unnecessary “forensic analysis” of individual data patterns / users\nNot publishing/printing any personal information in a paper/thesis\n“Rewarding” participants with monetary incentives or information"
+    "objectID": "slides/08_open_science.html#how-do-llms-handle-images",
+    "href": "slides/08_open_science.html#how-do-llms-handle-images",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "How do LLMs handle images?",
+    "text": "How do LLMs handle images?\n\n\nScraping web images and their captions\nExtracting image features and comparing the patterns of occurence across images\nUsing textual captions as image labels\n\n\n\n\nRamesh, A., Dhariwal, P., Nichol, A., Chu, C., & Chen, M. (2022). Hierarchical Text-Conditional Image Generation with CLIP Latents. OpenAI."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#the-data-we-will-use-today",
-    "href": "slides/03_webdata_designed_digital_data.html#the-data-we-will-use-today",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "The data we will use today",
-    "text": "The data we will use today\n\n\nWojcieszak, M., Clemm Von Hohenberg, B., Casas, A., Menchen-Trevino, E., De Leeuw, S., Gonçalves, A., & Boon, M. (2022). Null effects of news exposure: A test of the (un)desirable effects of a ‘news vacation’ and ‘news binging’. Humanities and Social Sciences Communications, 9(1), 413.\n\n\nA toy browsing data set from our OSF repository. It is based on a real data set collected from a US sample in 2019, but reduced to fewer participants and slightly modified for reasons of anonymity (n_subjects = 100; n_visits = 2 million)."
+    "objectID": "slides/08_open_science.html#dalle-3",
+    "href": "slides/08_open_science.html#dalle-3",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "DALL·E 3",
+    "text": "DALL·E 3\n\n\nBetker, J., Goh, G., Jing, L., Brooks, T., Wang, J., Li, L., Ouyang, L., Zhuang, J., Lee, J., Guo, Y., Manassra, W., Dhariwal, P., Chu, C., & Jiao, Y. (2023). Improving image generation with better captions. OpenAI."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#lets-get-started",
-    "href": "slides/03_webdata_designed_digital_data.html#lets-get-started",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Let’s get started",
-    "text": "Let’s get started\n\nGo to file 3_session_three.R in https://sebastianstier.com/ma_css24/material.html"
+    "objectID": "slides/08_open_science.html#validation-of-text-analysis-continued",
+    "href": "slides/08_open_science.html#validation-of-text-analysis-continued",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Validation of text analysis, continued",
+    "text": "Validation of text analysis, continued\n\n\nGründl, J. (2022). Populist ideas on social media: A dictionary-based measurement of populist communication. New Media & Society, 24(6), 1481–1499."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#collecting-digital-behavioral-data",
-    "href": "slides/03_webdata_designed_digital_data.html#collecting-digital-behavioral-data",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Collecting digital behavioral data",
-    "text": "Collecting digital behavioral data\nStarting 20 November 2024: Presentations of thesis ideas\nFor that, we need to collect some DBD for your research"
+    "objectID": "slides/08_open_science.html#model-validation-in-r",
+    "href": "slides/08_open_science.html#model-validation-in-r",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Model validation in R",
+    "text": "Model validation in R\nGo to file 7_class_eight.R in https://sebastianstier.com/ma_css24-25/material.html"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#how-to-collect-web-data",
-    "href": "slides/03_webdata_designed_digital_data.html#how-to-collect-web-data",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "How to collect web data",
-    "text": "How to collect web data\n\n\nApplication Programming Interfaces (APIs)\n\n\nhttps://ninetailed.io/blog/api-calls/\n\n\n\nWeb scraping\n\n\nhttps://www.faz.net/aktuell/politik/inland/bayern-muenchen-will-kita-foerderung-umstellen-19549912.html"
+    "objectID": "slides/08_open_science.html#data-quality",
+    "href": "slides/08_open_science.html#data-quality",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Data quality",
+    "text": "Data quality\n\nWhat are relevant dimensions of data quality?\nHow do you assess data quality in your research?\nHow do you ensure data quality in your research?"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#how-does-it-look-like-in-r",
-    "href": "slides/03_webdata_designed_digital_data.html#how-does-it-look-like-in-r",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "How does it look like in R?",
-    "text": "How does it look like in R?\n\n\nAPIs\n\nlibrary(academictwitteR)\ntweets &lt;- get_all_tweets(\n    query = \"#BlackLivesMatter\",\n    start_tweets = \"2020-01-01T00:00:00Z\",\n    end_tweets = \"2020-01-05T00:00:00Z\",\n    file = \"blmtweets\"\n  )\n\n\n\nWeb scraping\n\nlibrary(rvest)\nurl &lt;- \"https://rvest.tidyverse.org/articles/starwars.html\"\nhtml &lt;- read_html(url)\n\nsection &lt;- html |&gt; html_elements(\"section\")\nhead(section, 5)\n\n{xml_nodeset (5)}\n[1] &lt;section&gt;&lt;h2 data-id=\"1\"&gt;\\nThe Phantom Menace\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 1999 ...\n[2] &lt;section&gt;&lt;h2 data-id=\"2\"&gt;\\nAttack of the Clones\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 20 ...\n[3] &lt;section&gt;&lt;h2 data-id=\"3\"&gt;\\nRevenge of the Sith\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 200 ...\n[4] &lt;section&gt;&lt;h2 data-id=\"4\"&gt;\\nA New Hope\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 1977-05-25\\n ...\n[5] &lt;section&gt;&lt;h2 data-id=\"5\"&gt;\\nThe Empire Strikes Back\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: ..."
+    "objectID": "slides/08_open_science.html#data-quality-relevant-dimensions",
+    "href": "slides/08_open_science.html#data-quality-relevant-dimensions",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Data quality: relevant dimensions",
+    "text": "Data quality: relevant dimensions\n\n\nBirkenmaier, L., … Ziaja, S. (2024). Defining and Evaluating Data Quality for the Social Sciences: Position Paper. GESIS Papers."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#elon-we-have-a-problem",
-    "href": "slides/03_webdata_designed_digital_data.html#elon-we-have-a-problem",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Elon, we have a problem",
-    "text": "Elon, we have a problem\n\n\nhttps://aoir.org/facebook-shuts-the-gate-after-the-horse-has-bolted/ https://www.forbes.com/sites/antoniopequenoiv/2023/06/30/these-popular-third-party-reddit-apps-will-disappear-saturday-as-api-changes-take-effect-despite-weeks-of-user-protest/ https://www.theguardian.com/technology/2023/feb/07/techscape-elon-musk-twitter-api"
+    "objectID": "slides/08_open_science.html#what-is-a-measurement",
+    "href": "slides/08_open_science.html#what-is-a-measurement",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "What is a measurement?",
+    "text": "What is a measurement?\n\n\nA measurement is the process of linking an abstract concept to empirical indicators\nA measurement is typically an inference since we almost never observe “all data” perfectly. We use measurements to draw inferences based on incomplete/sampled data"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#how-to-still-collect-web-data",
-    "href": "slides/03_webdata_designed_digital_data.html#how-to-still-collect-web-data",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "How to (still) collect web data",
-    "text": "How to (still) collect web data\n\n\n\n\nhttps://paulcbauer.github.io/apis_for_social_scientists_a_review/\n\n\n\n\nhttp://www.r-datacollection.com"
+    "objectID": "slides/08_open_science.html#drawing-inferences-social-sciences",
+    "href": "slides/08_open_science.html#drawing-inferences-social-sciences",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Drawing inferences: social sciences",
+    "text": "Drawing inferences: social sciences"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#homework",
-    "href": "slides/03_webdata_designed_digital_data.html#homework",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/08_open_science.html#drawing-inferences-css",
+    "href": "slides/08_open_science.html#drawing-inferences-css",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Drawing inferences: CSS",
+    "text": "Drawing inferences: CSS"
+  },
+  {
+    "objectID": "slides/08_open_science.html#theory-and-causal-mechanisms",
+    "href": "slides/08_open_science.html#theory-and-causal-mechanisms",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Theory and causal mechanisms",
+    "text": "Theory and causal mechanisms"
+  },
+  {
+    "objectID": "slides/08_open_science.html#applications-to-election-prediction",
+    "href": "slides/08_open_science.html#applications-to-election-prediction",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Applications to election prediction",
+    "text": "Applications to election prediction\n\n\nTumasjan, A., Sprenger, T. O., Sandner, P. G., & Welpe, I. M. (2010). Predicting elections with Twitter: What 140 characters reveal about political sentiment. In: Proceedings of the 4th International AAAI Conference on Weblogs and Social Media (pp. 178–185).\n\n\n\nJungherr, A., Jürgens, P., & Schoen, H. (2012). Why the Pirate Party Won the German Election of 2009 or The Trouble With Predictions. Social Science Computer Review, 30(2), 229–234."
+  },
+  {
+    "objectID": "slides/08_open_science.html#the-micro-macro-link",
+    "href": "slides/08_open_science.html#the-micro-macro-link",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "The micro-macro link",
+    "text": "The micro-macro link\n\n\nJungherr, A., Schoen, H., & Jürgens, P. (2016). The Mediation of Politics through Twitter: An Analysis of Messages posted during the Campaign for the German Federal Election 2013. Journal of Computer-Mediated Communication, 21(1), 50–68.\nSee also: Coleman, J. S. (1990). Foundations of social theory. Belknap Press of Harvard University Press."
+  },
+  {
+    "objectID": "slides/08_open_science.html#an-error-framework-perspective",
+    "href": "slides/08_open_science.html#an-error-framework-perspective",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "An error framework perspective",
+    "text": "An error framework perspective\n\n\nGroves, R. M., & Lyberg, L. (2010). Total Survey Error: Past, Present, and Future. Public Opinion Quarterly, 74(5), 849–879."
+  },
+  {
+    "objectID": "slides/08_open_science.html#an-error-framework-for-dbd",
+    "href": "slides/08_open_science.html#an-error-framework-for-dbd",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "An error framework for DBD",
+    "text": "An error framework for DBD\n\n\nSen, I., Flöck, F., Weller, K., Weiß, B., & Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. Public Opinion Quarterly, 85(S1), 399–422."
+  },
+  {
+    "objectID": "slides/08_open_science.html#error-framework-for-dbd",
+    "href": "slides/08_open_science.html#error-framework-for-dbd",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Error framework for DBD",
+    "text": "Error framework for DBD\n\nCan improve communication between different social science and CSS communities\nMay help you to systematically reflect on the validity and reliability of your measurement\nBut this framework is just a starting point! There are always research design and platform specific things to consider"
+  },
+  {
+    "objectID": "slides/08_open_science.html#think-pair-share",
+    "href": "slides/08_open_science.html#think-pair-share",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nFocus on their relation to open science and reproducibility\nShare and discuss your results with the full class"
+  },
+  {
+    "objectID": "slides/08_open_science.html#required-reading-one-of-the-facebook-papers",
+    "href": "slides/08_open_science.html#required-reading-one-of-the-facebook-papers",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "Required reading: one of the “Facebook papers”",
+    "text": "Required reading: one of the “Facebook papers”\n\n\nNyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., Chen, A. Y., Allcott, H., Brown, T., Crespo-Tenorio, A., Dimmery, D., Freelon, D., Gentzkow, M., González-Bailón, S., Guess, A. M., Kennedy, E., Kim, Y. M., Lazer, D., Malhotra, N., Moehler, D., … Tucker, J. A. (2023). Like-minded sources on Facebook are prevalent but not polarizing. Nature, 620(7972), 137–144."
+  },
+  {
+    "objectID": "slides/08_open_science.html#references",
+    "href": "slides/08_open_science.html#references",
+    "title": "Open Science and Reproducibility in CSS",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim"
+  },
+  {
+    "objectID": "slides/04_designed_dbd.html#agenda-for-today",
+    "href": "slides/04_designed_dbd.html#agenda-for-today",
+    "title": "Designed Digital Data",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nData sources and getting data from APIs in R\nDesigned digital data\nData wrangling and joining operations in R"
+  },
+  {
+    "objectID": "slides/04_designed_dbd.html#homework",
+    "href": "slides/04_designed_dbd.html#homework",
+    "title": "Designed Digital Data",
     "section": "Homework",
-    "text": "Homework\n\nBrowse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.\n\nhttps://paulcbauer.github.io/apis_for_social_scientists_a_review/"
+    "text": "Homework\nBrowse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.\n\nhttps://bookdown.org/paul/apis_for_social_scientists/\n\n\n\nWhich APIs did you try out?\nWhich APIs/code still work?\nDid the data help shape your research ideas?"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#linking-digital-behavioral-data-and-surveys",
-    "href": "slides/03_webdata_designed_digital_data.html#linking-digital-behavioral-data-and-surveys",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#linking-digital-behavioral-data-and-surveys",
+    "href": "slides/04_designed_dbd.html#linking-digital-behavioral-data-and-surveys",
+    "title": "Designed Digital Data",
     "section": "Linking digital behavioral data and surveys",
     "text": "Linking digital behavioral data and surveys\n\n\nResnick, P., Adar, E., & Lampe, C. (2015). What Social Media Data We Are Missing and How to Get It. The ANNALS of the American Academy of Political and Social Science, 659(1), 192–206."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#how-to-actually-link-dbd-and-surveys",
-    "href": "slides/03_webdata_designed_digital_data.html#how-to-actually-link-dbd-and-surveys",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#how-to-actually-link-dbd-and-surveys",
+    "href": "slides/04_designed_dbd.html#how-to-actually-link-dbd-and-surveys",
+    "title": "Designed Digital Data",
     "section": "How to actually link DBD and surveys?",
     "text": "How to actually link DBD and surveys?\n\n\nStier, S., Breuer, J., Siegers, P., & Thorson, K. (2020). Integrating Survey Data and Digital Trace Data: Key Issues in Developing an Emerging Field. Social Science Computer Review, 38(5), 503–516.\n\n\n\n\\(\\rightarrow\\) The exact setup depends very much on the type of DBD and platform data that may be linked with surveys."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#example-political-polarization",
-    "href": "slides/03_webdata_designed_digital_data.html#example-political-polarization",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#example-political-polarization",
+    "href": "slides/04_designed_dbd.html#example-political-polarization",
+    "title": "Designed Digital Data",
     "section": "Example: political polarization",
     "text": "Example: political polarization\n\n\nConover, M., Ratkiewicz, J., Francisco, M., Goncalves, B., Menczer, F., & Flammini, A. (2011). Political Polarization on Twitter. In Proceedings of the 5th International AAAI Conference on Web and Social Media (pp. 89–96). AAAI Publications."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#political-polarization-on-twitter-better-conceptualized",
-    "href": "slides/03_webdata_designed_digital_data.html#political-polarization-on-twitter-better-conceptualized",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#political-polarization-on-twitter-better-conceptualized",
+    "href": "slides/04_designed_dbd.html#political-polarization-on-twitter-better-conceptualized",
+    "title": "Designed Digital Data",
     "section": "Political polarization on Twitter, better conceptualized",
     "text": "Political polarization on Twitter, better conceptualized\n\n\nBarberá, P., Jost, J. T., Nagler, J., Tucker, J. A., & Bonneau, R. (2015). Tweeting From Left to Right: Is Online Political Communication More Than an Echo Chamber? Psychological Science, 26(10), 1531–1542."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#political-polarization-using-web-browsing-data",
-    "href": "slides/03_webdata_designed_digital_data.html#political-polarization-using-web-browsing-data",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#political-polarization-using-web-browsing-data",
+    "href": "slides/04_designed_dbd.html#political-polarization-using-web-browsing-data",
+    "title": "Designed Digital Data",
     "section": "Political polarization, using web browsing data",
     "text": "Political polarization, using web browsing data\n\n\n\n\nNelson, J. L., & Webster, J. G. (2017). The Myth of Partisan Selective Exposure: A Portrait of the Online Political News Audience. Social Media + Society, 3(3).\n\n\n\n\nGuess, A. M. (2021). (Almost) Everything in Moderation: New Evidence on Americans’ Online Media Diets. American Journal of Political Science, 65(4), 1007–1022."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#our-two-required-readings",
-    "href": "slides/03_webdata_designed_digital_data.html#our-two-required-readings",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#our-two-required-readings",
+    "href": "slides/04_designed_dbd.html#our-two-required-readings",
+    "title": "Designed Digital Data",
     "section": "Our two required readings",
-    "text": "Our two required readings\n\n\n\n\nSilber, H., Breuer, J., Beuthner, C., Gummer, T., Keusch, F., Siegers, P., Stier, S., & Weiß, B. (2022). Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(Supplement_2), S387–S407.\n\n\n\n\nGuess, A. M., Barberá, P., Munzert, S., & Yang, J. (2021). The consequences of online partisan media. Proceedings of the National Academy of Sciences, 118(14)."
+    "text": "Our two required readings\n\n\n\n\nTromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. Social Media + Society, 7(1).\n\n\n\n\nSilber, H., Breuer, J., Beuthner, C., Gummer, T., Keusch, F., Siegers, P., Stier, S., & Weiß, B. (2022). Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(Supplement_2), S387–S407."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#guiding-questions",
-    "href": "slides/03_webdata_designed_digital_data.html#guiding-questions",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#guiding-questions",
+    "href": "slides/04_designed_dbd.html#guiding-questions",
+    "title": "Designed Digital Data",
     "section": "Guiding questions:",
     "text": "Guiding questions:\n\n- Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. \n\n- Reflect on the main strengths and weaknesses of these papers.\n\n- What are the concepts, assumed social mechanisms and operationalizations used in the papers?\n\n- What are the data in use? How are the data analyzed? Does this seem appropriate?\n\n- How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?\n\n- Do you see any ethical concerns?\n\n- If applicable, are there commonalities or differences between the two papers?"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#back-to-coding-2",
-    "href": "slides/03_webdata_designed_digital_data.html#back-to-coding-2",
-    "title": "Web Data and Designed Digital Data",
-    "section": "Back to coding",
-    "text": "Back to coding\n\nGo to file 3_session_three.R in https://sebastianstier.com/ma_css24/material.html"
+    "objectID": "slides/04_designed_dbd.html#think-pair-share",
+    "href": "slides/04_designed_dbd.html#think-pair-share",
+    "title": "Designed Digital Data",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nFocus on the presented solutions for data collection, their pros and cons, feasibility, etc.\nShare and discuss your results with the full class"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#references",
-    "href": "slides/03_webdata_designed_digital_data.html#references",
-    "title": "Research ethics in CSS and web data collection",
+    "objectID": "slides/04_designed_dbd.html#the-data-we-will-use-today",
+    "href": "slides/04_designed_dbd.html#the-data-we-will-use-today",
+    "title": "Designed Digital Data",
+    "section": "The data we will use today",
+    "text": "The data we will use today\n\n\nWojcieszak, M., Clemm Von Hohenberg, B., Casas, A., Menchen-Trevino, E., De Leeuw, S., Gonçalves, A., & Boon, M. (2022). Null effects of news exposure: A test of the (un)desirable effects of a ‘news vacation’ and ‘news binging’. Humanities and Social Sciences Communications, 9(1), 413.\n\n\n\nA toy browsing data set from our OSF repository. It is based on a real data set collected from a US sample in 2019, but reduced to fewer participants and slightly modified for reasons of anonymity (n_subjects = 100; n_visits = 2 million)."
+  },
+  {
+    "objectID": "slides/04_designed_dbd.html#lets-get-started",
+    "href": "slides/04_designed_dbd.html#lets-get-started",
+    "title": "Designed Digital Data",
+    "section": "Let’s get started",
+    "text": "Let’s get started\n\nDownload file 3_class_four.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/04_designed_dbd.html#references",
+    "href": "slides/04_designed_dbd.html#references",
+    "title": "Designed Digital Data",
     "section": "References",
-    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nboyd, danah m., and Nicole B. Ellison. 2007. “Social Network Sites: Definition, History, and Scholarship.” Journal of Computer-Mediated Communication 13 (1): 210–30. https://doi.org/https://doi.org/10.1111/j.1083-6101.2007.00393.x.\n\n\nFiesler, Casey, and Nicholas Proferes. 2018. “\"Participant\"\" Perceptions of Twitter Research Ethics.” Social Media + Society 4 (1): 205630511876336. https://doi.org/10.1177/2056305118763366.\n\n\nNeethling, Johann. 2005. “Personality Rights: A Comparative Overview.” Comparative and International Law Journal of Southern Africa 38 (2): 210–45."
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#trump-twitter-archive",
-    "href": "slides/03_webdata_designed_digital_data.html#trump-twitter-archive",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Trump Twitter Archive",
-    "text": "Trump Twitter Archive\n\n\nhttps://www.thetrumparchive.com"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#coding",
-    "href": "slides/03_webdata_designed_digital_data.html#coding",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Coding",
-    "text": "Coding\n\nDownload file 2_class_three.R from https://sebastianstier.com/ma_css24-25/material.html\nOpen it in RStudio, ideally within your project"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#research-ethics",
-    "href": "slides/03_webdata_designed_digital_data.html#research-ethics",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Research ethics?",
-    "text": "Research ethics?\n\nResearch ethics\n\nMoral principles and actions guiding and shaping research\n\nfrom inception to completion,\nthrough dissemination and sharing of findings,\nincluding archiving and future use.\n\n\n\n\n\nResearch ethics in the social sciences\n\nInitially “patient protection” model of medical research\nToday broader scope including consideration of benefits, risks and harms to all persons connected with the research\nIncluding social responsibilities of researchers"
-  },
-  {
-    "objectID": "slides/03_webdata_designed_digital_data.html#introduction-to-ggplot2",
-    "href": "slides/03_webdata_designed_digital_data.html#introduction-to-ggplot2",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Introduction to ggplot2",
-    "text": "Introduction to ggplot2\n\n\n\n\nhttps://stulp.gmw.rug.nl/dataviz/ggplottheory.html\n\n\n\nggplot2 follows the “grammar of graphics”\nCheatsheet with the most relevant functions\nExtensions to ggplot2 that others built"
+    "objectID": "slides/03_webdata_designed_digital_data.html#agenda-for-today",
+    "href": "slides/03_webdata_designed_digital_data.html#agenda-for-today",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Agenda for today",
+    "text": "Agenda for today\n\nR session, focus on social media and text data\nResearch ethics\nR session, focus on data visualization\nIntroduction to web data collection and APIs"
   },
   {
     "objectID": "slides/03_webdata_designed_digital_data.html#advantages-of-digital-behavioral-data",
     "href": "slides/03_webdata_designed_digital_data.html#advantages-of-digital-behavioral-data",
-    "title": "Research ethics in CSS and web data collection",
+    "title": "Research Ethics in CSS and Web Data Collection",
     "section": "Advantages of digital behavioral data",
     "text": "Advantages of digital behavioral data\n\nDigital behavioral data capture human behavior…\n\nnon-intrusively,\nreliably,\nwith fine-grained and multi-dimensional features,\nacross time and contexts."
   },
   {
     "objectID": "slides/03_webdata_designed_digital_data.html#downsides-of-digital-behavioral-data",
     "href": "slides/03_webdata_designed_digital_data.html#downsides-of-digital-behavioral-data",
-    "title": "Research ethics in CSS and web data collection",
+    "title": "Research Ethics in CSS and Web Data Collection",
     "section": "Downsides of digital behavioral data",
     "text": "Downsides of digital behavioral data\n\nBut, digital behavioral data…\n\ncome in large volumes,\nare unstructured,\nare multi-dimensional (text, images, videos, audio, …),\nare often produced and provided with minimal or no information on the data generating process.\n\n\n\n\\(\\rightarrow\\) Analyzing digital behavioral data in a scientifically meaningful way is an immense challenge"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#think-pair-share",
-    "href": "slides/03_webdata_designed_digital_data.html#think-pair-share",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Think-pair-share",
-    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nShare+discuss your position on trade offs between research ethics in CSS and data access restrictions with the full class\n\n\n\n\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics.Social Media + Society, 4(1).\n\n\n\n\nFreelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668."
+    "objectID": "slides/03_webdata_designed_digital_data.html#trump-twitter-archive",
+    "href": "slides/03_webdata_designed_digital_data.html#trump-twitter-archive",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Trump Twitter Archive",
+    "text": "Trump Twitter Archive\n\n\nhttps://www.thetrumparchive.com"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#our-two-required-readings-1",
-    "href": "slides/03_webdata_designed_digital_data.html#our-two-required-readings-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Our two required readings",
-    "text": "Our two required readings\n\n\n\n\nSilber, H., Breuer, J., Beuthner, C., Gummer, T., Keusch, F., Siegers, P., Stier, S., & Weiß, B. (2022). Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. Journal of the Royal Statistical Society Series A: Statistics in Society, 185(Supplement_2), S387–S407.\n\n\n\n\nGuess, A. M., Barberá, P., Munzert, S., & Yang, J. (2021). The consequences of online partisan media. Proceedings of the National Academy of Sciences, 118(14)."
+    "objectID": "slides/03_webdata_designed_digital_data.html#coding",
+    "href": "slides/03_webdata_designed_digital_data.html#coding",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Coding",
+    "text": "Coding\n\nDownload file 2_class_three.R from https://sebastianstier.com/ma_css24-25/material.html\nOpen it in RStudio, ideally within your project"
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#guiding-questions-1",
-    "href": "slides/03_webdata_designed_digital_data.html#guiding-questions-1",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Guiding questions:",
-    "text": "Guiding questions:\n\n- Describe what problem or question these papers address and the main contributions that they make towards a solution or answer. \n\n- Reflect on the main strengths and weaknesses of these papers.\n\n- What are the concepts, assumed social mechanisms and operationalizations used in the papers?\n\n- What are the data in use? How are the data analyzed? Does this seem appropriate?\n\n- How convincing do you find the arguments presented by the authors? Are the conclusions backed up by the empirical results?\n\n- Do you see any ethical concerns?\n\n- If applicable, are there commonalities or differences between the two papers?"
+    "objectID": "slides/03_webdata_designed_digital_data.html#research-ethics-1",
+    "href": "slides/03_webdata_designed_digital_data.html#research-ethics-1",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Research ethics?",
+    "text": "Research ethics?\n\n\nMoral principles and actions guiding and shaping research\n\nfrom inception to completion,\nthrough dissemination and sharing of findings,\nincluding archiving and future use.\n\n\n\n\n\n\nResearch ethics in the social sciences\n\nInitially “patient protection” model of medical research\nToday broader scope including consideration of benefits, risks and harms to all persons connected with the research\nIncluding social responsibilities of researchers"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#who-are-the-relevant-actors",
+    "href": "slides/03_webdata_designed_digital_data.html#who-are-the-relevant-actors",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Who are the relevant actors?",
+    "text": "Who are the relevant actors?"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#data-protection",
+    "href": "slides/03_webdata_designed_digital_data.html#data-protection",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Data protection",
+    "text": "Data protection\n\nData protection\n\nPart of fundamental right to privacy (or “informational freedom”)\n\n“Privacy is a personal condition of life characterised by seclusion from, and therefore absence of acquaintance by, the public” (Neethling 2005: 233)\nPrevention of unwanted disclosure of personal information or the misuse of such information"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations",
+    "href": "slides/03_webdata_designed_digital_data.html#data-protection-legal-foundations",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Data protection: legal foundations",
+    "text": "Data protection: legal foundations\n\nLegal framework in the European Union\n\nCharter of Fundamental Rights of the EU (Art. 8)\nGeneral Data Protection Regulation (GDPR)\nNational and sub-national data protection acts\nSpecialized laws\n\nSome legal documents and commentary\n\nDigital Services Act data access for researchers\nGerman law on text and data mining"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#informed-consent",
+    "href": "slides/03_webdata_designed_digital_data.html#informed-consent",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Informed consent",
+    "text": "Informed consent\n\n\nBridge between data protection and research ethics\nInformed consent means for example:\n\ninformation\ntransparency\nminimal requirement \\(\\rightarrow\\) chance not to consent\n\nStatus quo in social media research: lack of informed consent"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#social-networking-sites",
+    "href": "slides/03_webdata_designed_digital_data.html#social-networking-sites",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Social networking sites",
+    "text": "Social networking sites\n\n“We define social network sites as web-based services that allow individuals to\n\nconstruct a public or semi-public profile within a bounded system,\narticulate a list of other users with whom they share a connection, and\nview and traverse their list of connections and those made by others within the system.\n\nThe nature and nomenclature of these connections may vary from site to site.” (boyd and Ellison 2007: 211)\n\\(\\rightarrow\\) widely differing platform affordances"
   },
   {
     "objectID": "slides/03_webdata_designed_digital_data.html#are-all-these-researchers-doing-something-wrong",
     "href": "slides/03_webdata_designed_digital_data.html#are-all-these-researchers-doing-something-wrong",
-    "title": "Research ethics in CSS and web data collection",
+    "title": "Research Ethics in CSS and Web Data Collection",
     "section": "Are all these researchers doing something wrong?",
     "text": "Are all these researchers doing something wrong?\n\n\n\n\nLukito, J., et al. (2023). The State of Digital Media Data Research, 2023. Media and Democracy Data Cooperative.\n\n\n\n\nYu, J., & Muñoz-Justicia, J. (2020). A Bibliometric Overview of Twitter-Related Studies Indexed in Web of Science. Future Internet, 12(5), 91."
   },
   {
-    "objectID": "slides/03_webdata_designed_digital_data.html#lets-check-out-youtube",
-    "href": "slides/03_webdata_designed_digital_data.html#lets-check-out-youtube",
-    "title": "Research ethics in CSS and web data collection",
-    "section": "Let’s check out YouTube",
-    "text": "Let’s check out YouTube\n\n\n\n\nhttps://stulp.gmw.rug.nl/dataviz/ggplottheory.html\n\n\n\nggplot2 follows the “grammar of graphics”\nCheatsheet with the most relevant functions\nExtensions to ggplot2 that others built"
+    "objectID": "slides/03_webdata_designed_digital_data.html#think-pair-share",
+    "href": "slides/03_webdata_designed_digital_data.html#think-pair-share",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nShare+discuss your position on trade offs between research ethics in CSS and data access restrictions with the full class\n\n\n\n\n\nFiesler, C., & Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics.Social Media + Society, 4(1).\n\n\n\n\nFreelon, D. (2018). Computational Research in the Post-API Age. Political Communication, 35(4), 665–668."
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#legitimate-academic-interests",
+    "href": "slides/03_webdata_designed_digital_data.html#legitimate-academic-interests",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Legitimate academic interests",
+    "text": "Legitimate academic interests\nThere are legitimate academic interests for studying online platforms!\n\n\nUnderstanding the impact of digital media on society and democracy\nKeeping online platforms accountable\nMitigating “systemic risks” (see https://digital-strategy.ec.europa.eu/en/consultations/guidelines-providers-very-large-online-platforms-and-very-large-online-search-engines-mitigation)\nPreserving historical material\n… and more reasons?"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#what-can-we-do-to-ensure-the-integrity-of-our-css-research",
+    "href": "slides/03_webdata_designed_digital_data.html#what-can-we-do-to-ensure-the-integrity-of-our-css-research",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "What can we do to ensure the integrity of our CSS research?",
+    "text": "What can we do to ensure the integrity of our CSS research?\n\n\n\nAwareness: incorporate ethical considerations when designing and conducting our research\nDefine ethical “contextual factors” (Fiesler and Proferes 2018: 9)\n\n“justify what and how many tweets, what the study is about, who is conducting it, what methods researchers use”\n\nKeep the DBD safe and protected\nAnalyze DBD at the aggregated group-/variable-level\nAvoid unnecessary “forensic analysis” of individual data patterns / users\nNot publishing/printing any personal information in a paper/thesis\n“Rewarding” participants with monetary incentives or information"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#introduction-to-ggplot2",
+    "href": "slides/03_webdata_designed_digital_data.html#introduction-to-ggplot2",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Introduction to ggplot2",
+    "text": "Introduction to ggplot2\n\n\n\n\nhttps://stulp.gmw.rug.nl/dataviz/ggplottheory.html\n\n\n\nggplot2 follows the “grammar of graphics”\nCheatsheet with the most relevant functions\nExtensions to ggplot2 that others built"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#back-to-coding",
+    "href": "slides/03_webdata_designed_digital_data.html#back-to-coding",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Back to coding",
+    "text": "Back to coding\n\nGo back to file 2_class_three.R in https://sebastianstier.com/ma_css24-25/material.html"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#collecting-digital-behavioral-data",
+    "href": "slides/03_webdata_designed_digital_data.html#collecting-digital-behavioral-data",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Collecting digital behavioral data",
+    "text": "Collecting digital behavioral data\nStarting 20 November 2024: Presentations of thesis ideas\nFor that, we need to collect some DBD for your research"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#how-to-collect-web-data",
+    "href": "slides/03_webdata_designed_digital_data.html#how-to-collect-web-data",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "How to collect web data",
+    "text": "How to collect web data\n\n\nApplication Programming Interfaces (APIs)\n\n\nhttps://ninetailed.io/blog/api-calls/\n\n\n\nWeb scraping\n\n\nhttps://www.faz.net/aktuell/politik/inland/bayern-muenchen-will-kita-foerderung-umstellen-19549912.html"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#how-does-it-look-like-in-r",
+    "href": "slides/03_webdata_designed_digital_data.html#how-does-it-look-like-in-r",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "How does it look like in R?",
+    "text": "How does it look like in R?\n\n\nAPIs\n\nlibrary(academictwitteR)\ntweets &lt;- get_all_tweets(\n    query = \"#BlackLivesMatter\",\n    start_tweets = \"2020-01-01T00:00:00Z\",\n    end_tweets = \"2020-01-05T00:00:00Z\",\n    file = \"blmtweets\"\n  )\n\n\n\nWeb scraping\n\nlibrary(rvest)\nurl &lt;- \"https://rvest.tidyverse.org/articles/starwars.html\"\nhtml &lt;- read_html(url)\n\nsection &lt;- html |&gt; html_elements(\"section\")\nhead(section, 5)\n\n{xml_nodeset (5)}\n[1] &lt;section&gt;&lt;h2 data-id=\"1\"&gt;\\nThe Phantom Menace\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 1999 ...\n[2] &lt;section&gt;&lt;h2 data-id=\"2\"&gt;\\nAttack of the Clones\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 20 ...\n[3] &lt;section&gt;&lt;h2 data-id=\"3\"&gt;\\nRevenge of the Sith\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 200 ...\n[4] &lt;section&gt;&lt;h2 data-id=\"4\"&gt;\\nA New Hope\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: 1977-05-25\\n ...\n[5] &lt;section&gt;&lt;h2 data-id=\"5\"&gt;\\nThe Empire Strikes Back\\n&lt;/h2&gt;\\n&lt;p&gt;\\nReleased: ..."
   },
   {
     "objectID": "slides/03_webdata_designed_digital_data.html#lets-check-out-the-youtube-api",
     "href": "slides/03_webdata_designed_digital_data.html#lets-check-out-the-youtube-api",
-    "title": "Research ethics in CSS and web data collection",
+    "title": "Research Ethics in CSS and Web Data Collection",
     "section": "Let’s check out the YouTube API",
     "text": "Let’s check out the YouTube API\n\n\n\n\n\nYou always have to register for an API; requirements differ widely\nRegistration and endpoint documentation for the YouTube API\nSome APIs have rate limits, i.e., the number of free data requests is limited"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#elon-we-have-a-problem",
+    "href": "slides/03_webdata_designed_digital_data.html#elon-we-have-a-problem",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Elon, we have a problem",
+    "text": "Elon, we have a problem\n\n\nhttps://aoir.org/facebook-shuts-the-gate-after-the-horse-has-bolted/ https://www.forbes.com/sites/antoniopequenoiv/2023/06/30/these-popular-third-party-reddit-apps-will-disappear-saturday-as-api-changes-take-effect-despite-weeks-of-user-protest/ https://www.theguardian.com/technology/2023/feb/07/techscape-elon-musk-twitter-api"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#how-to-still-collect-web-data",
+    "href": "slides/03_webdata_designed_digital_data.html#how-to-still-collect-web-data",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "How to (still) collect web data",
+    "text": "How to (still) collect web data\n\n\n\n\nhttps://paulcbauer.github.io/apis_for_social_scientists_a_review/\n\n\n\n\nhttp://www.r-datacollection.com"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#homework",
+    "href": "slides/03_webdata_designed_digital_data.html#homework",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "Homework",
+    "text": "Homework\n\nBrowse through Bauer et al. and explore the options for collecting DBD. If you find the time, try a few of the proposed APIs and code snippets.\n\nhttps://paulcbauer.github.io/apis_for_social_scientists_a_review/"
+  },
+  {
+    "objectID": "slides/03_webdata_designed_digital_data.html#references",
+    "href": "slides/03_webdata_designed_digital_data.html#references",
+    "title": "Research Ethics in CSS and Web Data Collection",
+    "section": "References",
+    "text": "References\n\n\n\n\nComputational Social Science and Digital Behavioral Data, University of Mannheim\n\n\n\n\nboyd, danah m., and Nicole B. Ellison. 2007. “Social Network Sites: Definition, History, and Scholarship.” Journal of Computer-Mediated Communication 13 (1): 210–30. https://doi.org/https://doi.org/10.1111/j.1083-6101.2007.00393.x.\n\n\nFiesler, Casey, and Nicholas Proferes. 2018. “\"Participant\"\" Perceptions of Twitter Research Ethics.” Social Media + Society 4 (1): 205630511876336. https://doi.org/10.1177/2056305118763366.\n\n\nNeethling, Johann. 2005. “Personality Rights: A Comparative Overview.” Comparative and International Law Journal of Southern Africa 38 (2): 210–45."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2013-2024, Kim Davies and contributors. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/httpx-0.27.2.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "Copyright © 2019, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.13/site-packages/pyzmq-26.2.0.dist-info/licenses/LICENSE.html",
+    "title": "Computational Social Science and Digital Behavioral Data",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2009-2012, Brian Granger, Min Ragan-Kelley\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "slides/01_introduction.html#learning-objectives-for-today",
+    "href": "slides/01_introduction.html#learning-objectives-for-today",
+    "title": "Social media in comparative politics",
+    "section": "Learning objectives for today",
+    "text": "Learning objectives for today\nAfter this class you will be able to…\n\ndescribe the role of social media and politics,\ncritically reflect upon the value of social media data in comparative politics,\nwork with text as data using quanteda in R."
+  },
+  {
+    "objectID": "slides/01_introduction.html#think-pair-share",
+    "href": "slides/01_introduction.html#think-pair-share",
+    "title": "Social media in comparative politics",
+    "section": "Think-pair-share",
+    "text": "Think-pair-share\n\nDiscuss the literature for today with your neighbor (5 min.)\nFocus on the used methods, their pros and cons, feasibility, etc.\nLocate our two required readings on the map of Grimmer and Stewart (2013)\nShare and discuss your results with the full class"
+  },
+  {
+    "objectID": "slides/01_introduction.html#automated-text-analysis-in-r",
+    "href": "slides/01_introduction.html#automated-text-analysis-in-r",
+    "title": "Social media in comparative politics",
+    "section": "Automated text analysis in R",
+    "text": "Automated text analysis in R\n\n\nBenoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., Matsuo, A., Perry, P. O., Kuha, J., & Lauderdale, B. (2018). quanteda: An R package for the quantitative analysis of textual data. Journal of Open Source Software, 3(30), 774."
+  },
+  {
+    "objectID": "slides/01_introduction.html#trump-twitter-archive",
+    "href": "slides/01_introduction.html#trump-twitter-archive",
+    "title": "Social media in comparative politics",
+    "section": "Trump Twitter Archive",
+    "text": "Trump Twitter Archive\n\n\nhttps://www.thetrumparchive.com"
+  },
+  {
+    "objectID": "slides/01_introduction.html#coding",
+    "href": "slides/01_introduction.html#coding",
+    "title": "Social media in comparative politics",
+    "section": "Coding",
+    "text": "Coding\n\nDownload file 06_text_as_data.R from https://sebastianstier.com/ds_comp_pol25/material.html\nOpen it in RStudio within your project"
+  },
+  {
+    "objectID": "slides/01_introduction.html#automated-text-analysis-the-menu-of-options",
+    "href": "slides/01_introduction.html#automated-text-analysis-the-menu-of-options",
+    "title": "Social media in comparative politics",
+    "section": "Automated text analysis: The menu of options",
+    "text": "Automated text analysis: The menu of options\n\n\nGrimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297."
   }
 ]

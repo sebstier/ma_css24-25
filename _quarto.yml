@@ -3,8 +3,8 @@ project:
   lib-dir: "libs"
 
 website:
-  title: "Computational Social Science and Digital Behavioral Data"
-  site-url: "https://sebstier.github.io/ma_css24-25/"
+  title: "Data Science in Comparative Politics"
+  site-url: "https://sebstier.github.io/ds_comp_pol25/"
   search: false
   navbar:
     left:
@@ -14,11 +14,11 @@ website:
         text: Material
       - href: slides.qmd
         text: Slides
-    right:
-      - text: ILIAS
-        href: "https://ilias.uni-mannheim.de/ilias.php?baseClass=ilrepositorygui&ref_id=1527661"
+    # right:
+    #   - text: ILIAS
+    #     href: "https://ilias.uni-mannheim.de/ilias.php?baseClass=ilrepositorygui&ref_id=1527661"
   page-footer:
-    left: "Sebastian Stier 2024"
+    left: "Sebastian Stier 2025"
     right: "Powered by [Quarto](https://quarto.org)"
 
 format:
