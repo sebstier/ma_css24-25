@@ -8,11 +8,11 @@
 <link href="../libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Sebastian Stier">
-  <meta name="dcterms.date" content="2024-09-04">
-  <title>Computational Social Science and Digital Behavioral Data - Introduction</title>
+  <meta name="dcterms.date" content="2025-05-13">
+  <title>Data Science in Comparative Politics – Social media in comparative politics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,92 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../libs/revealjs/dist/theme/quarto.css">
   <link href="../libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -327,7 +412,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction</h1>
+  <h1 class="title">Social media in comparative politics</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -335,85 +420,34 @@
 Sebastian Stier 
 </div>
         <p class="quarto-title-affiliation">
-            University of Mannheim &amp; GESIS – Leibniz Institute for the Social Sciences
+            Teaching Presentation University of Hamburg, Summer semester 2025
           </p>
     </div>
 </div>
 
-  <p class="date">2024-09-04</p>
-</section>
-<section id="about-me" class="slide level2">
-<h2>About me</h2>
-<ul>
-<li>Dr.&nbsp;in Political Science in 2016 at the University of Heidelberg</li>
-<li>No R or programming training during my studies</li>
-<li>2016-2023, Postdoc/Senior Researcher at GESIS – Leibniz Institute for the Social Sciences</li>
-<li>Since November 2023
-<ul>
-<li>Scientific Director Department Computational Social Science at GESIS</li>
-<li>Professor of Computational Social Science, University of Mannheim</li>
-</ul></li>
-</ul>
-<div class="cell">
-<style type="text/css">
-.small-code{
-  font-size: 70%  
-}
-</style>
-</div>
-</section>
-<section id="my-research-interests" class="slide level2">
-<h2>My research interests</h2>
-
-<img data-src="../material/img/network_sst.png" class="r-stretch"></section>
-<section id="what-are-your-expectations-for-this-class" class="slide level2">
-<h2>What are your expectations for this class?</h2>
-<p>Let’s do a survey!</p>
-
-<img data-src="../material/img/mentimeter_qr_code.png" class="r-stretch"></section>
-<section id="about-you" class="slide level2">
-<h2>About you</h2>
-<ul>
-<li>Who are you?</li>
-<li>What’s your study program and which semester are you in?</li>
-<li>What are your experiences with scientific computing/programming?</li>
-<li>Why this course? Which topics/methods/data do you want to learn more about?</li>
-</ul>
-</section>
-<section id="agenda-for-today" class="slide level2">
-<h2>Agenda for today</h2>
-<ol type="1">
-<li><p>Logistics</p></li>
-<li><p>Introduction to Computational Social Science</p></li>
-<li><p><em>R</em>: Warmup session, basics &amp; introduction to <em>tidyverse</em></p></li>
-</ol>
-</section>
-<section>
-<section id="logistics" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>1. Logistics</h1>
-
+  <p class="date">2025-05-13</p>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ahhnrxahpw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ahhnrxahpw table {
+<div id="rfiwudijvs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rfiwudijvs table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ahhnrxahpw thead, #ahhnrxahpw tbody, #ahhnrxahpw tfoot, #ahhnrxahpw tr, #ahhnrxahpw td, #ahhnrxahpw th {
+#rfiwudijvs thead, #rfiwudijvs tbody, #rfiwudijvs tfoot, #rfiwudijvs tr, #rfiwudijvs td, #rfiwudijvs th {
   border-style: none;
 }
 
-#ahhnrxahpw p {
+#rfiwudijvs p {
   margin: 0;
   padding: 0;
 }
 
-#ahhnrxahpw .gt_table {
+#rfiwudijvs .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -439,12 +473,12 @@ Sebastian Stier
   border-left-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_caption {
+#rfiwudijvs .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ahhnrxahpw .gt_title {
+#rfiwudijvs .gt_title {
   color: #333333;
   font-size: 14px;
   font-weight: initial;
@@ -456,7 +490,7 @@ Sebastian Stier
   border-bottom-width: 0;
 }
 
-#ahhnrxahpw .gt_subtitle {
+#rfiwudijvs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -468,7 +502,7 @@ Sebastian Stier
   border-top-width: 0;
 }
 
-#ahhnrxahpw .gt_heading {
+#rfiwudijvs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -480,13 +514,13 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_bottom_border {
+#rfiwudijvs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_col_headings {
+#rfiwudijvs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -501,7 +535,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_col_heading {
+#rfiwudijvs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -521,7 +555,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#ahhnrxahpw .gt_column_spanner_outer {
+#rfiwudijvs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -533,15 +567,15 @@ Sebastian Stier
   padding-right: 4px;
 }
 
-#ahhnrxahpw .gt_column_spanner_outer:first-child {
+#rfiwudijvs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ahhnrxahpw .gt_column_spanner_outer:last-child {
+#rfiwudijvs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ahhnrxahpw .gt_column_spanner {
+#rfiwudijvs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -553,11 +587,11 @@ Sebastian Stier
   width: 100%;
 }
 
-#ahhnrxahpw .gt_spanner_row {
+#rfiwudijvs .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ahhnrxahpw .gt_group_heading {
+#rfiwudijvs .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -583,7 +617,7 @@ Sebastian Stier
   text-align: left;
 }
 
-#ahhnrxahpw .gt_empty_group_heading {
+#rfiwudijvs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -598,15 +632,15 @@ Sebastian Stier
   vertical-align: middle;
 }
 
-#ahhnrxahpw .gt_from_md > :first-child {
+#rfiwudijvs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ahhnrxahpw .gt_from_md > :last-child {
+#rfiwudijvs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ahhnrxahpw .gt_row {
+#rfiwudijvs .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -625,7 +659,7 @@ Sebastian Stier
   overflow-x: hidden;
 }
 
-#ahhnrxahpw .gt_stub {
+#rfiwudijvs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -638,7 +672,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#ahhnrxahpw .gt_stub_row_group {
+#rfiwudijvs .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -652,15 +686,15 @@ Sebastian Stier
   vertical-align: top;
 }
 
-#ahhnrxahpw .gt_row_group_first td {
+#rfiwudijvs .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ahhnrxahpw .gt_row_group_first th {
+#rfiwudijvs .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ahhnrxahpw .gt_summary_row {
+#rfiwudijvs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -670,16 +704,16 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#ahhnrxahpw .gt_first_summary_row {
+#rfiwudijvs .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_first_summary_row.thick {
+#rfiwudijvs .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ahhnrxahpw .gt_last_summary_row {
+#rfiwudijvs .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -689,7 +723,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_grand_summary_row {
+#rfiwudijvs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -699,7 +733,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#ahhnrxahpw .gt_first_grand_summary_row {
+#rfiwudijvs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -709,7 +743,7 @@ Sebastian Stier
   border-top-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_last_grand_summary_row_top {
+#rfiwudijvs .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -719,11 +753,11 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_striped {
+#rfiwudijvs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ahhnrxahpw .gt_table_body {
+#rfiwudijvs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -732,7 +766,7 @@ Sebastian Stier
   border-bottom-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_footnotes {
+#rfiwudijvs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -746,7 +780,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_footnote {
+#rfiwudijvs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -755,7 +789,7 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#ahhnrxahpw .gt_sourcenotes {
+#rfiwudijvs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -769,7 +803,7 @@ Sebastian Stier
   border-right-color: #D3D3D3;
 }
 
-#ahhnrxahpw .gt_sourcenote {
+#rfiwudijvs .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -777,72 +811,72 @@ Sebastian Stier
   padding-right: 5px;
 }
 
-#ahhnrxahpw .gt_left {
+#rfiwudijvs .gt_left {
   text-align: left;
 }
 
-#ahhnrxahpw .gt_center {
+#rfiwudijvs .gt_center {
   text-align: center;
 }
 
-#ahhnrxahpw .gt_right {
+#rfiwudijvs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ahhnrxahpw .gt_font_normal {
+#rfiwudijvs .gt_font_normal {
   font-weight: normal;
 }
 
-#ahhnrxahpw .gt_font_bold {
+#rfiwudijvs .gt_font_bold {
   font-weight: bold;
 }
 
-#ahhnrxahpw .gt_font_italic {
+#rfiwudijvs .gt_font_italic {
   font-style: italic;
 }
 
-#ahhnrxahpw .gt_super {
+#rfiwudijvs .gt_super {
   font-size: 65%;
 }
 
-#ahhnrxahpw .gt_footnote_marks {
+#rfiwudijvs .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ahhnrxahpw .gt_asterisk {
+#rfiwudijvs .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ahhnrxahpw .gt_indent_1 {
+#rfiwudijvs .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ahhnrxahpw .gt_indent_2 {
+#rfiwudijvs .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ahhnrxahpw .gt_indent_3 {
+#rfiwudijvs .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ahhnrxahpw .gt_indent_4 {
+#rfiwudijvs .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ahhnrxahpw .gt_indent_5 {
+#rfiwudijvs .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ahhnrxahpw .katex-display {
+#rfiwudijvs .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ahhnrxahpw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rfiwudijvs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -865,59 +899,55 @@ Sebastian Stier
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>3 September 2024</p></td>
-<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
+<td class="gt_row gt_left" headers="Date"><p>8 April 2025</p></td>
+<td class="gt_row gt_left" headers="Topics"><ul>
 <li>Introduction and expectations</li>
-<li>Foundations of CSS</li>
-<li>Getting started in R</li>
+<li>Setup in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"></td>
+<td class="gt_row gt_left" headers="Required reading"></td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>11 September 2024</p></td>
+<td class="gt_row gt_left" headers="Date"><p>15 April 2025</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>Foundations of CSS</li>
-<li>The R tidyverse</li>
+<li>Foundations of data science</li>
+<li>Foundations of comparative politics</li>
+<li>The tidyverse in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Lazer, D., &amp; Radford, J. (2017). Data ex Machina: Introduction to Big Data. <a href="https://doi.org/10.1146/annurev-soc-060116-053457"><em>Annual Review of Sociology</em>, 43(1), 19–39.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Caramani, D. (Ed.). (2017). <em>Comparative politics (4th edition)</em>. <a href="https://global.oup.com/ushe/product/comparative-politics-9780192846051?cc=de&amp;lang=en&amp;">Oxford University Press.</a> <br><br> Lazer, D., &amp; Radford, J. (2017). Data ex Machina: Introduction to Big Data. <a href="https://doi.org/10.1146/annurev-soc-060116-053457"><em>Annual Review of Sociology</em>, 43(1), 19–39.</a></p></td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>18 September 2024 <br><br> <strong>(Block: 15:30 - 18:45)</strong></p></td>
+<td class="gt_row gt_left" headers="Date"><p>22 April 2025</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>Research ethics in CSS</li>
-<li>Social media, web data and web scraping</li>
-<li>APIs and web data collection</li>
-<li>Data visualization</li>
+<li>Democracy and autocracy</li>
+<li>Data sources in comparative politics</li>
+<li>Data wrangling in R: joining, grouping and reshaping data</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Fiesler, C., &amp; Proferes, N. (2018). ‘Participant’ Perceptions of Twitter Research Ethics. <a href="https://doi.org/10.1177/2056305118763366"><em>Social Media + Society</em>, 4(1).</a> <br><br> Freelon, D. (2018). Computational Research in the Post-API Age. <a href="https://osf.io/preprints/socarxiv/56f4q"><em>Political Communication</em>, 35(4), 665–668.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Coppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Altman, D., Angiolillo, F., Bernhard, M., Borella, C., &amp; Cornell, A. (2024). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4774440"><em>V-Dem Codebook v14.</em></a> <br><br> Moses, J., &amp; Knutsen, T. L. (2012). The comparative method. In J. Moses &amp; T. L. Knutsen (Eds.), <a href="https://www.bloomsbury.com/us/ways-of-knowing-9781352005530/"><em>Ways of knowing: Competing methodologies in social and political research</em> (2. ed, pp.&nbsp;94–115). Palgrave Macmillan.</a></p></td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>2 October 2024</p></td>
+<td class="gt_row gt_left" headers="Date"><p>29 April 2025</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>APIs and web data collection, continued</li>
-<li>Linked surveys and DBD</li>
-<li>Web tracking data</li>
-<li>Smartphone-based data collection</li>
+<li>Party competition and ideology in Europe</li>
+<li>Party manifestos and legislative speech</li>
+<li>Data visualization in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Tromble, R. (2021). Where Have All the Data Gone? A Critical Reflection on Academic Digital Research in the Post-API Age. <a href="https://doi.org/10.1177/2056305121988929">Social Media + Society, 7(1).</a> <br><br> Silber, H., et al.&nbsp;Linking Surveys and Digital Trace Data: Insights From two Studies on Determinants of Data Sharing Behaviour. <a href="https://doi.org/10.1111/rssa.12954"><em>Journal of the Royal Statistical Society Series A: Statistics in Society</em>, 185(S2), S387–S407.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Kriesi, H., &amp; Hutter, S. (2019). Crises and the transformation of the national political space in Europe. In H. Kriesi &amp; S. Hutter (Eds.), <a href="https://doi.org/10.1017/9781108652780"><em>European party politics in times of crisis</em> (pp.&nbsp;3–32). Cambridge University Press.</a><br><br> Sebők, M., Proksch, S.-O., Rauh, C., Visnovitz, P., Balázs, G., &amp; Schwalbach, J. (2023). Comparative European legislative research in the age of large-scale computational text analysis: A review article. <a href="https://doi.org/10.1177/01925121231199904"><em>International Political Science Review</em>.</a></p></td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>16 October 2024 <br><br> <strong>(Block: 15:30 - 18:45)</strong></p></td>
+<td class="gt_row gt_left" headers="Date"><p>6 May 2025</p></td>
 <td class="gt_row gt_left" headers="Topics"><ul>
-<li>Introduction to automated text analysis</li>
-<li>Supervised and unsupervised models</li>
-<li>Validation of model results</li>
+<li>The Internet and democracy</li>
+<li>Regression analysis and presentation of results in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Schwemmer, C., &amp; Wieczorek, O. (2020). The Methodological Divide of Sociology: Evidence from Two Decades of Journal Publications. <a href="https://doi.org/10.1177/0038038519853146"><em>Sociology</em>, 54(1), 3–21.</a> <br><br> Bonikowski, B., Luo, Y., &amp; Stuhler, O. (2022). Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952–2020) with Neural Language Models. <a href="https://doi.org/10.31235/osf.io/uhvbp"><em>Sociological Methods &amp; Research</em>, 51(4), 1721–1787.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading"><p>Keremoğlu, E., &amp; Weidmann, N. B. (2020). How dictators control the internet: A review essay. <a href="https://doi.org/10.1177/0010414020912278"><em>Comparative Political Studies</em>, 53(10–11), 1690–1703.</a> <br><br> Tucker, J. A., Theocharis, Y., Roberts, M. E., &amp; Barberá, P. (2017). From liberation to turmoil: Social media and democracy. <a href="https://doi.org/10.1353/jod.2017.0064"><em>Journal of Democracy</em>, 28(4), 46–59.</a></p></td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>23 October 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Machine learning</li>
-<li>Large Language Models</li>
+<td class="gt_row gt_left" headers="Date" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>13 May 2025</p></td>
+<td class="gt_row gt_left" headers="Topics" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><ul>
+<li>Social media in comparative politics</li>
+<li>Text as data in R</li>
 </ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Gilardi, F., Alizadeh, M., &amp; Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <a href="https://doi.org/10.1073/pnas.2305016120"><em>PNAS</em>, 120(30).</a> <br><br></p>
-<p>Reiss, M. V. (2023). Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark. <a href="http://arxiv.org/abs/2304.11085"><em>arXiv Preprint</em>.</a></p></td>
+<td class="gt_row gt_left" headers="Required reading" style="background-color: rgba(173,216,230,0.8); color: #000000; font-weight: bold"><p>Barberá, P., Gohdes, A. R., Iakhnis, E., &amp; Zeitzoff, T. (2024). Distract and Divert: How World Leaders Use Social Media During Contentious Politics. <a href="https://doi.org/10.1177/19401612221102030"><em>The International Journal of Press/Politics</em>, 29(1), 47–73.</a> <br><br> Grimmer, J., &amp; Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <a href="https://doi.org/10.1093/pan/mps028"><em>Political Analysis</em>, 21(3), 267–297.</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -926,563 +956,76 @@ Sebastian Stier
 </div>
 </div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="bxgkmrnekh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bxgkmrnekh table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#bxgkmrnekh thead, #bxgkmrnekh tbody, #bxgkmrnekh tfoot, #bxgkmrnekh tr, #bxgkmrnekh td, #bxgkmrnekh th {
-  border-style: none;
-}
-
-#bxgkmrnekh p {
-  margin: 0;
-  padding: 0;
-}
-
-#bxgkmrnekh .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 13.5px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#bxgkmrnekh .gt_title {
-  color: #333333;
-  font-size: 14px;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#bxgkmrnekh .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#bxgkmrnekh .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#bxgkmrnekh .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#bxgkmrnekh .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#bxgkmrnekh .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#bxgkmrnekh .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#bxgkmrnekh .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#bxgkmrnekh .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#bxgkmrnekh .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#bxgkmrnekh .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#bxgkmrnekh .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#bxgkmrnekh .gt_row {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#bxgkmrnekh .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#bxgkmrnekh .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#bxgkmrnekh .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#bxgkmrnekh .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#bxgkmrnekh .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#bxgkmrnekh .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#bxgkmrnekh .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#bxgkmrnekh .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#bxgkmrnekh .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#bxgkmrnekh .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#bxgkmrnekh .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#bxgkmrnekh .gt_left {
-  text-align: left;
-}
-
-#bxgkmrnekh .gt_center {
-  text-align: center;
-}
-
-#bxgkmrnekh .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#bxgkmrnekh .gt_font_normal {
-  font-weight: normal;
-}
-
-#bxgkmrnekh .gt_font_bold {
-  font-weight: bold;
-}
-
-#bxgkmrnekh .gt_font_italic {
-  font-style: italic;
-}
-
-#bxgkmrnekh .gt_super {
-  font-size: 65%;
-}
-
-#bxgkmrnekh .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#bxgkmrnekh .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#bxgkmrnekh .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#bxgkmrnekh .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#bxgkmrnekh .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#bxgkmrnekh .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#bxgkmrnekh .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#bxgkmrnekh .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#bxgkmrnekh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top" data-quarto-postprocess="true" style="table-layout: fixed;; width: 100%" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 30%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header gt_heading">
-<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border"><p><strong>Seminar dates and topics</strong></p></th>
-</tr>
-<tr class="odd gt_col_headings">
-<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
-<th id="Topics" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Topics</th>
-<th id="Required reading" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Required reading</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>30 October 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Data quality and validation in CSS</li>
-<li>Network analysis</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Sen, I., Flöck, F., Weller, K., Weiß, B., &amp; Wagner, C. (2021). A Total Error Framework for Digital Traces of Human Behavior on Online Platforms. <a href="https://doi.org/10.1093/poq/nfab018"><em>Public Opinion Quarterly</em>, 85(S1), 399–422.</a> <br><br> Dahlke, R., Kumar, D., Durumeric, Z., &amp; Hancock, J. T. (2023). Quantifying the Systematic Bias in the Accessibility and Inaccessibility of Web Scraping Content From URL-Logged Web-Browsing Digital Trace Data. <a href="https://doi.org/10.1177/08944393231218214"><em>Social Science Computer Review</em>.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>6 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Open science and reproducibility in CSS</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Chan, C.- Hong, Schatto-Eckrodt, T., &amp; Gruber, J. (2024). What makes computational communication science (ir)reproducible? <a href="https://doi.org/10.5117/CCR2024.1.5.CHAN"><em>Computational Communication Research</em>, 6(1).</a> <br><br></p>
-<p>Nyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., et al.&nbsp;(2023). Like-minded sources on Facebook are prevalent but not polarizing. <a href="https://doi.org/10.1038/s41586-023-06297-w"><em>Nature</em>, 620(7972), 137–144.</a></p></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>13 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Writing reproducible research papers in R</li>
-<li>R Markdown, quarto</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"><p>Bauer, P. C., &amp; Landesvatter, C. (2023). Writing a reproducible paper with RStudio and Quarto. <a href="https://doi.org/10.31219/osf.io/ur4xn"><em>OSF Preprint</em>.</a></p></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>20 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Date"><p>27 November 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Date"><p>4 December 2024</p></td>
-<td class="gt_row gt_left" headers="Topics"><ul>
-<li>Presentations of thesis ideas</li>
-<li>Coding: troubleshooting</li>
-</ul></td>
-<td class="gt_row gt_left" headers="Required reading"></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="learning-objectives-on-ma-level" class="slide level2">
-<h2>Learning objectives (on MA level)</h2>
+<section id="agenda-for-today" class="slide level2">
+<h2>Agenda for today</h2>
 <ol type="1">
-<li>Advanced understanding of concepts, methods, data used and challenges in CSS</li>
-<li>Critical reflection of the applicability of CSS in social science research</li>
-<li>Learning to use CSS methods in R</li>
-<li>Application of CSS methods in R for own research question</li>
+<li><p>Recap</p></li>
+<li><p>Social media data in political science</p></li>
+<li><p>Text as data in <em>R</em></p></li>
+<li><p>Text as data in political science</p></li>
 </ol>
 </section>
-<section id="modus-operandi-in-the-class" class="slide level2">
-<h2>Modus operandi in the class</h2>
-<ul>
-<li>Introduction to the session’s topic by instructor</li>
-<li>Required reading: (mostly) applied papers
-<ul>
-<li>We’ll discuss these papers in the class</li>
-</ul></li>
-<li>We’ll code in the class <span class="math inline">\(\rightarrow\)</span> please bring your laptop</li>
-<li>Questions are always possible, this is supposed to be interactive</li>
-</ul>
+<section id="learning-objectives-for-today" class="slide level2">
+<h2>Learning objectives for today</h2>
+<p>After this class you will be able to…</p>
+<ol type="1">
+<li>describe the role of social media and politics,</li>
+<li>critically reflect upon the value of social media data in comparative politics,</li>
+<li>work with text as data using <em>quanteda</em> in R.</li>
+</ol>
 </section>
-<section id="requirements-for-examinationgrades" class="slide level2">
-<h2>Requirements for examination/grades</h2>
-<div>
-<ul>
-<li class="fragment">Regular participation in class</li>
-<li class="fragment">Writing a review of the required readings for <strong>two</strong> classes to be submitted by Sunday evening before the respective class (<strong>Studienleistung/Coursework</strong>)</li>
-<li class="fragment">Presentation of your own research idea for your term paper in the last 3 classes of the semester</li>
-<li class="fragment">Written term paper based on an analysis in R (3,000-5,000 words), deadline: 31 January 2025 (<strong>Prüfungsleistung/Examination</strong>)</li>
-</ul>
+<section id="recap" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>1. Recap</h1>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 6
+  country     continent  year lifeExp      pop gdpPercap
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.
+2 Afghanistan Asia       1957    30.3  9240934      821.
+3 Afghanistan Asia       1962    32.0 10267083      853.
+4 Afghanistan Asia       1967    34.0 11537966      836.
+5 Afghanistan Asia       1972    36.1 13079460      740.
+6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
 </div>
+</div>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="|2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a></a><span class="in">#| output-location: column-fragment</span></span>
+<span id="cb2-3"><a></a><span class="in">#| code-line-numbers: "|2"</span></span>
+<span id="cb2-4"><a></a></span>
+<span id="cb2-5"><a></a><span class="in">library(ggplot2)</span></span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a><span class="in">mtcars |&gt; </span></span>
+<span id="cb2-8"><a></a><span class="in">  ggplot(aes(x = disp, y = mpg)) +</span></span>
+<span id="cb2-9"><a></a><span class="in">  geom_point() +</span></span>
+<span id="cb2-10"><a></a><span class="in">  geom_smooth(method = "loess", formula = "y~x")</span></span>
+<span id="cb2-11"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="01_introduction_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+
+<section>
+<section id="social-media-data-in-political-science" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>2. Social media data in political science</h1>
+
+</section>
+<section id="think-pair-share" class="slide level2">
+<h2>Think-pair-share</h2>
+<ol type="1">
+<li>Discuss the literature for today with your neighbor (5 min.)</li>
+<li>Focus on the used methods, their pros and cons, feasibility, etc.</li>
+<li>Locate our two required readings on the map of <span class="citation" data-cites="grimmer_text_2013">Grimmer and Stewart (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></li>
+<li>Share and discuss your results with the full class</li>
+</ol>
 </section>
 <section id="format-of-the-reviews" class="slide level2">
 <h2>Format of the reviews</h2>
@@ -1506,72 +1049,61 @@ Sebastian Stier
 
 - If applicable, are there commonalities or differences between the two papers? How do they relate to each other?</code></pre>
 </div>
+</section></section>
+<section>
+<section id="text-as-data-in-r" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>3. Text as data in <em>R</em></h1>
+
 </section>
-<section id="format-of-term-paper-3000-5000-words" class="slide level2">
-<h2>Format of term paper (3,000-5,000 words)</h2>
-<ul>
-<li>Brief motivation and research question</li>
-<li>Concise theoretical overview: for what conceptual and theoretical reasons do I choose these data and methods?</li>
-<li>Research design</li>
-<li>Data and variables</li>
-<li>Method: no detailed mathematical description needed, but why does this method fit my research question and my data?</li>
-<li>Results</li>
-<li>Interpretation and conclusions</li>
-<li>Analysis code as an R script: needs to be fully reproducible</li>
-</ul>
+<section id="automated-text-analysis-in-r" class="slide level2">
+<h2>Automated text analysis in <em>R</em></h2>
+
+<img data-src="../material/img/quanteda.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
+<p>Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., Matsuo, A., Perry, P. O., Kuha, J., &amp; Lauderdale, B. (2018). quanteda: An R package for the quantitative analysis of textual data. <a href="https://joss.theoj.org/papers/10.21105/joss.00774"><em>Journal of Open Source Software</em>, 3(30), 774.</a></p>
+</div>
 </section>
-<section id="information-management-and-communication" class="slide level2">
-<h2>Information management and communication</h2>
-<ul>
-<li>Slides and materials will be online: <a href="https://sebastianstier.com/ma_css24-25">https://sebastianstier.com/ma_css24-25</a></li>
-<li>Communication
-<ul>
-<li>Via <a href="mailto:sebastian.stier@gesis.org">email</a></li>
-<li>In person after the class</li>
-<li>Via Zoom</li>
-</ul></li>
-<li>Submit the final term paper to <a href="mailto:sebastian.stier@gesis.org">sebastian.stier@gesis.org</a></li>
-<li>Data and scripts can be shared via the secure platform Cryptshare: <a href="https://cryptshare.gesis.org">https://cryptshare.gesis.org</a></li>
-</ul>
+<section id="trump-twitter-archive" class="slide level2">
+<h2>Trump Twitter Archive</h2>
+
+<img data-src="../material/img/trump_twitter.png" style="width:100.0%" class="r-stretch"><div style="font-size: 40%;">
+<p><a href="https://www.thetrumparchive.com">https://www.thetrumparchive.com</a></p>
+</div>
 </section>
-<section id="the-elephant-in-the-room-ai-llms-chatgpt-et-al." class="slide level2">
-<h2>The elephant in the room: AI, LLMs, ChatGPT et al.</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p><img data-src="../material/img/chat_gpt_academia.png" class="figure" width="710"></p>
-<div style="font-size: 26%;">
-<p>Meyer, J. G., Urbanowicz, R. J., Martin, P. C. N., et al.&nbsp;(2023). ChatGPT and large language models in academia: Opportunities and challenges. <em>BioData Mining</em>, 16(1), 20. <a href="https://doi.org/10.1186/s13040-023-00339-9">https://doi.org/10.1186/s13040-023-00339-9</a></p>
-</div>
-</div><div class="column" style="width:45%;">
-<div style="font-size: 68%;">
-<div>
+<section id="coding" class="slide level2">
+<h2>Coding</h2>
 <ul>
-<li class="fragment">It’s fine to look for help online but without an understanding of the R code base the use of AI is inefficient.</li>
-<li class="fragment">You’ll learn much more if you try to find a solution within-R, e.g., <em>?mean</em></li>
-<li class="fragment">We will code in class <span class="math inline">\(\rightarrow\)</span> applied programming.</li>
-<li class="fragment">Term paper:
-<ul>
-<li class="fragment">Synthesis of theory, research question and code.</li>
-<li class="fragment">Documentation of code: tell me why each step is needed and what it does.</li>
-</ul></li>
+<li>Download file <strong>06_text_as_data.R</strong> from <a href="https://sebastianstier.com/ds_comp_pol25/material.html">https://sebastianstier.com/ds_comp_pol25/material.html</a></li>
+<li>Open it in <em>RStudio</em> within your project</li>
 </ul>
-</div>
-</div>
-</div>
+</section></section>
+<section>
+<section id="text-as-data-in-political-science" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>4. Text as data in political science</h1>
+
+</section>
+<section id="automated-text-analysis-the-menu-of-options" class="slide level2">
+<h2>Automated text analysis: The menu of options</h2>
+
+<img data-src="../material/img/grimmer_stewart.png" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 30%;">
+<p>Grimmer, J., &amp; Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <a href="https://doi.org/10.1093/pan/mps028"><em>Political Analysis</em>, 21(3), 267–297.</a></p>
 </div>
 </section></section>
 <section>
-<section id="thank-you-for-your-attention-see-you-on-september-11" class="title-slide slide level1 center" data-background-color="#58748F">
-<h1>Thank you for your attention! See you on September 11</h1>
+<section id="thank-you-for-your-attention-see-you-on-may-20-2025" class="title-slide slide level1 center" data-background-color="#58748F">
+<h1>Thank you for your attention! See you on May 20 2025</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="quarto-auto-generated-content">
-<p><img src="_extensions/gesiscss/fakegesis/gesis-unima_new.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="https://sebstier.github.io/ma_css24-25/">Computational Social Science and Digital Behavioral Data, University of Mannheim</a></p>
+<p><a href="https://sebstier.github.io/ds_comp_pol25/">Data Science in Comparative Politics</a></p>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-grimmer_text_2013" class="csl-entry" role="listitem">
+Grimmer, Justin, and Brandon M. Stewart. 2013. <span>“Text as <span>Data</span>: <span>The</span> <span>Promise</span> and <span>Pitfalls</span> of <span>Automatic</span> <span>Content</span> <span>Analysis</span> <span>Methods</span> for <span>Political</span> <span>Texts</span>.”</span> <em>Political Analysis</em> 21 (3): 267–97. <a href="https://doi.org/10.1093/pan/mps028">https://doi.org/10.1093/pan/mps028</a>.
 </div>
 </div>
 </section></section>
@@ -1855,18 +1387,7 @@ Sebastian Stier
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1898,15 +1419,37 @@ Sebastian Stier
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/sebstier\.github\.io\/ma_css24-25\/");
+          var filterRegex = new RegExp("https:\/\/sebstier\.github\.io\/ds_comp_pol25\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
